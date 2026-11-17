@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meus periódicos — números mais recentes</title>
+<style>
+:root{
+  --bg:#f6f5f1; --card:#fff; --ink:#1d2330; --mut:#6b7280; --line:#e4e2da;
+  --accent:#1f5fbf; --new:#c2410c; --newbg:#fff1e6; --ok:#15803d; --err:#b91c1c;
+  --radius:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#14171d; --card:#1c2029; --ink:#e8eaee; --mut:#98a0ae; --line:#2b313d;
+    --accent:#7aa7f0; --new:#fb923c; --newbg:#3a2616; --ok:#4ade80; --err:#f87171; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:1.7rem;margin:0 0 4px;letter-spacing:-.01em}
+.sub{margin:0 0 22px;color:var(--mut);font-size:.92rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:22px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.kpi b{display:block;font-size:1.9rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--mut);font-size:.82rem}
+.kpi.hot b{color:var(--new)}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.toolbar form{display:flex;gap:8px;flex:1 1 360px}
+input[type=text],textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+textarea{min-height:120px;resize:vertical}
+button{font:inherit;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.pri{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media (prefers-color-scheme:dark){button.pri{color:#0b1220}}
+button:disabled{opacity:.55;cursor:default}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:14px}
+.panel[hidden]{display:none}
+.panel h3{margin:0 0 8px;font-size:1rem}
+.hit{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.hit:first-of-type{border-top:0}
+.hit small{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.card.novo{border-color:var(--new);box-shadow:0 0 0 1px var(--new) inset}
+.card header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.card h2{font-size:1.05rem;margin:0;line-height:1.3}
+.rm{border:0;background:none;color:var(--mut);padding:0 4px;font-size:1.2rem;line-height:1}
+.rm:hover{color:var(--err)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.85rem;color:var(--mut)}
+.issue{font-weight:600;color:var(--ink);font-size:.95rem}
+.badge{background:var(--newbg);color:var(--new);font-weight:600;font-size:.74rem;padding:2px 9px;border-radius:999px}
+ol{margin:0;padding-left:1.15rem;display:flex;flex-direction:column;gap:7px}
+li a{color:var(--ink);text-decoration:none}
+li a:hover{color:var(--accent);text-decoration:underline}
+li small{display:block;color:var(--mut)}
+.more{align-self:flex-start;padding:5px 10px;font-size:.82rem}
+h2.grupo{font-size:1.05rem;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);color:var(--mut);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.links{display:flex;gap:14px;flex-wrap:wrap;font-size:.84rem;margin-top:auto}
+.links a{color:var(--accent);text-decoration:none}
+.links a:hover{text-decoration:underline}
+.state{font-size:.88rem;color:var(--mut)}
+.state.err{color:var(--err)}
+footer{margin-top:28px;color:var(--mut);font-size:.8rem}
+.empty{padding:34px 20px;text-align:center;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Periódicos — números mais recentes</h1>
+  <p class="sub" id="status">Carregando…</p>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="toolbar">
+    <form id="formBusca">
+      <input type="text" id="q" placeholder="Adicionar periódico: nome ou ISSN (ex.: 0101-7438)" autocomplete="off">
+      <button class="pri" type="submit">Buscar</button>
+    </form>
+    <button id="btnImportar" type="button">Importar lista</button>
+    <button id="btnAtualizar" type="button">Atualizar agora</button>
+    <button id="btnCopiar" type="button">Copiar lista (JSON)</button>
+  </section>
+
+  <section class="panel" id="painelBusca" hidden></section>
+
+  <section class="panel" id="painelImportar" hidden>
+    <h3>Importar lista</h3>
+    <p class="state">Um periódico por linha: o ISSN (de preferência) ou o nome. Para nomes, uso o primeiro resultado da busca e mostro o título encontrado para você conferir.</p>
+    <textarea id="txtImportar" placeholder="0101-7438&#10;Revista Brasileira de Ensino de Física&#10;Nature — 0028-0836"></textarea>
+    <p><button class="pri" id="btnConfirmarImportar" type="button">Importar</button> <span class="state" id="logImportar"></span></p>
+  </section>
+
+  <main id="grade"></main>
+
+  <footer>
+    Dados: Crossref (metadados depositados pelas editoras). O “número mais recente” é o de data mais recente entre os artigos
+    com volume/fascículo registrados; periódicos de fluxo contínuo, sem fascículos, mostram os artigos mais recentes.
+    A página consulta o Crossref a cada abertura e de hora em hora enquanto fica aberta. Sua lista fica salva neste navegador.
+  </footer>
+</div>
+
+<script>
+/* ============ CONFIGURAÇÃO ============
+   Para que a lista valha em qualquer navegador/aparelho, cole aqui o JSON do botão
+   "Copiar lista (JSON)". Itens adicionados pela página ficam só neste navegador. */
+const CONFIG = {
+  // issn = ISSN principal (chave); alt = outros ISSN tentados se o principal não retornar dados;
+  // site = página do periódico; atual: false desliga o link derivado "edição atual".
+  PERIODICOS: [
+    { "grupo": "Arquivologia", "nome": "Acervo – Revista do Arquivo Nacional", "issn": "2237-8723", "alt": ["0102-700X"], "site": "https://revista.an.gov.br/index.php/revistaacervo" },
+    { "grupo": "Arquivologia", "nome": "Archeion Online", "issn": "2318-6186", "site": "https://periodicos.ufpb.br/index.php/archeion" },
+    { "grupo": "Arquivologia", "nome": "Informação Arquivística", "issn": "2316-7300", "site": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/index" },
+    { "grupo": "Arquivologia", "nome": "Ágora: Arquivologia em Debate", "issn": "2763-9045", "alt": ["0103-3557"], "site": "https://agora.emnuvens.com.br/ra/index" },
+    { "grupo": "Arquivologia", "nome": "Revista do Arquivo (APESP)", "issn": "2447-908X", "site": "https://revista.arquivoestado.sp.gov.br/", "atual": false },
+    { "grupo": "Arquivologia", "nome": "Revista do Arquivo Público do Estado do Espírito Santo", "issn": "2763-535X", "site": "https://periodicos.ufes.br/revapees" },
+    { "grupo": "Arquivologia", "nome": "Revista Officina", "issn": "2764-7773", "site": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/index" },
+
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Brazilian Journal of Information Science: Research Trends", "issn": "1981-1640", "site": "https://revistas.marilia.unesp.br/index.php/bjis" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Em Questão", "issn": "1808-5245", "alt": ["1807-8893"], "site": "https://seer.ufrgs.br/index.php/EmQuestao/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Encontros Bibli", "issn": "1518-2924", "site": "https://periodicos.ufsc.br/index.php/eb/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "InCID: Revista de Ciência da Informação e Documentação", "issn": "2178-2075", "site": "https://revistas.usp.br/incid" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Informação & Informação", "issn": "1981-8920", "site": "https://ojs.uel.br/revistas/uel/index.php/informacao/" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Perspectivas em Ciência da Informação", "issn": "1981-5344", "alt": ["1413-9936"], "site": "https://periodicos.ufmg.br/index.php/pci" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)", "issn": "1981-0695", "site": "https://www.pbcib.com/index.php/pbcib/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação", "issn": "1678-765X", "site": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)", "issn": "1980-6949", "site": "https://rbbd.febab.org.br/rbbd" },
+
+    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Revista Brasileira de Preservação Digital (RBPD)", "issn": "2675-3073", "site": "https://econtents.sbu.unicamp.br/inpec/index.php/rebpred/index" },
+    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Cadernos BAD", "issn": "1645-2895", "site": "https://publicacoes.bad.pt/revistas/index.php/cadernos" },
+    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Páginas a&b: arquivos e bibliotecas", "issn": "2183-6671", "alt": ["0873-5670"], "site": "https://ojs.letras.up.pt/index.php/paginasaeb" }
+  ],
+  EMAIL: "",          // opcional: seu e-mail, para o "polite pool" do Crossref (mais estável)
+  INTERVALO_MIN: 60,  // atualização automática enquanto a página estiver aberta
+  LINHAS: 100,        // artigos recentes consultados por periódico
+  MOSTRAR: 6          // artigos exibidos por cartão antes de "ver todos"
+};
+
+/* ============ utilidades ============ */
+const API = "https://api.crossref.org";
+const MESES = ["jan.","fev.","mar.","abr.","mai.","jun.","jul.","ago.","set.","out.","nov.","dez."];
+const ISSN_RE = /\b\d{4}-?\d{3}[\dXx]\b/;
+
+const store = (() => {
+  const mem = {};
+  return {
+    get(k, def){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e){ return k in mem ? mem[k] : def; } },
+    set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){ mem[k] = v; } }
+  };
+})();
+
+function h(tag, attrs, ...kids){
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})){
+    if (k === "class") el.className = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) el.setAttribute(k, v);
+  }
+  for (const kid of kids.flat()) if (kid != null) el.append(kid.nodeType ? kid : document.createTextNode(kid));
+  return el;
+}
+const limpa = s => String(s || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+const normIssn = s => { const t = s.replace(/-/g, "").toUpperCase(); return t.slice(0,4) + "-" + t.slice(4); };
+const numOf = v => { const m = String(v || "").match(/\d+/); return m ? parseInt(m[0], 10) : 0; };
+
+function dataItem(it){
+  const src = it.issued || it["published-print"] || it["published-online"] || {};
+  const a = (src["date-parts"] && src["date-parts"][0]) || [];
+  return { y: a[0] || 0, m: a[1] || 0, d: a[2] || 0 };
+}
+const dnum = d => d.y * 10000 + d.m * 100 + d.d;
+const fmtData = d => d.y ? (d.m ? MESES[d.m - 1] + " " : "") + d.y : "";
+function autores(it){
+  const a = (it.author || []).map(x => [x.given, x.family].filter(Boolean).join(" ") || x.name || "").filter(Boolean);
+  return a.length > 3 ? a.slice(0, 3).join(", ") + " et al." : a.join(", ");
+}
+
+/* Escolhe o número mais recente a partir dos artigos mais recentes do periódico. */
+function escolheUltimo(items){
+  const lista = items.map(it => ({ it, d: dataItem(it), v: String(it.volume || ""), n: String(it.issue || "") }));
+  const com = lista.filter(x => x.v || x.n);
+  if (!com.length){
+    const itens = lista.sort((a, b) => dnum(b.d) - dnum(a.d)).map(x => x.it);
+    return { tipo: "continuo", rotulo: "Artigos mais recentes", data: itens[0] ? fmtData(dataItem(itens[0])) : "", itens, sig: "c|" + (itens[0] ? itens[0].DOI : "") };
+  }
+  const cmp = (a, b) => (dnum(a.d) - dnum(b.d)) || (numOf(a.v) - numOf(b.v)) || (numOf(a.n) - numOf(b.n));
+  const melhor = com.reduce((a, b) => cmp(b, a) > 0 ? b : a);
+  const grupo = com.filter(x => x.v === melhor.v && x.n === melhor.n);
+  const dataG = grupo.map(x => x.d).reduce((a, b) => dnum(b) > dnum(a) ? b : a);
+  const rotulo = [melhor.v && "v. " + melhor.v, melhor.n && "n. " + melhor.n].filter(Boolean).join(", ");
+  const itens = grupo.sort((a, b) => numOf(a.it.page) - numOf(b.it.page)).map(x => x.it);
+  return { tipo: "numero", rotulo, data: fmtData(dataG), itens, sig: `${melhor.v}|${melhor.n}|${itens.length}` };
+}
+
+async function getJSON(url, tentativas = 2){
+  for (let i = 0; i <= tentativas; i++){
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 20000);
+    try {
+      const r = await fetch(url, { signal: ctl.signal, headers: { Accept: "application/json" } });
+      clearTimeout(t);
+      if (r.status === 404) throw Object.assign(new Error("Periódico não encontrado no Crossref"), { definitivo: true });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return await r.json();
+    } catch (e){
+      clearTimeout(t);
+      if (i === tentativas || e.definitivo) throw e;
+      await new Promise(res => setTimeout(res, 1000 * (i + 1)));
+    }
+  }
+}
+const mail = () => CONFIG.EMAIL ? "&mailto=" + encodeURIComponent(CONFIG.EMAIL) : "";
+
+async function buscaPeriodico(q){
+  q = q.trim();
+  const m = q.match(ISSN_RE);
+  if (m && q.replace(ISSN_RE, "").replace(/[\s\-—–:;,]/g, "") === ""){
+    const j = await getJSON(`${API}/journals/${normIssn(m[0])}?${mail().slice(1)}`);
+    return [j.message];
+  }
+  const j = await getJSON(`${API}/journals?query=${encodeURIComponent(q)}&rows=8${mail()}`);
+  return j.message.items || [];
+}
+
+async function carregaPeriodico(p){
+  const campos = "DOI,title,author,issue,volume,issued,published-print,published-online,container-title,URL,page";
+  const issns = [p.issn, ...(p.alt || [])].map(normIssn);
+  let ultimoErro = null;
+  for (const issn of issns){            // tenta cada ISSN até algum devolver artigos
+    try {
+      const url = `${API}/journals/${issn}/works?filter=type:journal-article&sort=issued&order=desc&rows=${CONFIG.LINHAS}&select=${campos}${mail()}`;
+      const j = await getJSON(url);
+      const items = j.message.items || [];
+      if (!items.length){ ultimoErro = new Error("Crossref não tem artigos registrados para este ISSN"); continue; }
+      const nome = p.nome || limpa((items[0]["container-title"] || [])[0]) || p.issn;
+      return { nome, ultimo: escolheUltimo(items) };
+    } catch (e){ ultimoErro = e; }
+  }
+  throw ultimoErro || new Error("Sem dados");
+}
+function urlAtual(p){
+  if (p.atual === false || !p.site) return null;
+  if (typeof p.atual === "string") return p.atual;
+  return p.site.replace(/\/index\/?$/, "").replace(/\/+$/, "") + "/issue/current";
+}
+
+/* ============ estado ============ */
+let usuario = store.get("perio.v1.user", { added: [], removed: [] });
+let cache = store.get("perio.v1.cache", {});
+const baseline = store.get("perio.v1.seen", {});   // assinaturas da visita anterior
+const visto = Object.assign({}, baseline);          // gravada ao final (próxima visita)
+const estado = {};                                  // issn -> {status, erro}
+let ultimaVerificacao = 0;
+const expandidos = new Set();
+
+function lista(){
+  const rem = new Set(usuario.removed);
+  const base = CONFIG.PERIODICOS.map(p => ({ ...p, issn: normIssn(p.issn) }));
+  const out = [], vistos = new Set();
+  for (const p of [...base, ...usuario.added]){
+    if (rem.has(p.issn) || vistos.has(p.issn)) continue;
+    vistos.add(p.issn); out.push(p);
+  }
+  return out;
+}
+const salvaUsuario = () => store.set("perio.v1.user", usuario);
+
+function adiciona(p){
+  const issn = normIssn(p.issn);
+  usuario.removed = usuario.removed.filter(x => x !== issn);
+  if (!lista().some(x => x.issn === issn) ) usuario.added.push({ issn, nome: p.nome });
+  salvaUsuario();
+  atualizaUm(lista().find(x => x.issn === issn)).then(render);
+  render();
+}
+function remove(issn){
+  usuario.added = usuario.added.filter(x => x.issn !== issn);
+  if (CONFIG.PERIODICOS.some(p => normIssn(p.issn) === issn)) usuario.removed.push(issn);
+  salvaUsuario(); delete cache[issn]; delete visto[issn];
+  store.set("perio.v1.cache", cache); store.set("perio.v1.seen", visto);
+  render();
+}
+
+async function atualizaUm(p){
+  estado[p.issn] = { status: "carregando" };
+  try {
+    const r = await carregaPeriodico(p);
+    cache[p.issn] = { t: Date.now(), ...r };
+    estado[p.issn] = { status: "ok" };
+    visto[p.issn] = r.ultimo.sig;
+    store.set("perio.v1.cache", cache);
+    store.set("perio.v1.seen", visto);
+  } catch (e){
+    estado[p.issn] = { status: "erro", erro: e.message || String(e) };
+  }
+}
+
+async function atualizaTodos(){
+  const itens = lista();
+  const btn = document.getElementById("btnAtualizar");
+  btn.disabled = true;
+  let i = 0;
+  const worker = async () => { while (i < itens.length){ const p = itens[i++]; await atualizaUm(p); render(); } };
+  await Promise.all([worker(), worker(), worker()]);
+  ultimaVerificacao = Date.now();
+  btn.disabled = false;
+  render();
+}
+
+/* ============ interface ============ */
+const ehNovo = issn => {
+  const c = cache[issn], b = baseline[issn];
+  return !!(c && b && b !== c.ultimo.sig);
+};
+function quando(t){
+  if (!t) return "ainda não verificado";
+  const min = Math.round((Date.now() - t) / 60000);
+  return min < 1 ? "agora há pouco" : min < 60 ? `há ${min} min` : `há ${Math.round(min / 60)} h`;
+}
+
+function card(p){
+  const c = cache[p.issn], st = estado[p.issn] || {};
+  const novo = ehNovo(p.issn);
+  const el = h("article", { class: "card" + (novo ? " novo" : "") },
+    h("header", {},
+      h("h2", {}, c ? c.nome : (p.nome || p.issn)),
+      h("button", { class: "rm", title: "Remover da lista", onclick: () => remove(p.issn) }, "×")
+    )
+  );
+  if (c){
+    const u = c.ultimo;
+    el.append(h("div", { class: "meta" },
+      h("span", { class: "issue" }, u.rotulo + (u.data ? " · " + u.data : "")),
+      novo ? h("span", { class: "badge" }, "Novo desde sua última visita") : null,
+      h("span", {}, "ISSN " + p.issn)
+    ));
+    const aberto = expandidos.has(p.issn);
+    const mostra = aberto ? u.itens : u.itens.slice(0, CONFIG.MOSTRAR);
+    el.append(h("ol", {}, mostra.map(it => h("li", {},
+      h("a", { href: it.URL, target: "_blank", rel: "noopener" }, limpa((it.title || [])[0]) || "(sem título)"),
+      autores(it) ? h("small", {}, autores(it)) : null
+    ))));
+    if (u.itens.length > CONFIG.MOSTRAR)
+      el.append(h("button", { class: "more", onclick: () => { aberto ? expandidos.delete(p.issn) : expandidos.add(p.issn); render(); } },
+        aberto ? "mostrar menos" : `ver todos (${u.itens.length}${u.tipo === "numero" && u.itens.length >= CONFIG.LINHAS ? "+" : ""})`));
+  }
+  if (st.status === "carregando") el.append(h("div", { class: "state" }, c ? "Atualizando…" : "Consultando o Crossref…"));
+  if (st.status === "erro") el.append(h("div", { class: "state err" },
+    c ? "Não consegui atualizar: " + st.erro + " (mostrando a última consulta " + quando(c.t) + ")"
+      : "Sem dados do Crossref (" + st.erro + "). Consulte o site do periódico pelos links abaixo."));
+  if (c && st.status !== "carregando") el.append(h("div", { class: "state" }, "Consultado " + quando(c.t)));
+  const atual = urlAtual(p);
+  if (p.site) el.append(h("div", { class: "links" },
+    h("a", { href: p.site, target: "_blank", rel: "noopener" }, "Site do periódico"),
+    atual ? h("a", { href: atual, target: "_blank", rel: "noopener" }, "Edição atual no site") : null));
+  return el;
+}
+
+function render(){
+  const itens = lista();
+  const ordenados = itens.slice().sort((a, b) => {
+    const na = ehNovo(a.issn) ? 1 : 0, nb = ehNovo(b.issn) ? 1 : 0;
+    if (na !== nb) return nb - na;
+    const da = cache[a.issn] ? cache[a.issn].ultimo.itens[0] : null, db = cache[b.issn] ? cache[b.issn].ultimo.itens[0] : null;
+    return (db ? dnum(dataItem(db)) : 0) - (da ? dnum(dataItem(da)) : 0);
+  });
+  const grade = document.getElementById("grade");
+  const grupos = [];                                   // mantém a ordem dos grupos da configuração
+  for (const p of itens){
+    const g = p.grupo || "Outros";
+    if (!grupos.includes(g)) grupos.push(g);
+  }
+  grade.replaceChildren(...(ordenados.length ? grupos.flatMap(g => [
+      h("h2", { class: "grupo" }, g),
+      h("div", { class: "grid" }, ordenados.filter(p => (p.grupo || "Outros") === g).map(card))
+    ]) : [h("div", { class: "empty" },
+      "Nenhum periódico na lista ainda. Use a busca acima, ou “Importar lista” para colar vários de uma vez.")]));
+
+  const comDados = itens.filter(p => cache[p.issn]);
+  const novos = itens.filter(p => ehNovo(p.issn)).length;
+  const artigos = comDados.reduce((s, p) => s + cache[p.issn].ultimo.itens.length, 0);
+  const erros = itens.filter(p => (estado[p.issn] || {}).status === "erro").length;
+  const kpi = (n, t, hot) => h("div", { class: "kpi" + (hot ? " hot" : "") }, h("b", {}, String(n)), h("span", {}, t));
+  document.getElementById("kpis").replaceChildren(
+    kpi(itens.length, "periódicos monitorados"),
+    kpi(novos, "com número novo desde sua última visita", novos > 0),
+    kpi(artigos, "artigos nos números mostrados"),
+    kpi(erros, "com falha na última consulta")
+  );
+  document.getElementById("status").textContent =
+    "Última verificação: " + quando(ultimaVerificacao) + " · atualiza sozinha a cada " + CONFIG.INTERVALO_MIN + " min enquanto estiver aberta.";
+}
+
+/* busca / importação */
+const painelBusca = document.getElementById("painelBusca");
+document.getElementById("formBusca").addEventListener("submit", async ev => {
+  ev.preventDefault();
+  const q = document.getElementById("q").value.trim();
+  if (!q) return;
+  painelBusca.hidden = false;
+  painelBusca.replaceChildren(h("span", { class: "state" }, "Buscando…"));
+  try {
+    const res = await buscaPeriodico(q);
+    if (!res.length){ painelBusca.replaceChildren(h("span", { class: "state" }, "Nada encontrado. Tente o ISSN.")); return; }
+    painelBusca.replaceChildren(h("h3", {}, "Resultados — clique para adicionar"),
+      ...res.map(j => {
+        const issn = (j.ISSN || [])[0];
+        return h("div", { class: "hit" },
+          h("div", {}, h("div", {}, limpa(j.title)), h("small", {}, [limpa(j.publisher), (j.ISSN || []).join(" / ")].filter(Boolean).join(" · "))),
+          h("button", { class: "pri", disabled: !issn, onclick: () => { adiciona({ issn, nome: limpa(j.title) }); painelBusca.hidden = true; document.getElementById("q").value = ""; } }, "Adicionar"));
+      }));
+  } catch (e){
+    painelBusca.replaceChildren(h("span", { class: "state err" }, "Falha na busca: " + (e.message || e)));
+  }
+});
+
+document.getElementById("btnImportar").addEventListener("click", () => {
+  const p = document.getElementById("painelImportar"); p.hidden = !p.hidden;
+});
+document.getElementById("btnConfirmarImportar").addEventListener("click", async () => {
+  const linhas = document.getElementById("txtImportar").value.split(/\n|;/).map(s => s.trim()).filter(Boolean);
+  const log = document.getElementById("logImportar");
+  const resumo = [];
+  for (const [k, linha] of linhas.entries()){
+    log.textContent = `Processando ${k + 1}/${linhas.length}…`;
+    try {
+      const m = linha.match(ISSN_RE);
+      const res = await buscaPeriodico(m ? m[0] : linha);
+      const j = res[0], issn = j && (j.ISSN || [])[0];
+      if (!issn) { resumo.push(`✗ ${linha}`); continue; }
+      adiciona({ issn, nome: limpa(j.title) });
+      resumo.push(`✓ ${linha} → ${limpa(j.title)}`);
+    } catch (e){ resumo.push(`✗ ${linha} (${e.message || e})`); }
+  }
+  log.textContent = "";
+  document.getElementById("logImportar").replaceChildren(...resumo.flatMap(t => [t, h("br")]));
+  document.getElementById("txtImportar").value = "";
+});
+
+document.getElementById("btnAtualizar").addEventListener("click", atualizaTodos);
+document.getElementById("btnCopiar").addEventListener("click", async ev => {
+  const json = JSON.stringify(lista().map(p => ({ issn: p.issn, nome: (cache[p.issn] && cache[p.issn].nome) || p.nome || "" })), null, 2);
+  const b = ev.currentTarget;
+  try { await navigator.clipboard.writeText(json); b.textContent = "Copiado!"; }
+  catch (e){ painelBusca.hidden = false; painelBusca.replaceChildren(h("h3", {}, "Copie o JSON abaixo"), h("textarea", {}, json)); }
+  setTimeout(() => b.textContent = "Copiar lista (JSON)", 1800);
+});
+
+/* ============ início ============ */
+render();                                   // primeiro desenho com o cache da última visita
+atualizaTodos();                            // consulta ao vivo
+setInterval(atualizaTodos, CONFIG.INTERVALO_MIN * 60000);
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden && Date.now() - ultimaVerificacao > CONFIG.INTERVALO_MIN * 60000) atualizaTodos();
+});
+</script>
+</body>
+</html>
