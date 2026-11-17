@@ -146,7 +146,20 @@ function h(tag, attrs, ...kids){
   for (const kid of kids.flat()) if (kid != null) el.append(kid.nodeType ? kid : document.createTextNode(kid));
   return el;
 }
-const limpa = s => String(s || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+/* Títulos do Crossref às vezes trazem tags escapadas (&lt;b&gt;…&lt;/b&gt;), duplamente escapadas ou tags JATS (<jats:italic>).
+   Decodifica as entidades e remove as tags, repetindo até estabilizar. Só tags de verdade (começam com letra) são
+   removidas, então um título como "p < 0,05" fica intacto. */
+const _ta = document.createElement("textarea");           // decodifica entidades sem executar nada
+const decodifica = s => { _ta.innerHTML = s; return _ta.value; };
+function limpa(s){
+  let t = String(s || "");
+  for (let i = 0; i < 4; i++){
+    const novo = decodifica(t).replace(/<\/?[a-zA-Z][^<>]*>/g, "");
+    if (novo === t) break;
+    t = novo;
+  }
+  return t.replace(/\s+/g, " ").trim();
+}
 const normIssn = s => { const t = s.replace(/-/g, "").toUpperCase(); return t.slice(0,4) + "-" + t.slice(4); };
 const numOf = v => { const m = String(v || "").match(/\d+/); return m ? parseInt(m[0], 10) : 0; };
 
@@ -158,7 +171,7 @@ function dataItem(it){
 const dnum = d => d.y * 10000 + d.m * 100 + d.d;
 const fmtData = d => d.y ? (d.m ? MESES[d.m - 1] + " " : "") + d.y : "";
 function autores(it){
-  const a = (it.author || []).map(x => [x.given, x.family].filter(Boolean).join(" ") || x.name || "").filter(Boolean);
+  const a = (it.author || []).map(x => limpa([x.given, x.family].filter(Boolean).join(" ") || x.name || "")).filter(Boolean);
   return a.length > 3 ? a.slice(0, 3).join(", ") + " et al." : a.join(", ");
 }
 
