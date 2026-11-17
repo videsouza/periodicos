@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meus periódicos — números mais recentes</title>
+<title>Periódicos — números mais recentes</title>
 <style>
 :root{
   --bg:#f6f5f1; --card:#fff; --ink:#1d2330; --mut:#6b7280; --line:#e4e2da;
@@ -18,6 +18,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px}
 h1{font-size:1.7rem;margin:0 0 4px;letter-spacing:-.01em}
+.credito{margin:0 0 6px;color:var(--mut);font-size:.92rem}
 .sub{margin:0 0 22px;color:var(--mut);font-size:.92rem}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:22px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
@@ -44,8 +45,6 @@ button:disabled{opacity:.55;cursor:default}
 .card.novo{border-color:var(--new);box-shadow:0 0 0 1px var(--new) inset}
 .card header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
 .card h2{font-size:1.05rem;margin:0;line-height:1.3}
-.rm{border:0;background:none;color:var(--mut);padding:0 4px;font-size:1.2rem;line-height:1}
-.rm:hover{color:var(--err)}
 .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.85rem;color:var(--mut)}
 .issue{font-weight:600;color:var(--ink);font-size:.95rem}
 .badge{background:var(--newbg);color:var(--new);font-weight:600;font-size:.74rem;padding:2px 9px;border-radius:999px}
@@ -67,42 +66,30 @@ footer{margin-top:28px;color:var(--mut);font-size:.8rem}
 <body>
 <div class="wrap">
   <h1>Periódicos — números mais recentes</h1>
+  <p class="credito">Criado e mantido por Vinicius A. de Souza (<a href="mailto:va.vinicius@gmail.com">va.vinicius@gmail.com</a>)</p>
   <p class="sub" id="status">Carregando…</p>
 
   <section class="kpis" id="kpis"></section>
 
   <section class="toolbar">
-    <form id="formBusca">
-      <input type="text" id="q" placeholder="Adicionar periódico: nome ou ISSN (ex.: 0101-7438)" autocomplete="off">
-      <button class="pri" type="submit">Buscar</button>
-    </form>
-    <button id="btnImportar" type="button">Importar lista</button>
     <button id="btnAtualizar" type="button">Atualizar agora</button>
     <button id="btnCopiar" type="button">Copiar lista (JSON)</button>
   </section>
 
-  <section class="panel" id="painelBusca" hidden></section>
-
-  <section class="panel" id="painelImportar" hidden>
-    <h3>Importar lista</h3>
-    <p class="state">Um periódico por linha: o ISSN (de preferência) ou o nome. Para nomes, uso o primeiro resultado da busca e mostro o título encontrado para você conferir.</p>
-    <textarea id="txtImportar" placeholder="0101-7438&#10;Revista Brasileira de Ensino de Física&#10;Nature — 0028-0836"></textarea>
-    <p><button class="pri" id="btnConfirmarImportar" type="button">Importar</button> <span class="state" id="logImportar"></span></p>
-  </section>
+  <section class="panel" id="painelCopia" hidden></section>
 
   <main id="grade"></main>
 
   <footer>
     Dados: Crossref (metadados depositados pelas editoras). O “número mais recente” é o de data mais recente entre os artigos
     com volume/fascículo registrados; periódicos de fluxo contínuo, sem fascículos, mostram os artigos mais recentes.
-    A página consulta o Crossref a cada abertura e de hora em hora enquanto fica aberta. Sua lista fica salva neste navegador.
+    A página consulta o Crossref a cada abertura e de hora em hora enquanto fica aberta.
   </footer>
 </div>
 
 <script>
 /* ============ CONFIGURAÇÃO ============
-   Para que a lista valha em qualquer navegador/aparelho, cole aqui o JSON do botão
-   "Copiar lista (JSON)". Itens adicionados pela página ficam só neste navegador. */
+   Para alterar a lista de periódicos, edite CONFIG.PERIODICOS abaixo. */
 const CONFIG = {
   // issn = ISSN principal (chave); alt = outros ISSN tentados se o principal não retornar dados;
   // site = página do periódico; atual: false desliga o link derivado "edição atual".
@@ -211,17 +198,6 @@ async function getJSON(url, tentativas = 2){
 }
 const mail = () => CONFIG.EMAIL ? "&mailto=" + encodeURIComponent(CONFIG.EMAIL) : "";
 
-async function buscaPeriodico(q){
-  q = q.trim();
-  const m = q.match(ISSN_RE);
-  if (m && q.replace(ISSN_RE, "").replace(/[\s\-—–:;,]/g, "") === ""){
-    const j = await getJSON(`${API}/journals/${normIssn(m[0])}?${mail().slice(1)}`);
-    return [j.message];
-  }
-  const j = await getJSON(`${API}/journals?query=${encodeURIComponent(q)}&rows=8${mail()}`);
-  return j.message.items || [];
-}
-
 /* Dados coletados direto do site do periódico (coletar.py -> dados.json, mesma pasta desta página). */
 async function carregaLocal(p){
   let j;
@@ -261,7 +237,6 @@ function urlAtual(p){
 }
 
 /* ============ estado ============ */
-let usuario = store.get("perio.v1.user", { added: [], removed: [] });
 let cache = store.get("perio.v1.cache", {});
 const baseline = store.get("perio.v1.seen", {});   // assinaturas da visita anterior
 const visto = Object.assign({}, baseline);          // gravada ao final (próxima visita)
@@ -270,31 +245,9 @@ let ultimaVerificacao = 0;
 const expandidos = new Set();
 
 function lista(){
-  const rem = new Set(usuario.removed);
-  const base = CONFIG.PERIODICOS.map(p => ({ ...p, issn: normIssn(p.issn) }));
-  const out = [], vistos = new Set();
-  for (const p of [...base, ...usuario.added]){
-    if (rem.has(p.issn) || vistos.has(p.issn)) continue;
-    vistos.add(p.issn); out.push(p);
-  }
-  return out;
-}
-const salvaUsuario = () => store.set("perio.v1.user", usuario);
-
-function adiciona(p){
-  const issn = normIssn(p.issn);
-  usuario.removed = usuario.removed.filter(x => x !== issn);
-  if (!lista().some(x => x.issn === issn) ) usuario.added.push({ issn, nome: p.nome });
-  salvaUsuario();
-  atualizaUm(lista().find(x => x.issn === issn)).then(render);
-  render();
-}
-function remove(issn){
-  usuario.added = usuario.added.filter(x => x.issn !== issn);
-  if (CONFIG.PERIODICOS.some(p => normIssn(p.issn) === issn)) usuario.removed.push(issn);
-  salvaUsuario(); delete cache[issn]; delete visto[issn];
-  store.set("perio.v1.cache", cache); store.set("perio.v1.seen", visto);
-  render();
+  const vistos = new Set();
+  return CONFIG.PERIODICOS.map(p => ({ ...p, issn: normIssn(p.issn) }))
+    .filter(p => !vistos.has(p.issn) && vistos.add(p.issn));
 }
 
 async function atualizaUm(p){
@@ -339,8 +292,7 @@ function card(p){
   const novo = ehNovo(p.issn);
   const el = h("article", { class: "card" + (novo ? " novo" : "") },
     h("header", {},
-      h("h2", {}, c ? c.nome : (p.nome || p.issn)),
-      h("button", { class: "rm", title: "Remover da lista", onclick: () => remove(p.issn) }, "×")
+      h("h2", {}, c ? c.nome : (p.nome || p.issn))
     )
   );
   if (c){
@@ -395,7 +347,7 @@ function render(){
       h("h2", { class: "grupo" }, g),
       h("div", { class: "grid" }, ordenados.filter(p => (p.grupo || "Outros") === g).map(card))
     ]) : [h("div", { class: "empty" },
-      "Nenhum periódico na lista ainda. Use a busca acima, ou “Importar lista” para colar vários de uma vez.")]));
+      "Nenhum periódico na lista.")]));
 
   const comDados = itens.filter(p => cache[p.issn]);
   const novos = itens.filter(p => ehNovo(p.issn)).length;
@@ -412,58 +364,14 @@ function render(){
     "Última verificação: " + quando(ultimaVerificacao) + " · atualiza sozinha a cada " + CONFIG.INTERVALO_MIN + " min enquanto estiver aberta.";
 }
 
-/* busca / importação */
-const painelBusca = document.getElementById("painelBusca");
-document.getElementById("formBusca").addEventListener("submit", async ev => {
-  ev.preventDefault();
-  const q = document.getElementById("q").value.trim();
-  if (!q) return;
-  painelBusca.hidden = false;
-  painelBusca.replaceChildren(h("span", { class: "state" }, "Buscando…"));
-  try {
-    const res = await buscaPeriodico(q);
-    if (!res.length){ painelBusca.replaceChildren(h("span", { class: "state" }, "Nada encontrado. Tente o ISSN.")); return; }
-    painelBusca.replaceChildren(h("h3", {}, "Resultados — clique para adicionar"),
-      ...res.map(j => {
-        const issn = (j.ISSN || [])[0];
-        return h("div", { class: "hit" },
-          h("div", {}, h("div", {}, limpa(j.title)), h("small", {}, [limpa(j.publisher), (j.ISSN || []).join(" / ")].filter(Boolean).join(" · "))),
-          h("button", { class: "pri", disabled: !issn, onclick: () => { adiciona({ issn, nome: limpa(j.title) }); painelBusca.hidden = true; document.getElementById("q").value = ""; } }, "Adicionar"));
-      }));
-  } catch (e){
-    painelBusca.replaceChildren(h("span", { class: "state err" }, "Falha na busca: " + (e.message || e)));
-  }
-});
-
-document.getElementById("btnImportar").addEventListener("click", () => {
-  const p = document.getElementById("painelImportar"); p.hidden = !p.hidden;
-});
-document.getElementById("btnConfirmarImportar").addEventListener("click", async () => {
-  const linhas = document.getElementById("txtImportar").value.split(/\n|;/).map(s => s.trim()).filter(Boolean);
-  const log = document.getElementById("logImportar");
-  const resumo = [];
-  for (const [k, linha] of linhas.entries()){
-    log.textContent = `Processando ${k + 1}/${linhas.length}…`;
-    try {
-      const m = linha.match(ISSN_RE);
-      const res = await buscaPeriodico(m ? m[0] : linha);
-      const j = res[0], issn = j && (j.ISSN || [])[0];
-      if (!issn) { resumo.push(`✗ ${linha}`); continue; }
-      adiciona({ issn, nome: limpa(j.title) });
-      resumo.push(`✓ ${linha} → ${limpa(j.title)}`);
-    } catch (e){ resumo.push(`✗ ${linha} (${e.message || e})`); }
-  }
-  log.textContent = "";
-  document.getElementById("logImportar").replaceChildren(...resumo.flatMap(t => [t, h("br")]));
-  document.getElementById("txtImportar").value = "";
-});
-
+/* botões */
+const painelCopia = document.getElementById("painelCopia");
 document.getElementById("btnAtualizar").addEventListener("click", atualizaTodos);
 document.getElementById("btnCopiar").addEventListener("click", async ev => {
   const json = JSON.stringify(lista().map(p => ({ issn: p.issn, nome: (cache[p.issn] && cache[p.issn].nome) || p.nome || "" })), null, 2);
   const b = ev.currentTarget;
   try { await navigator.clipboard.writeText(json); b.textContent = "Copiado!"; }
-  catch (e){ painelBusca.hidden = false; painelBusca.replaceChildren(h("h3", {}, "Copie o JSON abaixo"), h("textarea", {}, json)); }
+  catch (e){ painelCopia.hidden = false; painelCopia.replaceChildren(h("h3", {}, "Copie o JSON abaixo"), h("textarea", {}, json)); }
   setTimeout(() => b.textContent = "Copiar lista (JSON)", 1800);
 });
 
