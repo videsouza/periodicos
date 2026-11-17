@@ -1,4 +1,811 @@
 {
- "gerado": null,
- "periodicos": {}
+ "gerado": "2026-11-17T17:58:16+00:00",
+ "periodicos": {
+  "2763-9045": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://agora.emnuvens.com.br/ra",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 36, n. 73",
+    "data": "set. 2026",
+    "itens": [
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1251",
+      "title": [
+       "Archival outreach and publishing in municipal public archives in Bahia/Brazil: an analysis of products, services and digital presence (2020-2023)"
+      ],
+      "author": [
+       {
+        "name": "Daila Lima"
+       },
+       {
+        "name": "Bruna Lessa"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1329",
+      "title": [
+       "DIGITAL ARCHIVAL GOVERNANCE IN BRAZILIAN PUBLIC ADMINISTRATION"
+      ],
+      "author": [
+       {
+        "name": "Wellington de Olivieira Vieira"
+       },
+       {
+        "name": "Marta Macedo Kerr Pinheiro"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1331",
+      "title": [
+       "The permanent attributes of the municipal historical archives of the brazilian southern region: from institutional title to practice in relation to historical factors"
+      ],
+      "author": [
+       {
+        "name": "Angela da Silveira Santos"
+       },
+       {
+        "name": "Rafael Semidão"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1340",
+      "title": [
+       "System or Network? Archival Policy and Private Collections at the State University of Campinas (Unicamp)"
+      ],
+      "author": [
+       {
+        "name": "Luccas Eduardo Castilho Maldonado"
+       },
+       {
+        "name": "Renato Venancio"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1342",
+      "title": [
+       "Records management in the Military Justice of Minas Gerais"
+      ],
+      "author": [
+       {
+        "name": "Maria Luisa Vieira da Silva"
+       },
+       {
+        "name": "Ivana Denise Parrela"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1372",
+      "title": [
+       "PERSONAL ARCHIVES DONATED TO PUBLIC INSTITUTIONS: ACQUISITION POLICIES AND THE CONSTRUCTION OF COLLECTIVE MEMORY"
+      ],
+      "author": [
+       {
+        "name": "Clizenia Fernandes Vaz Viega"
+       },
+       {
+        "name": "Fernanda Kieling Pedrazzi"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1374",
+      "title": [
+       "Epistemicide of Black people in archival collections: a study of the Arquivo Municipal de Santo Amaro / BA"
+      ],
+      "author": [
+       {
+        "name": "Rebeca Jesus da Conceição"
+       },
+       {
+        "name": "Ana Claudia Medeiros de Sousa"
+       },
+       {
+        "name": "Maíra Salles de Souza"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://agora.emnuvens.com.br/ra/article/view/1377",
+      "title": [
+       "The Personal Archive as a research source for culture and memory: the collection of Leda Alves and Hermilo Borba Filho"
+      ],
+      "author": [
+       {
+        "name": "Acácia Maria Coutinho de Paula"
+       },
+       {
+        "name": "Thais Helen do Nascimento Santos"
+       }
+      ],
+      "page": "1"
+     }
+    ],
+    "sig": "36|73|8"
+   },
+   "total_registros": 836,
+   "nome": "Ágora: Arquivologia em Debate",
+   "coletado": "2026-11-17T17:58:16+00:00"
+  },
+  "2447-908X": {
+   "ok": true,
+   "fonte": "html",
+   "base": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "n. 17",
+    "data": "2025",
+    "itens": [
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/330",
+      "title": [
+       "40 anos do Sistema de Arquivos do Estado de São Paulo – SAESP (1984-2024) Comemorações, memórias e perspectivas"
+      ],
+      "author": [
+       {
+        "name": "Camila Giovana Ribeiro"
+       },
+       {
+        "name": "Ieda Pimenta Bernardes"
+       },
+       {
+        "name": "Maria Elisa Pereira"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/314",
+      "title": [
+       "Algunas reflexiones y experiencias prácticas acerca de los sistemas de archivos y otros conceptos relacionados"
+      ],
+      "author": [
+       {
+        "name": "Ramon Alberch i Fugueras"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/312",
+      "title": [
+       "O SAESP e as políticas de gestão documental e acesso à informação no Brasil Contribuições e desafios"
+      ],
+      "author": [
+       {
+        "name": "Paulo Roberto Elian dos Santos"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/335",
+      "title": [
+       "Arquivo, democracia e historiografia A formação do Sistema de Arquivos do Estado de São Paulo"
+      ],
+      "author": [
+       {
+        "name": "Thiago Lima Nicodemo"
+       },
+       {
+        "name": "Luccas Eduardo Castilho Maldonado"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/290",
+      "title": [
+       "Boas práticas na constituição do Arquivo Público da Paraíba"
+      ],
+      "author": [
+       {
+        "name": "Josemar Henrique de Melo"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/301",
+      "title": [
+       "As políticas públicas para os arquivos municipais na perspectiva da legislação das capitais dos estados brasileiros"
+      ],
+      "author": [
+       {
+        "name": "Juliana Loureiro Alvim Carvalho"
+       },
+       {
+        "name": "Ana Célia Rodrigues"
+       },
+       {
+        "name": "Renato de Mattos"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/331",
+      "title": [
+       "40 anos do SAESP e os desafios dos sistemas de arquivos no Brasil"
+      ],
+      "author": [
+       {
+        "name": "Ieda Pimenta Bernardes"
+       },
+       {
+        "name": "Marcia Cristina de Carvalho Pazin Victoriano"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/300",
+      "title": [
+       "As contribuições e inovações do SAESP do ponto de vista metodológico"
+      ],
+      "author": [
+       {
+        "name": "Renato Tarciso Barbosa de Sousa"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/310",
+      "title": [
+       "PGDeArq Avanços, desafios e oportunidades perdidas na Gestão de Documentos da Administração Pública Federal"
+      ],
+      "author": [
+       {
+        "name": "Neide De Sordi"
+       },
+       {
+        "name": "Larissa Candida Costa"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/298",
+      "title": [
+       "A gestão de documentos e da memória na Justiça do Trabalho Normativas, ações e desafios"
+      ],
+      "author": [
+       {
+        "name": "Edna Maria de Aquino Mendes"
+       },
+       {
+        "name": "Margareth da Silva"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/303",
+      "title": [
+       "Perspectivas metodológicas da gestão de documentos nos Arquivos Públicos Estaduais do Brasil"
+      ],
+      "author": [
+       {
+        "name": "Alexandre Faben"
+       },
+       {
+        "name": "Danilo Bueno"
+       },
+       {
+        "name": "Ana Célia Rodrigues"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/305",
+      "title": [
+       "Busca por uma unidade metodológica A classificação arquivística na Fundação Getulio Vargas - FGV"
+      ],
+      "author": [
+       {
+        "name": "Rosale de Mattos Souza"
+       },
+       {
+        "name": "Guilherme de Azevedo Leonardo"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/293",
+      "title": [
+       "Gestão e memória documental limeirense As iniciativas do Arquivo Público Municipal de Limeira (2017-2024)"
+      ],
+      "author": [
+       {
+        "name": "Adelaine Cordeiro Ribeiro Feres"
+       },
+       {
+        "name": "João Paulo Berto"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/287",
+      "title": [
+       "Gestão arquivística de documentos empresariais Uma proposta de roteiro de implantação"
+      ],
+      "author": [
+       {
+        "name": "Livia Kaori Nogueira Ikezawa"
+       },
+       {
+        "name": "Sonali Paula Molin Bedin"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/308",
+      "title": [
+       "Sistemas informatizados de gestão documental nos 40 anos do SAESP Do SPU ao SEI-SP, passando por SPdoc e SP Sem Papel"
+      ],
+      "author": [
+       {
+        "name": "Elisangela Mendes Queiroz"
+       },
+       {
+        "name": "Benedito Vanelli do Carmo Neto"
+       },
+       {
+        "name": "Rogério Madeira Moura Campos"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/article/view/309",
+      "title": [
+       "Proposta de Planos de Classificação e Tabelas de Temporalidade de Documentos para o Poder Executivo Municipal (atividades-meio e atividades-fim)"
+      ],
+      "author": [
+       {
+        "name": "Júlio Couto Filho"
+       }
+      ],
+      "page": "1"
+     }
+    ],
+    "sig": "|17|16"
+   },
+   "total_registros": 16,
+   "nome": "Revista do Arquivo (APESP)",
+   "coletado": "2026-11-17T17:58:16+00:00"
+  },
+  "2763-535X": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://periodicos.ufes.br/revapees",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 9, n. 14",
+    "data": "jul. 2026",
+    "itens": [
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/43689",
+      "title": [
+       "Normalização de formatos no Archivematica"
+      ],
+      "author": [
+       {
+        "name": "Tânia Barbosa Salles Gava"
+       },
+       {
+        "name": "Wendell André Rocha"
+       },
+       {
+        "name": "Luciana Itida Ferrari"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/44617",
+      "title": [
+       "REPRESENTANTES DIGITAIS PARA OS PRODUTOS DO FUNCULTURA NO CASO MIDIATECA CAPIXABA"
+      ],
+      "author": [
+       {
+        "name": "Marcello França Furtado"
+       },
+       {
+        "name": "Luciana Itida Ferrari"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46379",
+      "title": [
+       "MEMÓRIA E FICÇÃO: EVENTOS REAIS QUE INSPIRARAM O ROMANCE KARINA DE VIRGÍNIA GASPARINI TAMANINI"
+      ],
+      "author": [
+       {
+        "name": "Francisco Roldi Guariz"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46385",
+      "title": [
+       "A Espanha na Grande Emigração (1880-1930): os motivos expulsores"
+      ],
+      "author": [
+       {
+        "name": "RENATO PETERLE CAMARGOS"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46759",
+      "title": [
+       "As tradições dos pomeranos em perspectiva língua, vendeiros e magia"
+      ],
+      "author": [
+       {
+        "name": "Cione Marta Raasch Manske"
+       },
+       {
+        "name": "Maria Cristina Dadalto"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46780",
+      "title": [
+       "O baralho como elemento de sociabilidade: Um estudo entre os descendentes de imigrantes italianos em Alfredo Chaves-ES"
+      ],
+      "author": [
+       {
+        "name": "Gabriel Pietralonga Marion"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46859",
+      "title": [
+       "Dos Açores ao Sertão de Santo Agostinho: a imigração açoriana em Viana-ES"
+      ],
+      "author": [
+       {
+        "name": "Fabiene Passamani Mariano"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46910",
+      "title": [
+       "HISTÓRIA, MEMÓRIA E PATRIMÔNIO NO CARNAVAL DE CONGO DE MÁSCARAS EM RODA D’ÁGUA"
+      ],
+      "author": [
+       {
+        "name": "Vinícius Aguiar Caloti"
+       },
+       {
+        "name": "Wanderlei Porto do Nascimento Aguiar"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46912",
+      "title": [
+       "O QUE NOS ACOSTA: HISTÓRIA DE VIDA DE UMA FAMÍLIA DE VENEZUELANOS REFUGIADA NO ESTADO DO ESPÍRITO SANTO"
+      ],
+      "author": [
+       {
+        "name": "viviane mozine rodrigues"
+       },
+       {
+        "name": "Barbara Azevedo"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46924",
+      "title": [
+       "RETRATOS DE UMA IMIGRAÇÃO ORIENTAL NO SUL CAPIXABA: SÍRIOS E LIBANESES EM ALEGRE (1890-1930)"
+      ],
+      "author": [
+       {
+        "name": "Adilson Silva Santos"
+       },
+       {
+        "name": "Emanuela Ferreira Neves"
+       },
+       {
+        "name": "Gabriel Ramanholi Monteiro Rodrigues"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46943",
+      "title": [
+       "As fontes da história da imigração italiana para o Espírito Santo e seus usos pela historiografia : a saúde dos imigrantes em perspectiva política"
+      ],
+      "author": [
+       {
+        "name": "TIAGO CAMILLO"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46971",
+      "title": [
+       "Reterritorialização e Territorialização italiana em terras espírito-santenses"
+      ],
+      "author": [
+       {
+        "name": "Sandra Nicoli"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/46986",
+      "title": [
+       "Saúde, Doenças e Mortalidade de Imigrantes no Espírito Santo: : Um Estudo sobre a Hospedaria Pedra d'Água entre 1892 e 1895"
+      ],
+      "author": [
+       {
+        "name": "GUILHERME BORGES DA SILVA"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47122",
+      "title": [
+       "Territorialização e Reterritorialização Italiana no Brasil: Conexões entre Espírito Santo e Minas Gerais"
+      ],
+      "author": [
+       {
+        "name": "Simone Zamprogno Scalzer"
+       },
+       {
+        "name": "Sandra Nicoli"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47128",
+      "title": [
+       "FLUXOS MIGRATÓRIOS NO ESPÍRITO SANTO"
+      ],
+      "author": [
+       {
+        "name": "Maria Cristina Dadalto"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47142",
+      "title": [
+       "HISTÓRIAS DE VIDA E MIGRAÇÃO:  TRAJETÓRIA DOS MINEIROS EM SANTA TERESA-ES"
+      ],
+      "author": [
+       {
+        "name": "Simone Zamprogno Scalzer"
+       },
+       {
+        "name": "Cristiani Lopes Silva"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47146",
+      "title": [
+       "Na  terra capixaba a Guerra do Paraguai nunca mais será a mesma"
+      ],
+      "author": [
+       {
+        "name": "Fernando Antônio de Moraes Achiamé"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47165",
+      "title": [
+       "Industrialização e Segregação: Os Paradoxos do Crescimento em Aracruz e a Invisibilidade Social dos Migrantes"
+      ],
+      "author": [
+       {
+        "name": "Maria Rita de Cássia Sales Regis"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/47167",
+      "title": [
+       "A festa Cosme e Damião no Espírito Santo: os Ibejis capixabas."
+      ],
+      "author": [
+       {
+        "name": "FELIPE FERNANDEZ"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/53019",
+      "title": [
+       "Editorial"
+      ],
+      "author": [
+       {
+        "name": "Cilmar Cesconetto Franceschetto"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/53218",
+      "title": [
+       "Apresentação"
+      ],
+      "author": [
+       {
+        "name": "Maria Cristina Dadalto"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/53220",
+      "title": [
+       "AS PRIMEIRAS MIGRAÇÕES PARA O ESPÍRITO SANTO: 8000 ANOS DE POVOAMENTO E HISTÓRIA INDÍGENA"
+      ],
+      "author": [
+       {
+        "name": "Henrique Antônio Valadares Costa"
+       }
+      ]
+     },
+     {
+      "URL": "https://periodicos.ufes.br/revapees/article/view/53222",
+      "title": [
+       "RELATÓRIO DA COMPANHIA DE APRENDIZES MARINHEIROS DA PROVÍNCIA DO ESPÍRITO SANTO"
+      ],
+      "author": [
+       {
+        "name": "Maria Luisa de Melo Welerson"
+       },
+       {
+        "name": "Matheus Freeire Viola"
+       },
+       {
+        "name": "Tiago de Matos Alves"
+       }
+      ]
+     }
+    ],
+    "sig": "9|14|23"
+   },
+   "total_registros": 225,
+   "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
+   "coletado": "2026-11-17T17:58:16+00:00"
+  },
+  "1645-2895": {
+   "ok": true,
+   "fonte": "html",
+   "base": "https://publicacoes.bad.pt/revistas/index.php/cadernos",
+   "ultimo": {
+    "tipo": "continuo",
+    "rotulo": "Artigos mais recentes",
+    "data": "",
+    "itens": [
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
+      "title": [
+       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
+      ],
+      "author": [
+       {
+        "name": "Ana Margarida Dias da Silva"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
+      "title": [
+       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
+      ],
+      "author": [
+       {
+        "name": "André Barbosa"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090",
+      "title": [
+       "Transcritores automáticos de texto e transcrição colaborativa agilizando o trabalho de leitura paleográfica e identificação de informações textuais para acervos históricos: o exemplo do Mooc Paleografia na Rede Wiki"
+      ],
+      "author": [
+       {
+        "name": "Alícia Duhá Lose"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3097",
+      "title": [
+       "Inteligência Artificial e memória profunda: transformando o acesso e a interpretação dos arquivos"
+      ],
+      "author": [
+       {
+        "name": "Luis Borges Gouveia"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093",
+      "title": [
+       "Preservação Digital na Universidade de Aveiro: Estratégias e Desafios"
+      ],
+      "author": [
+       {
+        "name": "Ana Cristina Fernandes Cortês Santana Ju Justino"
+       },
+       {
+        "name": "Luísa Falcão"
+       },
+       {
+        "name": "Pedro Lobo"
+       },
+       {
+        "name": "Filipe Trancho"
+       },
+       {
+        "name": "José Vieira"
+       },
+       {
+        "name": "Rafael Direito"
+       },
+       {
+        "name": "Isaac Raimundo"
+       },
+       {
+        "name": "Eduardo Santos"
+       },
+       {
+        "name": "Filipe Bento"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091",
+      "title": [
+       "Diretório Indexar | Recursos Digitais Abertos à Ciência e à Cultura"
+      ],
+      "author": [
+       {
+        "name": "Paula Seguro de Carvalho"
+       },
+       {
+        "name": "Paula Meireles"
+       },
+       {
+        "name": "Paulo Lopes"
+       },
+       {
+        "name": "João Mendes Moreira"
+       }
+      ]
+     }
+    ],
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095"
+   },
+   "total_registros": 6,
+   "nome": "Cadernos BAD",
+   "coletado": "2026-11-17T17:58:16+00:00"
+  }
+ }
 }
