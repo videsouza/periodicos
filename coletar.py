@@ -1,0 +1,355 @@
+#!/usr/bin/env python3
+"""Coleta o número mais recente de periódicos OJS que não têm dados no Crossref.
+
+Para cada periódico de fontes.json tenta, nesta ordem e para cada endereço-base listado:
+  1) OAI-PMH   {base}/oai   (metadados Dublin Core; traz volume/número em dc:source)
+  2) HTML      {base}/issue/current   (página "Edição atual" do OJS)
+O primeiro método que devolver artigos vale. O resultado vai para dados.json, que a página lê.
+Se um periódico falhar, o dado anterior é mantido e o erro é registrado.
+
+Só usa a biblioteca padrão do Python (3.9+).
+"""
+import argparse
+import datetime as dt
+import json
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+
+UA = "periodicos-monitor/1.0 (coleta pessoal de metadados; OAI-PMH)"
+NS = {
+    "oai": "http://www.openarchives.org/OAI/2.0/",
+    "oai_dc": "http://www.openarchives.org/OAI/2.0/oai_dc/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+}
+MAX_PAGINAS = 80      # teto de páginas OAI por periódico (100 registros por página no OJS)
+PAUSA = 1.0           # segundos entre requisições ao mesmo servidor
+TIMEOUT = 40
+MESES = ["jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez."]
+
+
+# ---------------------------------------------------------------- rede
+def http_get(url, tentativas=3):
+    ultimo = None
+    for i in range(tentativas):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            ultimo = e
+            if e.code in (400, 401, 403, 404, 410):   # não adianta insistir
+                break
+        except Exception as e:                          # rede, timeout, TLS...
+            ultimo = e
+        time.sleep(PAUSA * (i + 1))
+    raise RuntimeError(f"falha ao acessar {url}: {ultimo}")
+
+
+def num(s):
+    m = re.search(r"\d+", s or "")
+    return int(m.group()) if m else 0
+
+
+# ---------------------------------------------------------------- fascículo
+RE_ANO = re.compile(r"\(([^()]*?)(\d{4})\)")
+RE_VOL = re.compile(r"\b(?:v\.?|vol\.?|volume)\s*([0-9]+)", re.I)
+RE_NUM = re.compile(r"\b(?:n\.?|no\.?|nº|núm\.?|num\.?|número)\s*([0-9]+(?:[-/][0-9]+)?|esp\w*)", re.I)
+
+
+def parse_fasciculo(textos):
+    """'Revista; v. 9 n. 2 (2024): Título; 83-98' -> {'vol':'9','num':'2','ano':2024}"""
+    for s in textos:
+        m = RE_ANO.search(s)
+        if not m:
+            continue
+        trecho = s[: m.end()]
+        v, n = RE_VOL.search(trecho), RE_NUM.search(trecho)
+        if v or n:
+            return {"vol": v.group(1) if v else "", "num": n.group(1) if n else "", "ano": int(m.group(2))}
+    return None
+
+
+def rotulo_data(iso, ano):
+    m = re.match(r"(\d{4})-(\d{2})", iso or "")
+    if m and 1 <= int(m.group(2)) <= 12:
+        return f"{MESES[int(m.group(2)) - 1]} {m.group(1)}"
+    return str(ano) if ano else ""
+
+
+def pagina_inicial(fontes):
+    for s in fontes:
+        m = re.search(r";\s*([0-9]+)\s*[-–]\s*[0-9]+\s*$", s)
+        if m:
+            return m.group(1)
+    return ""
+
+
+def nome_autor(s):
+    s = s.strip()
+    if "," in s:
+        familia, _, resto = s.partition(",")
+        return f"{resto.strip()} {familia.strip()}".strip()
+    return s
+
+
+# ---------------------------------------------------------------- OAI-PMH
+def vals(md, tag):
+    return [(e.text or "").strip() for e in md.findall(f"dc:{tag}", NS) if (e.text or "").strip()]
+
+
+def registro_dc(md):
+    ids = vals(md, "identifier")
+    url = next((i for i in ids if i.startswith("http") and "/download/" not in i and "doi.org" not in i), "")
+    doi = next((i for i in ids if "doi.org/" in i or re.match(r"10\.\d{4,}/", i)), "")
+    if not url and doi:
+        url = doi if doi.startswith("http") else "https://doi.org/" + doi
+    fontes = vals(md, "source")
+    datas = vals(md, "date")
+    titulos = vals(md, "title")
+    return {
+        "titulo": titulos[0] if titulos else "(sem título)",
+        "autores": [nome_autor(a) for a in vals(md, "creator")],
+        "url": url,
+        "doi": doi.replace("https://doi.org/", "") if doi else "",
+        "data": max(datas) if datas else "",
+        "fasc": parse_fasciculo(fontes),
+        "pagina": pagina_inicial(fontes),
+    }
+
+
+def colhe_oai(base):
+    raiz_url = base.rstrip("/") + "/oai?"
+    url = raiz_url + urllib.parse.urlencode({"verb": "ListRecords", "metadataPrefix": "oai_dc"})
+    registros, paginas = [], 0
+    while url and paginas < MAX_PAGINAS:
+        try:
+            raiz = ET.fromstring(http_get(url))
+        except ET.ParseError:
+            raise RuntimeError("a resposta não é XML (provavelmente não é um endpoint OAI-PMH)")
+        erro = raiz.find("oai:error", NS)
+        if erro is not None:
+            if erro.get("code") == "noRecordsMatch":
+                break
+            raise RuntimeError(f"OAI-PMH respondeu erro {erro.get('code')}: {(erro.text or '').strip()}")
+        lr = raiz.find("oai:ListRecords", NS)
+        if lr is None:
+            raise RuntimeError("resposta sem ListRecords")
+        for rec in lr.findall("oai:record", NS):
+            hdr = rec.find("oai:header", NS)
+            if hdr is not None and hdr.get("status") == "deleted":
+                continue
+            md = rec.find("oai:metadata/oai_dc:dc", NS)
+            if md is not None:
+                registros.append(registro_dc(md))
+        tok = lr.find("oai:resumptionToken", NS)
+        token = (tok.text or "").strip() if tok is not None else ""
+        paginas += 1
+        url = raiz_url + urllib.parse.urlencode({"verb": "ListRecords", "resumptionToken": token}) if token else None
+        if url:
+            time.sleep(PAUSA)
+    vistos, unicos = set(), []
+    for r in registros:                      # remove duplicatas (mesmo URL)
+        if r["url"] and r["url"] in vistos:
+            continue
+        vistos.add(r["url"])
+        unicos.append(r)
+    return unicos
+
+
+# ---------------------------------------------------------------- HTML (issue/current)
+VOID = {"br", "img", "hr", "input", "meta", "link", "source", "wbr"}
+
+
+class EdicaoAtual(HTMLParser):
+    """Lê a página 'Edição atual' do OJS 3: cabeçalho do fascículo + lista de artigos."""
+
+    def __init__(self, base_url):
+        super().__init__(convert_charrefs=True)
+        self.base_url = base_url
+        self.artigos, self.cur = [], None
+        self.pilha = []          # (tag, modo_anterior, era_resumo)
+        self.modo = None
+        self.h1, self._em_h1 = [], False
+        self.corpo = []
+
+    @staticmethod
+    def _classes(attrs):
+        return (dict(attrs).get("class") or "").split()
+
+    def handle_starttag(self, tag, attrs):
+        if tag in VOID:
+            return
+        cls = self._classes(attrs)
+        era_resumo = False
+        modo_ant = self.modo
+        if tag == "h1":
+            self._em_h1 = True
+            self.h1.append("")
+        if "obj_article_summary" in cls and self.cur is None:
+            self.cur = {"titulo": "", "url": "", "autores": "", "paginas": ""}
+            era_resumo = True
+        elif self.cur is not None:
+            if "title" in cls:
+                self.modo = "titulo"
+            elif "authors" in cls:
+                self.modo = "autores"
+            elif "pages" in cls:
+                self.modo = "paginas"
+            if tag == "a" and self.modo == "titulo" and not self.cur["url"]:
+                href = dict(attrs).get("href") or ""
+                self.cur["url"] = urllib.parse.urljoin(self.base_url, href)
+        self.pilha.append((tag, modo_ant, era_resumo))
+
+    def handle_endtag(self, tag):
+        if tag in VOID:
+            return
+        if tag == "h1":
+            self._em_h1 = False
+        # desempilha até achar a tag correspondente (tolerante a HTML malformado)
+        for i in range(len(self.pilha) - 1, -1, -1):
+            if self.pilha[i][0] == tag:
+                for _t, modo_ant, era_resumo in reversed(self.pilha[i:]):
+                    self.modo = modo_ant
+                    if era_resumo and self.cur is not None:
+                        c = self.cur
+                        if c["url"] and c["titulo"].strip():
+                            self.artigos.append(c)
+                        self.cur = None
+                del self.pilha[i:]
+                break
+
+    def handle_data(self, data):
+        if self._em_h1 and self.h1:
+            self.h1[-1] += data
+        self.corpo.append(data)
+        if self.cur is not None and self.modo:
+            self.cur[self.modo] += data
+
+
+def colhe_html(base):
+    url = base.rstrip("/") + "/issue/current"
+    p = EdicaoAtual(url)
+    p.feed(http_get(url).decode("utf-8", errors="replace"))
+    if not p.artigos:
+        raise RuntimeError("nenhum artigo reconhecido na página da edição atual")
+    candidatos = [re.sub(r"\s+", " ", h).strip() for h in p.h1] + [re.sub(r"\s+", " ", " ".join(p.corpo))[:4000]]
+    fasc = parse_fasciculo(candidatos)
+    regs = []
+    for a in p.artigos:
+        regs.append({
+            "titulo": re.sub(r"\s+", " ", a["titulo"]).strip(),
+            "autores": [x.strip() for x in re.split(r"[,;]", re.sub(r"\s+", " ", a["autores"])) if x.strip()],
+            "url": a["url"], "doi": "", "data": "", "fasc": fasc,
+            "pagina": (re.match(r"\s*(\d+)", a["paginas"]) or [None, ""])[1] if a["paginas"] else "",
+        })
+    return regs
+
+
+# ---------------------------------------------------------------- escolha do último número
+def item_crossref(r):
+    """Mesmo formato dos itens do Crossref, para a página reaproveitar a renderização."""
+    it = {"URL": r["url"], "title": [r["titulo"]], "author": [{"name": a} for a in r["autores"]]}
+    if r["doi"]:
+        it["DOI"] = r["doi"]
+    if r["pagina"]:
+        it["page"] = r["pagina"]
+    return it
+
+
+def escolhe_ultimo(regs):
+    com = [r for r in regs if r["fasc"]]
+    if not com:
+        recentes = sorted(regs, key=lambda r: r["data"], reverse=True)[:12]
+        ultima = recentes[0]["data"] if recentes else ""
+        return {"tipo": "continuo", "rotulo": "Artigos mais recentes", "data": rotulo_data(ultima, 0),
+                "itens": [item_crossref(r) for r in recentes],
+                "sig": "c|" + (recentes[0]["url"] if recentes else "")}
+    chave = lambda r: (r["fasc"]["ano"], num(r["fasc"]["vol"]), num(r["fasc"]["num"]))
+    melhor = max(com, key=chave)
+    f = melhor["fasc"]
+    grupo = [r for r in com if (r["fasc"]["vol"], r["fasc"]["num"], r["fasc"]["ano"]) == (f["vol"], f["num"], f["ano"])]
+    grupo.sort(key=lambda r: num(r["pagina"]))
+    rotulo = ", ".join(x for x in [f"v. {f['vol']}" if f["vol"] else "", f"n. {f['num']}" if f["num"] else ""] if x)
+    datas = [r["data"] for r in grupo if r["data"]]
+    return {"tipo": "numero", "rotulo": rotulo, "data": rotulo_data(max(datas) if datas else "", f["ano"]),
+            "itens": [item_crossref(r) for r in grupo],
+            "sig": f"{f['vol']}|{f['num']}|{len(grupo)}"}
+
+
+# ---------------------------------------------------------------- principal
+def norm_issn(s):
+    t = s.replace("-", "").upper()
+    return t[:4] + "-" + t[4:]
+
+
+def coleta_periodico(f):
+    erros = []
+    for base in f["bases"]:
+        for metodo, fn in (("oai", colhe_oai), ("html", colhe_html)):
+            try:
+                regs = fn(base)
+                if not regs:
+                    erros.append(f"{metodo} {base}: sem registros")
+                    continue
+                return {"ok": True, "fonte": metodo, "base": base, "ultimo": escolhe_ultimo(regs),
+                        "total_registros": len(regs)}, erros
+            except Exception as e:
+                erros.append(f"{metodo} {base}: {e}")
+            time.sleep(PAUSA)
+    return None, erros
+
+
+def main():
+    global PAUSA
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--fontes", default="fontes.json")
+    ap.add_argument("--saida", default="dados.json")
+    ap.add_argument("--sem-pausa", action="store_true", help="para testes locais")
+    args = ap.parse_args()
+    if args.sem_pausa:
+        PAUSA = 0
+
+    with open(args.fontes, encoding="utf-8") as fh:
+        fontes = json.load(fh)
+    try:
+        with open(args.saida, encoding="utf-8") as fh:
+            antigo = json.load(fh).get("periodicos", {})
+    except (OSError, ValueError):
+        antigo = {}
+
+    agora = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+    saida = {"gerado": agora, "periodicos": {}}
+    falhas = 0
+    for f in fontes:
+        issn = norm_issn(f["issn"])
+        res, erros = coleta_periodico(f)
+        if res:
+            res.update({"nome": f["nome"], "coletado": agora})
+            saida["periodicos"][issn] = res
+            u = res["ultimo"]
+            print(f"[ok]    {f['nome']}: {u['rotulo']} {u['data']} — {len(u['itens'])} artigos via {res['fonte']}")
+        else:
+            falhas += 1
+            msg = " | ".join(erros)
+            prev = antigo.get(issn, {})
+            entrada = {"nome": f["nome"], "ok": False, "erro": msg}
+            if prev.get("ultimo"):     # mantém o último dado bom
+                entrada.update({k: prev[k] for k in ("ultimo", "coletado", "fonte", "base") if k in prev})
+            saida["periodicos"][issn] = entrada
+            print(f"[falha] {f['nome']}: {msg}")
+            print(f"::warning title=Coleta falhou::{f['nome']}")   # anotação do GitHub Actions
+    with open(args.saida, "w", encoding="utf-8") as fh:
+        json.dump(saida, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    print(f"\n{len(fontes) - falhas}/{len(fontes)} periódicos coletados; gravado em {args.saida}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

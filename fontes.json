@@ -1,0 +1,28 @@
+[
+  {
+    "issn": "2763-9045",
+    "nome": "Ágora: Arquivologia em Debate",
+    "bases": ["https://agora.emnuvens.com.br/ra"]
+  },
+  {
+    "issn": "2447-908X",
+    "nome": "Revista do Arquivo (APESP)",
+    "bases": [
+      "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo",
+      "https://revista.arquivoestado.sp.gov.br"
+    ]
+  },
+  {
+    "issn": "2763-535X",
+    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
+    "bases": [
+      "https://periodicos.ufes.br/revapees",
+      "https://periodicos.ufes.br/index.php/revapees"
+    ]
+  },
+  {
+    "issn": "1645-2895",
+    "nome": "Cadernos BAD",
+    "bases": ["https://publicacoes.bad.pt/revistas/index.php/cadernos"]
+  }
+]
