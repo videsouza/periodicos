@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Periódicos — números mais recentes</title>
+<title>Meus periódicos — números mais recentes</title>
 <style>
 :root{
   --bg:#f6f5f1; --card:#fff; --ink:#1d2330; --mut:#6b7280; --line:#e4e2da;
@@ -183,13 +183,18 @@ function escolheUltimo(items){
     const itens = lista.sort((a, b) => dnum(b.d) - dnum(a.d)).map(x => x.it);
     return { tipo: "continuo", rotulo: "Artigos mais recentes", data: itens[0] ? fmtData(dataItem(itens[0])) : "", itens, sig: "c|" + (itens[0] ? itens[0].DOI : "") };
   }
-  const cmp = (a, b) => (dnum(a.d) - dnum(b.d)) || (numOf(a.v) - numOf(b.v)) || (numOf(a.n) - numOf(b.n));
+  // Ano, volume e número vêm antes do mês: muitas revistas depositam o número novo só com o ano ([2026]) e o antigo com
+  // data completa ([2026,3,10]); comparando a data inteira primeiro, o número antigo ganharia.
+  const cmp = (a, b) => (a.d.y - b.d.y) || (numOf(a.v) - numOf(b.v)) || (numOf(a.n) - numOf(b.n)) || (dnum(a.d) - dnum(b.d));
   const melhor = com.reduce((a, b) => cmp(b, a) > 0 ? b : a);
   const grupo = com.filter(x => x.v === melhor.v && x.n === melhor.n);
   const dataG = grupo.map(x => x.d).reduce((a, b) => dnum(b) > dnum(a) ? b : a);
   const rotulo = [melhor.v && "v. " + melhor.v, melhor.n && "n. " + melhor.n].filter(Boolean).join(", ");
   const itens = grupo.sort((a, b) => numOf(a.it.page) - numOf(b.it.page)).map(x => x.it);
-  return { tipo: "numero", rotulo, data: fmtData(dataG), itens, sig: `${melhor.v}|${melhor.n}|${itens.length}` };
+  // artigos mais novos que o número escolhido, mas sem volume/fascículo registrado no Crossref (possível atraso de depósito)
+  const sem = lista.filter(x => !x.v && !x.n && dnum(x.d) > dnum(dataG));
+  const aviso = sem.length ? `O Crossref tem ${sem.length} artigo${sem.length > 1 ? "s" : ""} mais recente${sem.length > 1 ? "s" : ""} (até ${fmtData(sem.map(x => x.d).reduce((a, b) => dnum(b) > dnum(a) ? b : a))}) sem número de fascículo registrado; veja a edição atual no site.` : "";
+  return { tipo: "numero", rotulo, data: fmtData(dataG), itens, aviso, sig: `${melhor.v}|${melhor.n}|${itens.length}` };
 }
 
 async function getJSON(url, tentativas = 2){
@@ -315,6 +320,7 @@ function card(p){
       novo ? h("span", { class: "badge" }, "Novo desde sua última visita") : null,
       h("span", {}, "ISSN " + p.issn)
     ));
+    if (u.aviso) el.append(h("div", { class: "state" }, "⚠ " + u.aviso));
     const aberto = expandidos.has(p.issn);
     const mostra = aberto ? u.itens : u.itens.slice(0, CONFIG.MOSTRAR);
     el.append(h("ol", {}, mostra.map(it => h("li", {},
