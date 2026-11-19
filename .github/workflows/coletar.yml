@@ -11,6 +11,7 @@ permissions:
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Baixar o repositorio
         uses: actions/checkout@v4
