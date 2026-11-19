@@ -1,6 +1,245 @@
 {
- "gerado": "2026-11-19T18:23:19+00:00",
+ "gerado": "2026-11-19T20:10:54+00:00",
  "periodicos": {
+  "2237-8723": {
+   "nome": "Acervo – Revista do Arquivo Nacional",
+   "ok": false,
+   "erro": "oai https://revista.an.gov.br/index.php/revistaacervo: a resposta não é XML (provavelmente não é um endpoint OAI-PMH) | html https://revista.an.gov.br/index.php/revistaacervo: nenhum artigo reconhecido na página da edição atual"
+  },
+  "2318-6186": {
+   "nome": "Archeion Online",
+   "ok": false,
+   "erro": "oai https://periodicos.ufpb.br/index.php/archeion: falha ao acessar https://periodicos.ufpb.br/index.php/archeion/oai?verb=ListRecords&metadataPrefix=oai_dc: The read operation timed out | html https://periodicos.ufpb.br/index.php/archeion: falha ao acessar https://periodicos.ufpb.br/index.php/archeion/issue/current: The read operation timed out"
+  },
+  "2316-7300": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 11, n. 1",
+    "data": "set. 2026",
+    "itens": [
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/232",
+      "title": [
+       "Editorial (18ª edição)"
+      ],
+      "author": [
+       {
+        "name": "Beatriz Kushnir"
+       },
+       {
+        "name": "Rachel Ferreira Torres"
+       },
+       {
+        "name": "Wagner Ramos Ridolphi"
+       }
+      ],
+      "page": "9"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/233",
+      "title": [
+       "Apresentação do dossiê Estudos e Práticas em Arquivos de Imagens e Audiovisuais e na Preservação de seu Patrimônio Documental"
+      ],
+      "author": [
+       {
+        "name": "Rosa Inês de Novais Cordeiro"
+       },
+       {
+        "name": "Marina Cavalcanti Tedesco"
+       }
+      ],
+      "page": "11"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/234",
+      "title": [
+       "Image files: a domain analysis of Brazilian scientific production in Information Science"
+      ],
+      "author": [
+       {
+        "name": "José Augusto Chaves Guimarães"
+       },
+       {
+        "name": "Telma Campanha de Carvalho Madio"
+       },
+       {
+        "name": "Vinícius Gustavo Franco"
+       }
+      ],
+      "page": "17"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/235",
+      "title": [
+       "From the filmmaking process to archival organization: information behavior, documentary genesis and Helena Solberg’s personal archive"
+      ],
+      "author": [
+       {
+        "name": "Rosa Inês de Novais Cordeiro"
+       },
+       {
+        "name": "Marina Cavalcanti Tedesco"
+       }
+      ],
+      "page": "41"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/236",
+      "title": [
+       "Subject representation of photographs: between theoretical-methodological foundations and emerging technologies"
+      ],
+      "author": [
+       {
+        "name": "Célia da Consolação Dias"
+       }
+      ],
+      "page": "64"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/237",
+      "title": [
+       "Counter-archive: the polysemy of a concept"
+      ],
+      "author": [
+       {
+        "name": "Carolina Amaral de Aguiar"
+       },
+       {
+        "name": "Patrícia Furtado Mendes Machado"
+       },
+       {
+        "name": "Thaís Continentino Blank"
+       }
+      ],
+      "page": "84"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/240",
+      "title": [
+       "No one preserves something they don’t know exists: archival practices and audiovisual memory in Latin America"
+      ],
+      "author": [
+       {
+        "name": "Delfina Isabel Cabrera"
+       },
+       {
+        "name": "Cecilia Nuria Gil Mariño"
+       }
+      ],
+      "page": "101"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/221",
+      "title": [
+       "The The creation of an audiovisual preservation project for the collection of university films at PUC Minas"
+      ],
+      "author": [
+       {
+        "name": "Pedro Vaz Perez"
+       }
+      ],
+      "page": "129"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/222",
+      "title": [
+       "From analog to digital: challenges for preserving the institutional memory of the Pinacoteca de São Paulo"
+      ],
+      "author": [
+       {
+        "name": "Eliane Barbosa"
+       },
+       {
+        "name": "Asa Fujino"
+       }
+      ],
+      "page": "145"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/238",
+      "title": [
+       "Margot Benacerraf: her life in pictures"
+      ],
+      "author": [
+       {
+        "name": "Milvia Villamizar Bernal"
+       }
+      ],
+      "page": "159"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/218",
+      "title": [
+       "Preservation and access challenges of the celluloid film archives of the Museu de Comunicação Social Hipólito José da Costa"
+      ],
+      "author": [
+       {
+        "name": "Estela Machado Winter Galmarino"
+       },
+       {
+        "name": "Louise Ayang Folgiarini"
+       },
+       {
+        "name": "Vivian Eiko Nunes Fujisawa"
+       }
+      ],
+      "page": "174"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/220",
+      "title": [
+       "Preservation of the film collection of the Federal District Public Archive: specificities and challenges of a regional archive"
+      ],
+      "author": [
+       {
+        "name": "Lila Silva Foster"
+       },
+       {
+        "name": "Débora Lúcia Vieira Butruce"
+       },
+       {
+        "name": "Wilson Vieira Júnior"
+       }
+      ],
+      "page": "189"
+     },
+     {
+      "URL": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/article/view/213",
+      "title": [
+       "Rediscovering the News: the preservation of TV Tupi newscasts at the Brazilian Cinematheque"
+      ],
+      "author": [
+       {
+        "name": "Eduardo Victorio Morettin"
+       },
+       {
+        "name": "Rodrigo Archangelo"
+       },
+       {
+        "name": "Bruno Couto Porpora"
+       },
+       {
+        "name": "Carolina Viganó Menezes"
+       },
+       {
+        "name": "Catarina Silva Bijotti"
+       },
+       {
+        "name": "Giuliana Ghiraldelli Moreira"
+       }
+      ],
+      "page": "211"
+     }
+    ],
+    "sig": "11|1|13"
+   },
+   "total_registros": 169,
+   "nome": "Informação Arquivística",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
   "2763-9045": {
    "ok": true,
    "fonte": "oai",
@@ -138,7 +377,7 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-19T18:23:19+00:00"
+   "coletado": "2026-11-19T20:10:54+00:00"
   },
   "2447-908X": {
    "ok": true,
@@ -385,7 +624,7 @@
    },
    "total_registros": 16,
    "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-19T18:23:19+00:00"
+   "coletado": "2026-11-19T20:10:54+00:00"
   },
   "2763-535X": {
    "ok": true,
@@ -591,7 +830,7 @@
      {
       "URL": "https://periodicos.ufes.br/revapees/article/view/47142",
       "title": [
-       "HISTÓRIAS DE VIDA E MIGRAÇÃO:  TRAJETÓRIA DOS MINEIROS EM SANTA TERESA-ES"
+       "HISTÓRIAS DE VIDA E MIGRAÇÃO: TRAJETÓRIA DOS MINEIROS EM SANTA TERESA-ES"
       ],
       "author": [
        {
@@ -605,7 +844,7 @@
      {
       "URL": "https://periodicos.ufes.br/revapees/article/view/47146",
       "title": [
-       "Na  terra capixaba a Guerra do Paraguai nunca mais será a mesma"
+       "Na terra capixaba a Guerra do Paraguai nunca mais será a mesma"
       ],
       "author": [
        {
@@ -690,7 +929,4289 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-19T18:23:19+00:00"
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "2764-7773": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 5, n. 2",
+    "data": "out. 2026",
+    "itens": [
+     {
+      "URL": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/article/view/196",
+      "title": [
+       "ARCHIVI D’ARTISTA E PRATICHE CONTEMPORANEE: TRA AUTO-RAPPRESENTAZIONE, MEMORIA E RESISTENZA CULTURALE"
+      ],
+      "author": [
+       {
+        "name": "Annantonia Martorano"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/article/view/197",
+      "title": [
+       "ARQUIVOS DE ARTISTA E PRÁTICAS CONTEMPORÂNEAS: ENTRE AUTORREPRESENTAÇÃO, MEMÓRIA E RESISTÊNCIA CULTURAL"
+      ],
+      "author": [
+       {
+        "name": "Annantonia Martorano"
+       },
+       {
+        "name": "Natália Tognoli"
+       }
+      ]
+     },
+     {
+      "URL": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/article/view/198",
+      "title": [
+       "PRESERVAÇÃO DIGITAL SISTÊMICA PARA DOCUMENTOS ARQUIVÍSTICOS"
+      ],
+      "author": [
+       {
+        "name": "Henrique Machado dos Santos"
+       },
+       {
+        "name": "Lucieli Francini Barni"
+       }
+      ]
+     }
+    ],
+    "sig": "5|2|3"
+   },
+   "total_registros": 128,
+   "nome": "Revista Officina",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1981-1640": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://revistas.marilia.unesp.br/index.php/bjis",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 20",
+    "data": "nov. 2026",
+    "itens": [
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17037",
+      "title": [
+       "Visualization and Generation of Bibliographic Data in the BIBFRAME Model: an analysis based on MARVA Editor"
+      ],
+      "author": [
+       {
+        "name": "Victória Marques de Sousa Vasconcelos"
+       },
+       {
+        "name": "Felipe Augusto Arakaki"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026007"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17241",
+      "title": [
+       "Documentary Reading of Meta-narratives on Gender and Racial Violence:: an analysis of Judith Butler's philosophical discourse and the literary discourse in Conceição Evaristo's “Olhos D'água”"
+      ],
+      "author": [
+       {
+        "name": "Bruna Lessa"
+       },
+       {
+        "name": "Maria Luiza Ferreira Crosara"
+       },
+       {
+        "name": "Bruna Cupertino de Jesus"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026001"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17409",
+      "title": [
+       "Making Research Data Available in Open Access: perceptions of a sample of Brazilian postgraduate student"
+      ],
+      "author": [
+       {
+        "name": "Nivaldo Calixto Ribeiro"
+       },
+       {
+        "name": "Eduardo César Borges"
+       },
+       {
+        "name": "Fabrício Oliveira Fernandes"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026006"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17579",
+      "title": [
+       "Search and Retrieval in Open Government Data Portals: an analysis in the international context"
+      ],
+      "author": [
+       {
+        "name": "André Luiz Guimarães Amorim"
+       },
+       {
+        "name": "Patrícia Nascimento Silva"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026031"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17686",
+      "title": [
+       "Information Practices in Postgraduate Programs in Information Science: analysis of theses and dissertations"
+      ],
+      "author": [
+       {
+        "name": "Mary Caroline Santos Ribeiro"
+       },
+       {
+        "name": "Lucas Thery Monte Verde Silva Monte Verde Silva"
+       },
+       {
+        "name": "Renata Lira Furtado"
+       },
+       {
+        "name": "Renata Lira Furtado"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026004"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/17727",
+      "title": [
+       "Institutional Logics and their Interconnection with Informational Practices and the User's Power of Agency"
+      ],
+      "author": [
+       {
+        "name": "Glauciene Izaltina Tassi"
+       },
+       {
+        "name": "Ilemar Christina Lansoni Wey Berti"
+       },
+       {
+        "name": "João Arlindo dos Santos Neto"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026042"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18152",
+      "title": [
+       "Approaches to Gender Issues in the Health Sciences Descriptors: a study of new terminologies"
+      ],
+      "author": [
+       {
+        "name": "Ana Rafaela Sales de Araújo"
+       },
+       {
+        "name": "Maria Elizabeth Baltar Carneiro de Albuquerque"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026008"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18166",
+      "title": [
+       "University Libraries and Digital Transformation: applying Artificial Intelligence tools to promote Open Science"
+      ],
+      "author": [
+       {
+        "name": "rosaria Otoni"
+       },
+       {
+        "name": "Rosaria Ferreira Otoni dos Santos"
+       },
+       {
+        "name": "Frederico César Mafra Pereira"
+       },
+       {
+        "name": "Adriléia de Moura Lima"
+       },
+       {
+        "name": "Viviane Lílian dos Santos Barrozo"
+       },
+       {
+        "name": "Elisângela Cristina Aganette"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026002"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18229",
+      "title": [
+       "Active learning methodologies in higher education: an experience report on the use of crossword puzzles in a Librarianship course"
+      ],
+      "author": [
+       {
+        "name": "Leandro da Conceição Borges"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026025"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18230",
+      "title": [
+       "Assessment of the Citation Dilution Between Health-Related Preprints and Journal Articles"
+      ],
+      "author": [
+       {
+        "name": "Pedro Henrique da Silva Rodrigues"
+       },
+       {
+        "name": "Lucas George Wendt"
+       },
+       {
+        "name": "Sônia Elisa Caregnato"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026014"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18256",
+      "title": [
+       "Integration and Access of Research Data and Scientific Publications"
+      ],
+      "author": [
+       {
+        "name": "Bruno Pacheco Coelho Leite"
+       },
+       {
+        "name": "Carlos Henrique Marcondes"
+       },
+       {
+        "name": "Cláudio José Silva Ribeiro"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026021"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18264",
+      "title": [
+       "Information Policies in Archives in Brazil: a systematic literature review on approaches, methodologies, and trends"
+      ],
+      "author": [
+       {
+        "name": "François Braga de Azevedo Filho"
+       },
+       {
+        "name": "Gustavo Henrique de Araújo Freire"
+       },
+       {
+        "name": "Márcia Maria de Medeiros Travassos Saeger"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026011"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18360",
+      "title": [
+       "Representation of Information in the Context of the Repentista Know-How of Oliveira de Panelas"
+      ],
+      "author": [
+       {
+        "name": "Ronieli Victor da Silva"
+       },
+       {
+        "name": "Maria Elizabeth Baltar Carneiro de Albuquerque"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026005"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18375",
+      "title": [
+       "Literature and the Identity Formation of Readers"
+      ],
+      "author": [
+       {
+        "name": "Gabriele Soares Barros da Silva"
+       },
+       {
+        "name": "Ana Claudia Medeiros de Sousa"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026034"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18405",
+      "title": [
+       "Reading Clubs and the Aesthetic Dimension of Information Literacy"
+      ],
+      "author": [
+       {
+        "name": "Sueli Silva"
+       },
+       {
+        "name": "Márcia Cristina Silva Maronesi"
+       },
+       {
+        "name": "Ligia Patrícia Torino"
+       },
+       {
+        "name": "Adriana Rosecler Alcará"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026020"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18446",
+      "title": [
+       "Digital Citizenship and Information Mediation in the Use of e-Gov Services by Older Adults: a study in the Federal District"
+      ],
+      "author": [
+       {
+        "name": "Ricardo Ajax Dias Kosloski"
+       },
+       {
+        "name": "Leides Barroso de Azevedo Moura"
+       },
+       {
+        "name": "Marília Miranda Forte Gomes"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026010"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18468",
+      "title": [
+       "Subject Analysis Methodologies: mapping and systematization of approaches"
+      ],
+      "author": [
+       {
+        "name": "Gercina Ângela de Lima"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026026"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18474",
+      "title": [
+       "Organization of information and documentary analysis: semantic-cognitive aspects"
+      ],
+      "author": [
+       {
+        "name": "Alexandre Robson Martines"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026017"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18477",
+      "title": [
+       "Active Transparency and Open Government Data in the Federal Government: a mapping of regulatory frameworks on Open Data Plans"
+      ],
+      "author": [
+       {
+        "name": "Luana Carolina de Castro Gil"
+       },
+       {
+        "name": "Paula Regina Dal'Evedove"
+       },
+       {
+        "name": "Paula Regina Dal'Evedove"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026012"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18482",
+      "title": [
+       "Recovering and Making Reusable and Interoperable Brazilian Thesauri of Culture and Science in Textual Format"
+      ],
+      "author": [
+       {
+        "name": "Francis Bento Marques"
+       },
+       {
+        "name": "Carlos Henrique Marcondes"
+       },
+       {
+        "name": "Carlos Henrique Marcondes"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026003"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18491",
+      "title": [
+       "Data Management Plan in Open Finance: contributions of Information Science in the corporate context"
+      ],
+      "author": [
+       {
+        "name": "Anderson Rafael Castro Simões"
+       },
+       {
+        "name": "Guilherme Dias"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026009"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18736",
+      "title": [
+       "Reliability and Interoperability: Digital Archival Preservation at the confluence of FAIR and FDOs Principles"
+      ],
+      "author": [
+       {
+        "name": "Thiago Felipe Soares da Silva"
+       },
+       {
+        "name": "Daniel Flores"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026047"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18738",
+      "title": [
+       "Thematic Differentiation in Brazilian Postgraduate Programmes in Information Science: analysis by degree, institution, and temporal evolution"
+      ],
+      "author": [
+       {
+        "name": "Francis Bento Marques"
+       },
+       {
+        "name": "Benildes Coura Moreira dos Santos Maculan"
+       },
+       {
+        "name": "Yuri Bento Marques"
+       },
+       {
+        "name": "Gustavo Henrique Silva de Souza"
+       },
+       {
+        "name": "Francis Bento Marques"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026022"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18762",
+      "title": [
+       "Fairy Tales and Factual Texts: intermediality and pedagogical potencial in combating misinfomation"
+      ],
+      "author": [
+       {
+        "name": "Fernanda Sevarolli Creston Faria Kistemann"
+       },
+       {
+        "name": "Marco Aurélio Reis"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026023"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18794",
+      "title": [
+       "Cultural Mediation in the Digital Environment: an analysis of the social media of federal university libraries in Northeast Brazil"
+      ],
+      "author": [
+       {
+        "name": "Rafael Matos Nunes"
+       },
+       {
+        "name": "Ana Claudia Medeiros de Sousa"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026015"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18856",
+      "title": [
+       "Theoretical and Methodological Contributions to the Representation of Textual Data Generated in Bibliographic Research"
+      ],
+      "author": [
+       {
+        "name": "Laura Rocha Silveira Tavares da Silva"
+       },
+       {
+        "name": "Linair Maria Campos"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026013"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18930",
+      "title": [
+       "Systematic Review of Educational Technology Use by Academic Librarians in Higher Education"
+      ],
+      "author": [
+       {
+        "name": "Edmont Pasipamire"
+       },
+       {
+        "name": "Edmont Pasipamire"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026027"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18976",
+      "title": [
+       "Institutional eMail Management: an integrative literature review and proposal of analytical categories"
+      ],
+      "author": [
+       {
+        "name": "Luciana Boaventura"
+       },
+       {
+        "name": "Benildes Coura Moreira dos Santos Maculan"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026016"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18977",
+      "title": [
+       "Geopolitics of knowledge: university rankings and geographical inequalities in scientific prestige"
+      ],
+      "author": [
+       {
+        "name": "Raquel Viana"
+       },
+       {
+        "name": "Marília Augusta de Freitas"
+       },
+       {
+        "name": "João de Melo Maricato"
+       },
+       {
+        "name": "Fernando César Lima Leite"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026018"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/18980",
+      "title": [
+       "Public Archives and Mediation on Social Media: the National Archives on Instagram"
+      ],
+      "author": [
+       {
+        "name": "Carmem Lúcia Batista"
+       },
+       {
+        "name": "Maria Clara Verissimo"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026019"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19030",
+      "title": [
+       "Transparency, Archival Records, and Corporate Social Responsibility: reflections on the invisibility of business archives in Brazilian archival discourse"
+      ],
+      "author": [
+       {
+        "name": "Alexandre de Souza Costa"
+       },
+       {
+        "name": "Rafaella Pessanha Chamma"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026024"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19038",
+      "title": [
+       "Representation of Music Information in National Libraries in a Cultural Heritage Perspective"
+      ],
+      "author": [
+       {
+        "name": "Camila Monteiro de Barros"
+       },
+       {
+        "name": "Camila Barros"
+       },
+       {
+        "name": "Camila Barros"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026030"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19108",
+      "title": [
+       "Information literacy, intersectionality and information justice: tokenism and the challenges of an emancipatory agenda in Information Science"
+      ],
+      "author": [
+       {
+        "name": "Guilherme Goulart Righetto"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026028"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19186",
+      "title": [
+       "Cultural Biases in Knowledge Organization Systems: the case of Global University Rankings"
+      ],
+      "author": [
+       {
+        "name": "José Augusto Chaves Guimarães"
+       },
+       {
+        "name": "Maria Cristina Piumbato Innocentini Hayashi"
+       },
+       {
+        "name": "José Augusto Chaves Guimaraes"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026043"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19220",
+      "title": [
+       "Scientific production in Computer Science Teacher Education programs in Brazil: a bibliometric analysis of undergraduate theses available in repositories of Brazilian public institutions – 2015–2025"
+      ],
+      "author": [
+       {
+        "name": "Jonathan Rosa"
+       },
+       {
+        "name": "Jonathan Rosa Moreira"
+       },
+       {
+        "name": "Jefferson Bruno Pereira Ribeiro"
+       },
+       {
+        "name": "Cláudia Pinheiro Nascimento"
+       },
+       {
+        "name": "Maristela Terto de Holanda"
+       },
+       {
+        "name": "Geilson dos Santos Sá"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026029"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19228",
+      "title": [
+       "Informational Effects of Classificatory Decisions: an analytical approach to information integrity in knowledge organization"
+      ],
+      "author": [
+       {
+        "name": "Benildes Coura Moreira dos Santos Maculan"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026040"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19286",
+      "title": [
+       "Informational Competencies and Digital Education in Basic Education: analysis of the computational curriculum of the municipality of Marília-SP in the light of Information Science"
+      ],
+      "author": [
+       {
+        "name": "Lucas Pinto Franzo"
+       },
+       {
+        "name": "Cecílio Merlotti Rodas"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026032"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19378",
+      "title": [
+       "Understanding The FAIR Digital Object: a conceptual analysis of its structure, function, and meaning"
+      ],
+      "author": [
+       {
+        "name": "Lidianne Albernaz"
+       },
+       {
+        "name": "Bárbara Lúcia Pereira"
+       },
+       {
+        "name": "Luana Farias Sales Marques"
+       },
+       {
+        "name": "Luís Fernando Sayão"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026035"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19388",
+      "title": [
+       "Evolution and Structure of Scientific Output in Artificial Intelligence Involving African Institutions (2018–2025): a bibliometric analysis of open-access publications indexed in Web of Science and Scopus"
+      ],
+      "author": [
+       {
+        "name": "Arieta Domingas Bartolomeu Filipe"
+       },
+       {
+        "name": "Geraldo Vernijo Deixa"
+       },
+       {
+        "name": "Rosalino Subtil Chicote"
+       },
+       {
+        "name": "Verônica Angélica Freitas de Paula"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026039"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19399",
+      "title": [
+       "The Anti-Terrorism Law and the Thematic Evolution of Chinese Scientific Research on Terrorism"
+      ],
+      "author": [
+       {
+        "name": "Rossana Gleucy de Ávila Chagas e Carvalho"
+       },
+       {
+        "name": "Adilson Luiz Pinto"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026041"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19461",
+      "title": [
+       "Data Management in the Context of Digital Objects: a systematic literature review"
+      ],
+      "author": [
+       {
+        "name": "Marcus da Costa Fernandes"
+       },
+       {
+        "name": "Guilherme Ataíde Dias"
+       },
+       {
+        "name": "Wagner Junqueira de Araújo"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026033"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19479",
+      "title": [
+       "IHGVV Photographic Practices and the Production of Visual Testimonies of the City of Vila Velha, Brazil"
+      ],
+      "author": [
+       {
+        "name": "Rogério Zanon da Silveira"
+       },
+       {
+        "name": "Marcelo Calderari miguel"
+       },
+       {
+        "name": "Rogério Zanon da da Silveira"
+       },
+       {
+        "name": "Marcelo Calderari Miguel"
+       },
+       {
+        "name": "Rogério Zanon da Silveira"
+       },
+       {
+        "name": "Marcelo Calderari Miguel"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026044"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19509",
+      "title": [
+       "Information Findability and Informational Continuity in University Digital Environments: an analysis of the digital environments of the State University of Londrina"
+      ],
+      "author": [
+       {
+        "name": "Gustavo Lunardelli Trevisan"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026037"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19533",
+      "title": [
+       "Information, Relevance, and Disinformation: a Spinozist reading"
+      ],
+      "author": [
+       {
+        "name": "Derek Warwick Tavares"
+       },
+       {
+        "name": "Derek Warwick Tavares"
+       },
+       {
+        "name": "José Loureiro"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026045"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19541",
+      "title": [
+       "Bibliographic and Historical Collections in Supporting Information Flows and Governance in a Public Financial Institution"
+      ],
+      "author": [
+       {
+        "name": "Rogério Zanon da Silveira"
+       },
+       {
+        "name": "Marcelo Calderari Miguel"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026038"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19571",
+      "title": [
+       "Peer Review of Data Papers and Research Data: an analysis of scientific journal editorial policies"
+      ],
+      "author": [
+       {
+        "name": "Crislaine Zurilda Silveira"
+       },
+       {
+        "name": "Thiago Magela Rodrigues Dias"
+       },
+       {
+        "name": "Patricia da Silva Neubert"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026036"
+     },
+     {
+      "URL": "https://revistas.marilia.unesp.br/index.php/bjis/article/view/19596",
+      "title": [
+       "University Museums and Scientific Collections in Universities: what are we managing?"
+      ],
+      "author": [
+       {
+        "name": "Emanuela Sousa Ribeiro"
+       },
+       {
+        "name": "Bruno Melo de Araújo"
+       }
+      ],
+      "DOI": "10.36311/1981-1640.2026.v20.e026046"
+     }
+    ],
+    "sig": "20||47"
+   },
+   "total_registros": 549,
+   "nome": "Brazilian Journal of Information Science: Research Trends",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1808-5245": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://seer.ufrgs.br/index.php/EmQuestao",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 32",
+    "data": "nov. 2026",
+    "itens": [
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/145326",
+      "title": [
+       "Mapping the teaching of subject analysis in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Gercina Ângela de Lima"
+       },
+       {
+        "name": "Isabella Cristina Resende Ramos"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.145326"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/145414",
+      "title": [
+       "Procedure manuals in technical processing: a review on guidelines, and practices in libraries"
+      ],
+      "author": [
+       {
+        "name": "Lilian Morais Brum"
+       },
+       {
+        "name": "Benildes Coura Moreira dos Santos Maculan"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.145414"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/145622",
+      "title": [
+       "Experts say: how scientific evidence was taken out of context to validate covid-19 vaccine misinformation in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Mariana Hafiz"
+       },
+       {
+        "name": "Sabine Righetti"
+       },
+       {
+        "name": "Marcelo Soares da Silva"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.145622"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/145742",
+      "title": [
+       "Criteria of the SciELO Brazil collection: perception of editors in the Brazilian Northeast"
+      ],
+      "author": [
+       {
+        "name": "Emmanoella Patrocinio Ferreira"
+       },
+       {
+        "name": "Kátia de Oliveira Rodrigues"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.145742"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146050",
+      "title": [
+       "Accessibility in Digital Information Environments: Perceptions and Challenges for people with low vision"
+      ],
+      "author": [
+       {
+        "name": "Rogério Ferreira Marques"
+       },
+       {
+        "name": "Érica Fernanda Olimpio da Silva"
+       },
+       {
+        "name": "Lilian Soares Outtes Wanderley"
+       },
+       {
+        "name": "Maria Luciana De Almeida"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146050"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146155",
+      "title": [
+       "The electronic health record: reflections on digital preservation"
+      ],
+      "author": [
+       {
+        "name": "Odete Máyra Mesquita Sales"
+       },
+       {
+        "name": "Virginia Bentes Pinto"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146155"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146366",
+      "title": [
+       "Concept of oral information mediation: elements of reference bases"
+      ],
+      "author": [
+       {
+        "name": "Marcos Aparecido Rodrigues do Prado"
+       },
+       {
+        "name": "Filipe Vinícius Cabral Neri"
+       },
+       {
+        "name": "Sueli Bortolin"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146366"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146483",
+      "title": [
+       "Samba-enredo as a source of information and dissemination of Afro-Brazilian culture from 2000 to 2024s"
+      ],
+      "author": [
+       {
+        "name": "Barbara Lopes Gonçalves"
+       },
+       {
+        "name": "Maria de Fatima Sousa de Oliveira Barbosa"
+       },
+       {
+        "name": "Ana Senna"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146483"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146489",
+      "title": [
+       "Subject analysis in museological cataloging: application of the individual verbal protocol in Amazonian Museums"
+      ],
+      "author": [
+       {
+        "name": "Raul de Azevedo Carvalho"
+       },
+       {
+        "name": "Franciele Marques Redigolo"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146489"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146508",
+      "title": [
+       "Artificial Intelligence in Information Science: analysis of trends and applications"
+      ],
+      "author": [
+       {
+        "name": "Edna Karina da Silva Lira"
+       },
+       {
+        "name": "Jônatas Edison da Silva"
+       },
+       {
+        "name": "Eliana Maria dos Santos Bahia"
+       },
+       {
+        "name": "Thiago Magela Rodrigues Dias"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146508"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146819",
+      "title": [
+       "Communities of practice formed in the context of libraries or by librarians: a systematic literature review"
+      ],
+      "author": [
+       {
+        "name": "Danielle Harlene da Silva Moreno"
+       },
+       {
+        "name": "Alzira Karla da Silva Araújo"
+       },
+       {
+        "name": "Alessandra Stefane Cândido Elias da Trindade"
+       },
+       {
+        "name": "Márcia Maria de Medeiros Travassos Saeger"
+       },
+       {
+        "name": "Júlio Afonso Sá de Pinho Neto"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146819"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146953",
+      "title": [
+       "Data life cycles from the perspective of Digital Curation"
+      ],
+      "author": [
+       {
+        "name": "Gabriela de Oliveira Souza"
+       },
+       {
+        "name": "Daniel Martínez-Ávila"
+       },
+       {
+        "name": "Maria José Vicentini Jorente"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146953"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/146993",
+      "title": [
+       "The disinformation cycle on digital platforms: creation, dissemination, and recirculation"
+      ],
+      "author": [
+       {
+        "name": "Thiago Henrique de Jesus-Silva"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.146993"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147005",
+      "title": [
+       "The institutional repository for scientific prduction manegement"
+      ],
+      "author": [
+       {
+        "name": "Cássio Marcilio Matos Santos"
+       },
+       {
+        "name": "Vitor Koki da Costa Nogami"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147005"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147086",
+      "title": [
+       "Records Management: a systematic review of the literature on the subject in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Celineide Rodrigues Cavalcante"
+       },
+       {
+        "name": "Márcia Cristina de Carvalho Pazin Vitoriano"
+       },
+       {
+        "name": "Renata Lira Furtado"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147086"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147191",
+      "title": [
+       "Similarity between the online attention of Latin American scientific journals in Information Science across alternative channels"
+      ],
+      "author": [
+       {
+        "name": "Francielle Franco"
+       },
+       {
+        "name": "Natalia Rodrigues Delbianco"
+       },
+       {
+        "name": "Maria Cláudia Cabrini Grácio"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147191"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147308",
+      "title": [
+       "Framework for Information Literacy for Higher Education and the PISA 2025 Science Framework: a possibility for integration"
+      ],
+      "author": [
+       {
+        "name": "Kelley Cristine Gonçalves Dias Gasque"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147308"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147584",
+      "title": [
+       "Structured metadata and search engine optimization: contributions to information findability and user experience"
+      ],
+      "author": [
+       {
+        "name": "Gustavo Camossi"
+       },
+       {
+        "name": "Felipe Ivo da Silva"
+       },
+       {
+        "name": "Felipe Augusto Arakaki"
+       },
+       {
+        "name": "Cecilo Merlotti Rodas"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147584"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147685",
+      "title": [
+       "Public policies and digital preservation: between decisions and non-decisions"
+      ],
+      "author": [
+       {
+        "name": "Alex Pereira de Holanda"
+       },
+       {
+        "name": "Margareth da Silva"
+       },
+       {
+        "name": "Natasha Hermida Pereira Castro da Silva"
+       },
+       {
+        "name": "Clarissa Moreira dos Santos Schmidt"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147685"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147696",
+      "title": [
+       "CIL and Critical Theory as an epistemological positioning from confronting disinformation and populism"
+      ],
+      "author": [
+       {
+        "name": "Anna Cristina Brisola"
+       },
+       {
+        "name": "Thiago Cury Luiz"
+       },
+       {
+        "name": "Marco André Feldman Schneider"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147696"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/147969",
+      "title": [
+       "Perspectives of Information Design in the use of simple language in women’s health articles on Wikipedia"
+      ],
+      "author": [
+       {
+        "name": "Isabela Correa Macena"
+       },
+       {
+        "name": "Maria José Vicentini Jorente"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.147969"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148021",
+      "title": [
+       "Impacts of academic mobility on scientific production: evidence from the Lattes Platform"
+      ],
+      "author": [
+       {
+        "name": "Higor Alexandre Duarte Mascarenhas"
+       },
+       {
+        "name": "Thiago Magela Rodrigues Dias"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148021"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148245",
+      "title": [
+       "The librarian and the competences for the job market in open access scientific literature (2014-2024)"
+      ],
+      "author": [
+       {
+        "name": "Ana Laura Garbin Brati"
+       },
+       {
+        "name": "Edgar Bisset-Alvarez"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148245"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148269",
+      "title": [
+       "Material analysis of the work Rerum per octennium in Brasília [...] of Gaspar Barléu: perspectives on the individualization of copies produced in the Early Modern"
+      ],
+      "author": [
+       {
+        "name": "Raphael Diego Greenhalgh"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148269"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148409",
+      "title": [
+       "To turn the game around: young people propose actions to fight misinformation"
+      ],
+      "author": [
+       {
+        "name": "Daniela da Silva"
+       },
+       {
+        "name": "Carolayne Barros"
+       },
+       {
+        "name": "Matheus Levandoski"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148409"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148462",
+      "title": [
+       "Analyzing the adoption of Artificial Intelligence in modern library services: a Technology Acceptance Model perspective"
+      ],
+      "author": [
+       {
+        "name": "Oluwole Olumide Durodolu"
+       },
+       {
+        "name": "Ganiyu Ojo Adigun"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148462"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148563",
+      "title": [
+       "Autism and biases in the field of Information Science: a domain analysis through an integrative review of the Information Science database BRAPCI"
+      ],
+      "author": [
+       {
+        "name": "Larissa Kawana Passos Benatto Perandre Pereira"
+       },
+       {
+        "name": "Brígida Maria Nogueira Cervantes"
+       },
+       {
+        "name": "Rosane Suely Alvares Lunardelli"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148563"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148632",
+      "title": [
+       "Information technology and Artificial Intelligence: ethical challenges and social transformations"
+      ],
+      "author": [
+       {
+        "name": "Keyla Regina da Silva Torres Bosco Matias"
+       },
+       {
+        "name": "Edilson Ferneda"
+       },
+       {
+        "name": "Fabricio Ziviani"
+       },
+       {
+        "name": "João Ricardo de Sousa Mello"
+       },
+       {
+        "name": "Allyson Augusto Nunes Almeida"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148632"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148678",
+      "title": [
+       "Archives and health emergency: an analysis of the technological order project for the Oxford/AstraZeneca vaccine"
+      ],
+      "author": [
+       {
+        "name": "Paulo Roberto Elian dos Santos"
+       },
+       {
+        "name": "Luciana Quillet Heymann"
+       },
+       {
+        "name": "Aline Lopes de Lacerda"
+       },
+       {
+        "name": "André Felipe Paiva dos Santos"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148678"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148705",
+      "title": [
+       "Information representation and the semanticweb: a convergence for the evolution of the internet"
+      ],
+      "author": [
+       {
+        "name": "Ana Karoline França de Menezes"
+       },
+       {
+        "name": "Fabio Assis Pinho"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148705"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148706",
+      "title": [
+       "Beetween the exhibition space and the feed: connections with the publics of contemporary art museums"
+      ],
+      "author": [
+       {
+        "name": "Luciana Ferreira da Costa"
+       },
+       {
+        "name": "Mariana Lira de Sousa"
+       },
+       {
+        "name": "Adriano Araújo Borges"
+       },
+       {
+        "name": "Eva Caroline de Sena Castro"
+       },
+       {
+        "name": "José Cláudio Alves de Oliveira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148706"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148837",
+      "title": [
+       "Neoliberalism and surveillance: the search for paths towards a infocomunicational ducation against the apocalypse"
+      ],
+      "author": [
+       {
+        "name": "Francisco José Daher Junior"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148837"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148844",
+      "title": [
+       "Principles of critical cataloging education"
+      ],
+      "author": [
+       {
+        "name": "Filipe Reis"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148844"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148858",
+      "title": [
+       "Scientific data management and digital preservation in public universities: a proposal of guidelines for institutional policies"
+      ],
+      "author": [
+       {
+        "name": "Viviane Lílian dos Santos Barrozo"
+       },
+       {
+        "name": "Elisângela Cristina Aganette"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148858"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/148961",
+      "title": [
+       "Mediation, culture, and identity: conscious action by information mediators"
+      ],
+      "author": [
+       {
+        "name": "Ana Claudia Medeiros de Sousa"
+       },
+       {
+        "name": "Raquel do Rosário Santos"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.148961"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149109",
+      "title": [
+       "What imaginary narratives tell us: perspectives in Brazilian Information Science"
+      ],
+      "author": [
+       {
+        "name": "Júlia Raquel Farias da Costa"
+       },
+       {
+        "name": "Murilo Artur Araújo da Silveira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149109"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149271",
+      "title": [
+       "Social memory, information, and identity in migration narratives"
+      ],
+      "author": [
+       {
+        "name": "Uiara Lopes Miranda"
+       },
+       {
+        "name": "Fabrício Jose Nascimento da Silveira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149271"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149448",
+      "title": [
+       "Indexing fiction films: a proposed method"
+      ],
+      "author": [
+       {
+        "name": "Marina Macambyra"
+       },
+       {
+        "name": "Lilian Viana"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149448"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149519",
+      "title": [
+       "Management of processes for value generation in the Central Archive of a Federal Institution of Higher Education"
+      ],
+      "author": [
+       {
+        "name": "Jeovana Diomar Pinheiro Januário"
+       },
+       {
+        "name": "Ana Paula Alves Soares"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149519"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149594",
+      "title": [
+       "Women and knowledge organization: analysis in the journal Knowledge Organization"
+      ],
+      "author": [
+       {
+        "name": "Fernanda de Lima Moraes"
+       },
+       {
+        "name": "Luciane Paula Vital"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149594"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149744",
+      "title": [
+       "Application of the 11 domain analysis approaches in the study of the military dictatorship: an investigation of epistemological fields in Information Science"
+      ],
+      "author": [
+       {
+        "name": "Marcos Oliveira da Costa"
+       },
+       {
+        "name": "Monica Tenaglia"
+       },
+       {
+        "name": "Gilberto Gomes Cândido"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149744"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149807",
+      "title": [
+       "Institutional policies for research data management: an analysis of Dutch university frameworks"
+      ],
+      "author": [
+       {
+        "name": "Ana Lúcia da Silva Araújo"
+       },
+       {
+        "name": "Luana Farias Sales"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149807"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149912",
+      "title": [
+       "First impressions in science: predicting paper impact from article titles and basic metadata"
+      ],
+      "author": [
+       {
+        "name": "Yonara Costa Magalhães"
+       },
+       {
+        "name": "João Pedro Cavalcanti Azevedo"
+       },
+       {
+        "name": "Antônio de Abreu Batista Junior"
+       },
+       {
+        "name": "Jesús Pascual Mena-Chalco"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149912"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/149951",
+      "title": [
+       "Words that wound: a terminological-discursive analysis of AIDS in the Brazilian press in the 1980s"
+      ],
+      "author": [
+       {
+        "name": "Alessandra Nunes de Oliveira"
+       },
+       {
+        "name": "Jetur Lima de Castro"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.149951"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150093",
+      "title": [
+       "Theory and practice: applications of Design Science research in the development and evaluation of maturity models"
+      ],
+      "author": [
+       {
+        "name": "Renato Placido Mathias Machado"
+       },
+       {
+        "name": "Renato Tarciso Barbosa de Sousa"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150093"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150114",
+      "title": [
+       "Proposed data lifecycle model to support results-based management: a case study of Compaz Ariano Suassuna"
+      ],
+      "author": [
+       {
+        "name": "Liliane Kallyne de Souza"
+       },
+       {
+        "name": "Edilene Maria da Silva"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150114"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150195",
+      "title": [
+       "From user-centered design to strategic communication: redesigning the Pesquisas Arquivísticas Brasileiras Database (PAB)"
+      ],
+      "author": [
+       {
+        "name": "Maria Eduarda dos Santos de Sousa"
+       },
+       {
+        "name": "Maria Meriane Vieira da Rocha"
+       },
+       {
+        "name": "Adelaide Helena Targino Casimiro"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150195"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150336",
+      "title": [
+       "Reflections on the concept of disinformation within the scope of Information Science"
+      ],
+      "author": [
+       {
+        "name": "Bárbara Bentes Pinto"
+       },
+       {
+        "name": "Henry Poncio Cruz de Oliveira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150336"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150399",
+      "title": [
+       "Lived experiences of records management in a Federal Educational Institution: a phenomenological perspective"
+      ],
+      "author": [
+       {
+        "name": "Ricardo Roberto de Andrade"
+       },
+       {
+        "name": "Otaviano José Pereira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150399"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150519",
+      "title": [
+       "Knowledge management maturity assessment: a bibliometric analysis of scientific production from 2016 to 2025"
+      ],
+      "author": [
+       {
+        "name": "Pamela Rodrigues Perrotta"
+       },
+       {
+        "name": "Sergio Ricardo da Silveira Barros"
+       },
+       {
+        "name": "Luis Alberto Duncan Rangel"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150519"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150525",
+      "title": [
+       "Memory and resistance: proposals for the preservation of Kaingang knowledge"
+      ],
+      "author": [
+       {
+        "name": "Claudia Carmem Baggio"
+       },
+       {
+        "name": "Edgar Bisset-Alvarez"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150525"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150728",
+      "title": [
+       "The neo-institutionalist approach as a theoretical-methodological framework for the analysis of information public policy in the archival field"
+      ],
+      "author": [
+       {
+        "name": "Antonio Gouveia de Sousa"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.150728"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150770",
+      "title": [
+       "Expediente"
+      ],
+      "author": [
+       {
+        "name": "Comissão Editorial Em Questão"
+       }
+      ]
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150778",
+      "title": [
+       "Normas para publicação"
+      ],
+      "author": [
+       {
+        "name": "Comissão Editorial Em Questão"
+       }
+      ]
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/150964",
+      "title": [
+       "Política Editorial"
+      ],
+      "author": [
+       {
+        "name": "Comissão Editorial Em Questão"
+       }
+      ]
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151012",
+      "title": [
+       "Application of artificial intelligence in vocational and technical education: evaluation of information practices and student perceptions"
+      ],
+      "author": [
+       {
+        "name": "Maria Carolina Barbosa Dantas"
+       },
+       {
+        "name": "Ivette Kafure"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151012"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151200",
+      "title": [
+       "Applications and methods of mapping between knowledge organization systems: a narrative review of the literature"
+      ],
+      "author": [
+       {
+        "name": "Julietti de Andrade"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151200"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151263",
+      "title": [
+       "Students’ informational practices in the school context: reflections from the architecture of practice"
+      ],
+      "author": [
+       {
+        "name": "Rosana da Silva Gomes"
+       },
+       {
+        "name": "Marcia Regina da Silva"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151263"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151279",
+      "title": [
+       "Theoretical proximities and intellectual structure of the bibliographies of disciplines related to Metric Studies of Information in undergraduate Library Science programs in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Raidan Cruz Silveira"
+       },
+       {
+        "name": "Rafael Gutierres Castanha"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151279"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151294",
+      "title": [
+       "BRICS publication in Library and Information Science: language and access"
+      ],
+      "author": [
+       {
+        "name": "Rosângela Schwarz Rodrigues"
+       },
+       {
+        "name": "Laura Lavinia Santos"
+       },
+       {
+        "name": "Suenia Oliveira Mendes"
+       },
+       {
+        "name": "Enrique Muriel-Torrado"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151294"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151451",
+      "title": [
+       "The legislative influence on Brazilian scientific production on terrorism: an exploratory Scientometrics study"
+      ],
+      "author": [
+       {
+        "name": "Rossana Gleucy de Avila Chagas e Carvalho"
+       },
+       {
+        "name": "Adilson Luiz Pinto"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151451"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/151500",
+      "title": [
+       "Indigenous Knowlegde Organization in the educational materials of the Guarani, Kaingang and Laklãnõ-Xokleng peoples"
+      ],
+      "author": [
+       {
+        "name": "Juliana Akemi Andrade Okawati"
+       },
+       {
+        "name": "Rodrigo de Sales"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.151500"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/152171",
+      "title": [
+       "Data Literacy and Dark Data: reflections on the impact on the climate crisis from the Data Life Cycle perspective"
+      ],
+      "author": [
+       {
+        "name": "Marcelo Goberto de Azevedo"
+       },
+       {
+        "name": "Mariângela Spotti Lopes Fujita"
+       },
+       {
+        "name": "Marcelo Fernandes Oliveira"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.152171"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/155927",
+      "title": [
+       "Domain-specific extension of BIBFRAME for regional music: conceptual modeling and expert validation"
+      ],
+      "author": [
+       {
+        "name": "Maliheh Dorkhosh"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.155927"
+     },
+     {
+      "URL": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/159717",
+      "title": [
+       "Editorial: internationalization of Information Science, current challenges"
+      ],
+      "author": [
+       {
+        "name": "Thiago Henrique Bragato Barros"
+       }
+      ],
+      "DOI": "10.1590/1808-5245.32.159717"
+     }
+    ],
+    "sig": "32||65"
+   },
+   "total_registros": 1260,
+   "nome": "Em Questão",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1518-2924": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://periodicos.ufsc.br/index.php/eb",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 31",
+    "data": "nov. 2026",
+    "itens": [
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/104855",
+      "title": [
+       "The Role of Community Libraries in Fostering Youth Agency and Social Mobility: A Mixed-Methods Study in West Sumatra, Indonesia"
+      ],
+      "author": [
+       {
+        "name": "Ciptro Handrianto"
+       },
+       {
+        "name": "Irmawita Irmawita"
+       },
+       {
+        "name": "Ridha Husnul Hayati"
+       },
+       {
+        "name": "Ahmad Jazimin Jusoh"
+       },
+       {
+        "name": "Ary Kiswanto Kenedi"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e104855",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105169",
+      "title": [
+       "School library, bilingualism, and human rights: insights from the experience of bilingual education center for the deaf in Belém, Brazil"
+      ],
+      "author": [
+       {
+        "name": "Glayseanne Carvalho"
+       },
+       {
+        "name": "Mônica Tenaglia"
+       },
+       {
+        "name": "Tania Chalhub"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105169",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105200",
+      "title": [
+       "Optimizing Information Flow through an Information Architecture Model in SUS Digital and RNDS Support Services"
+      ],
+      "author": [
+       {
+        "name": "João Marques Lopes Barbosa"
+       },
+       {
+        "name": "Claudio Gottschalg-Duque"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105200",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105546",
+      "title": [
+       "Information mediation in the Museum of Image and Sound of the State of Pará, Brazil: an analysis of the captions of the exhibition ‘Eneida Simplesmente’"
+      ],
+      "author": [
+       {
+        "name": "João Vitor Corrêa Diniz"
+       },
+       {
+        "name": "João Arlindo dos Santos Neto"
+       },
+       {
+        "name": "Gilberto Gomes Cândido"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105546",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105691",
+      "title": [
+       "Information mediation actions at the Venezuelan Observatory of Social Conflict (OVCS): between the defense of human rights and social protagonism"
+      ],
+      "author": [
+       {
+        "name": "Orledys Maria de Jesus López Caldera"
+       },
+       {
+        "name": "Henriette Ferreira Gomes"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105691",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105840",
+      "title": [
+       "Ranganathan's 5th law in the data age: a systematic review of libraries' provision of data visualization services"
+      ],
+      "author": [
+       {
+        "name": "Tainá Regly"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105840",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/105932",
+      "title": [
+       "Indicators in the hospital decision-making process: a study at the Hospital Universitário do Paraná (HUPR), Brazil"
+      ],
+      "author": [
+       {
+        "name": "Vera Lucia Belo Chagas"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e105932",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106044",
+      "title": [
+       "Collaboration and scientific production: an analysis of the Medicine co-authorship network in Colombia"
+      ],
+      "author": [
+       {
+        "name": "Adolfo A. Abadía"
+       },
+       {
+        "name": "Julio César Alonso-Cifuentes"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106044",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106572",
+      "title": [
+       "DATANIT: technical-scientific database of the technology innovation centers of brazilian universities"
+      ],
+      "author": [
+       {
+        "name": "Rafael Gutierres Castanha"
+       },
+       {
+        "name": "Ana Lìvia Cazane"
+       },
+       {
+        "name": "Gabriel Bueno da Silva"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106572",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106682",
+      "title": [
+       "The role of schema.org in search engine optimization techniques"
+      ],
+      "author": [
+       {
+        "name": "Gustavo Camossi"
+       },
+       {
+        "name": "Felipe Ivo da Silva"
+       },
+       {
+        "name": "Felipe Augusto Arakaki"
+       },
+       {
+        "name": "Cecílio Merlotti Rodas"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106682",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106750",
+      "title": [
+       "Architectures of Opacity: denialism, disinformation, and the erosion of access to information under the Bolsonaro administration"
+      ],
+      "author": [
+       {
+        "name": "Juliano da Silva Borges"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106750",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106848",
+      "title": [
+       "Gender Disinformation on Twitter/X: Strategies and Mechanisms"
+      ],
+      "author": [
+       {
+        "name": "Anna Raquel de Lemos Viana"
+       },
+       {
+        "name": "Májory Karoline Fernandes de Oliveira Miranda"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106848",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/106937",
+      "title": [
+       "Information integrity: critical construction of the concept in contemporaneity"
+      ],
+      "author": [
+       {
+        "name": "Bianca da Costa Maia Lopes"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e106937",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107446",
+      "title": [
+       "Teaching Subject Analysis from Cognitive, Contextual, And Logical Approaches: a didactic experiment using the educational Game Noah's Ark"
+      ],
+      "author": [
+       {
+        "name": "Gercina Ângela de Lima"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107446",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107570",
+      "title": [
+       "The use of the Electronic Information System (SEI) by elderly people: a study based on the UTAUT Theory 3"
+      ],
+      "author": [
+       {
+        "name": "Gleisiane Carvalho Fernandes"
+       },
+       {
+        "name": "Alyce Cardoso Campos"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107570",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107575",
+      "title": [
+       "Organizational intelligence in the mining industry: strategic foresight for success"
+      ],
+      "author": [
+       {
+        "name": "Betsy Mederos-Isaac"
+       },
+       {
+        "name": "Karen Pupo-Méndez"
+       },
+       {
+        "name": "Oridayma Tarano-Artigas"
+       },
+       {
+        "name": "Fridel Julio Ramos-Azcuy"
+       },
+       {
+        "name": "Rosa Mayelin Guerra-Bretaña"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107575",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107640",
+      "title": [
+       "Adoption of information and communication technologies by brazilian public libraries: diagnosis and trends"
+      ],
+      "author": [
+       {
+        "name": "Michelângelo Mazzardo Marques Viana"
+       },
+       {
+        "name": "Giovana Deliberali Maimone"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107640",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107780",
+      "title": [
+       "Open scientific practices of Agricultural Science researchers in Colombia"
+      ],
+      "author": [
+       {
+        "name": "Ruth Helena Vallejo Sierra"
+       },
+       {
+        "name": "Johann Enrique Pirela Morillo"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107780",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107837",
+      "title": [
+       "Building a health information and communication device: the DCZ Almanac (Dengue, Chikungunya, Zika)"
+      ],
+      "author": [
+       {
+        "name": "Regina Maria Marteleto"
+       },
+       {
+        "name": "Nanci Gonçalves da Nóbrega"
+       },
+       {
+        "name": "Helena Maria Scherlowski Leal David"
+       },
+       {
+        "name": "Lídia Eugênia Cavalcante"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107837",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107950",
+      "title": [
+       "Data-driven editorial management: an indicator model applied to peer review"
+      ],
+      "author": [
+       {
+        "name": "Danilo Silva Santos Rocha"
+       },
+       {
+        "name": "Gabriel Teles"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107950",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/107990",
+      "title": [
+       "LIRA — Intermodal Language For Affective Recognition: a multimodal database for music emotion recognition"
+      ],
+      "author": [
+       {
+        "name": "Paulo Sergio da Conceição Moreira"
+       },
+       {
+        "name": "Denise Fukumi Tsunoda"
+       },
+       {
+        "name": "Marília Nunes-Silva"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e107990",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108047",
+      "title": [
+       "Dataset on Research Data Management in Biodiversity: Practices, Challenges, and Perspectives"
+      ],
+      "author": [
+       {
+        "name": "Paulo Roberto Santos Costa"
+       },
+       {
+        "name": "Guilherme Ataíde Dias"
+       },
+       {
+        "name": "Janaína Nascimento de Araújo"
+       },
+       {
+        "name": "Marckson Roberto Ferreira de Sousa"
+       },
+       {
+        "name": "Anderson Rafael Castro Simões"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108047",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108239",
+      "title": [
+       "Terminological analysis of the culture of Pará, Brazil, in the song lyrics of “Voando pro Pará”"
+      ],
+      "author": [
+       {
+        "name": "Alessandra Nunes de Oliveira"
+       },
+       {
+        "name": "Jetur Lima de Castro"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108239",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108315",
+      "title": [
+       "Cognitive impacts of excessive use of social media: attention, memory, and emotion"
+      ],
+      "author": [
+       {
+        "name": "Leandro Coqueiro Souza"
+       },
+       {
+        "name": "Luciana Ordine Araujo"
+       },
+       {
+        "name": "Priscila Shizu Martins Hasegawa Chaparro dos Santos"
+       },
+       {
+        "name": "Marcos Antonio Tedeschi"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108315",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108417",
+      "title": [
+       "Key factors in user satisfaction: an analysis using LibQUAL+ and structural equation modeling at a Peruvian University"
+      ],
+      "author": [
+       {
+        "name": "Xiomara Roselina Salazar Carpio"
+       },
+       {
+        "name": "Hadet Brusnella Geronimo Huanqui"
+       },
+       {
+        "name": "Carlos Renzo Rivera Calcina"
+       },
+       {
+        "name": "Brigitte Melanie Larico Figueroa"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108417",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108462",
+      "title": [
+       "Information literacy in teacher training: a proposal for its observation"
+      ],
+      "author": [
+       {
+        "name": "Jorge Winston Barbosa Chacón"
+       },
+       {
+        "name": "Michelle Mendoza Lira"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108462",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108640",
+      "title": [
+       "Clarifying and consolidating graph-based knowledge representations in LIS: a terminological framework"
+      ],
+      "author": [
+       {
+        "name": "Rafael Rocha"
+       },
+       {
+        "name": "Gercina Ângela de Lima"
+       },
+       {
+        "name": "Webert Júnio Araújo"
+       },
+       {
+        "name": "Patrícia Lopes"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108640",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108644",
+      "title": [
+       "Critical information literacy and Law 10.639/03: experiences in reconfiguring the collection of the university library of social sciences, philosophy and history at UFRJ"
+      ],
+      "author": [
+       {
+        "name": "Alexandre Carlos Gugliotta"
+       },
+       {
+        "name": "Fabiana Magno de Lacerda"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108644",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108797",
+      "title": [
+       "The açaí signboard as an informational mediator: a semiotic analysis in light of Peirce’s trichotomy"
+      ],
+      "author": [
+       {
+        "name": "Jetur Lima de Castro"
+       },
+       {
+        "name": "Alessandra Nunes de Oliveira"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108797",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108828",
+      "title": [
+       "Ethics and informational integrity in the climate emergency: the socio-environmental responsibility of Information Science"
+      ],
+      "author": [
+       {
+        "name": "Edgar Bisset Alvarez"
+       },
+       {
+        "name": "Genilson Geraldo"
+       },
+       {
+        "name": "Patricia da Silva Neubert"
+       },
+       {
+        "name": "Enrique Muriel-Torrado"
+       },
+       {
+        "name": "Ana Clara Candido"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108828",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108883",
+      "title": [
+       "Textual Curation of unpublished works by Oliveira Telles: convergences between Philology and Information Science"
+      ],
+      "author": [
+       {
+        "name": "Renata Ferreira Costa"
+       },
+       {
+        "name": "Hellen Sabrina Santos Farias"
+       },
+       {
+        "name": "Thaís Oliveira da Silva"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108883",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108889",
+      "title": [
+       "Domains in perspective: critical Archival studies as an emerging trend"
+      ],
+      "author": [
+       {
+        "name": "Anderson Berbesi"
+       },
+       {
+        "name": "Natália Tognoli"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108889",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108932",
+      "title": [
+       "Twenty years of Hospitality in Brazil: social and epistemological genesis of a field based on scientific output at a Higher Education Institution"
+      ],
+      "author": [
+       {
+        "name": "Rafael Ferro"
+       },
+       {
+        "name": "Sênia Bastos"
+       },
+       {
+        "name": "Mirian Rejowski"
+       },
+       {
+        "name": "Renan Pedroso Teixeira"
+       },
+       {
+        "name": "Giulia Medina"
+       },
+       {
+        "name": "Lisandra Passos"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108932",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/108990",
+      "title": [
+       "Library and information education in Brazil: analysis of its scientific development in Web of Science"
+      ],
+      "author": [
+       {
+        "name": "Eduardo Alejandro Hernández Alfonso"
+       },
+       {
+        "name": "Víctor Herrero-Solana"
+       },
+       {
+        "name": "Luis Ernesto Paz Enrique"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e108990",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109075",
+      "title": [
+       "Beyond publication: proposed model for evaluating open data plans based on federal regulations"
+      ],
+      "author": [
+       {
+        "name": "Luana Carolina de Castro Gil"
+       },
+       {
+        "name": "Paula Regina Dal'Evedove"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109075",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109140",
+      "title": [
+       "Replicable prompt engineering model for scientific literature retrieval with ChatGPT"
+      ],
+      "author": [
+       {
+        "name": "Carlos Andrés Castillo Badilla"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109140",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109202",
+      "title": [
+       "Influence of the interpersonal relationship with the supervisor on the job satisfaction of employees of university libraries through the work environment"
+      ],
+      "author": [
+       {
+        "name": "Nancy Irasema Quiroga Garza"
+       },
+       {
+        "name": "Zapopan Martín Muela Meza"
+       },
+       {
+        "name": "Marco Antonio Mariano Torres"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109202",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109399",
+      "title": [
+       "Geek library: theoretical foundations for a proposal for participatory cultural action in public libraries"
+      ],
+      "author": [
+       {
+        "name": "Bruna Daniele de Oliveira Silva"
+       },
+       {
+        "name": "Tamara de Souza Brandão Guaraldo"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109399",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109420",
+      "title": [
+       "Analysis of the accessibility of virtual museums for blind visitors: a case study in alagoas, Brazil"
+      ],
+      "author": [
+       {
+        "name": "Juliana de Carvalho Cavalcanti"
+       },
+       {
+        "name": "Jonathas Patrick Hermenegildo de Azevedo"
+       },
+       {
+        "name": "Floripes Teixeira Santos"
+       },
+       {
+        "name": "Fábio José Coutinho da Silva"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109420",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109644",
+      "title": [
+       "Evaluation of the Annif automatic indexing system in information science journal articles"
+      ],
+      "author": [
+       {
+        "name": "Remi Correia Lapa"
+       },
+       {
+        "name": "Renato Fernandes Correa"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109644",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109732",
+      "title": [
+       "Reflections on information management in university libraries and teleworking"
+      ],
+      "author": [
+       {
+        "name": "Berenice Rodrigues Ferreira"
+       },
+       {
+        "name": "Milton Shintaku"
+       },
+       {
+        "name": "Elder Lopes Barboza"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109732",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109792",
+      "title": [
+       "Knowledge Management: diagnosis in the innovation ecosystem Estação 43"
+      ],
+      "author": [
+       {
+        "name": "Danieli Pinto"
+       },
+       {
+        "name": "Letícia Gorri Molina"
+       },
+       {
+        "name": "Nelson Nunes Tenório Junior"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109792",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109844",
+      "title": [
+       "Discourse and religious supernatural from the perspective of cultural mediation in the poetry of Patativa do Assaré"
+      ],
+      "author": [
+       {
+        "name": "Paula Kaliane Henrique Silva"
+       },
+       {
+        "name": "Jefferson Veras Nunes"
+       },
+       {
+        "name": "Luiz Tadeu Feitosa"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109844",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/109979",
+      "title": [
+       "Phenomenology as a Path to Understanding Document Management: methodological notes from research conducted at IFTM Campus Uberlândia"
+      ],
+      "author": [
+       {
+        "name": "Ricardo Roberto de Andrade"
+       },
+       {
+        "name": "Otaviano José Pereira"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e109979",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110038",
+      "title": [
+       "The conceptual and lexical structure of Information Science: epistemological and discursive patterns in bigrams"
+      ],
+      "author": [
+       {
+        "name": "Francis Bento Marques"
+       },
+       {
+        "name": "Benildes Coura Moreira dos Santos Maculan"
+       },
+       {
+        "name": "Renato Rocha Souza"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110038",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110199",
+      "title": [
+       "The use of large language models for semantic mapping in OBDA processes"
+      ],
+      "author": [
+       {
+        "name": "Cleiton Rodrigues Monteiro"
+       },
+       {
+        "name": "Patrícia Nascimento Silva"
+       },
+       {
+        "name": "Renato Rocha Souza"
+       },
+       {
+        "name": "Maurício Barcellos Almeida"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110199",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110252",
+      "title": [
+       "Information literacy in initial teacher training: From dogmatic-operational to critical-emancipatory"
+      ],
+      "author": [
+       {
+        "name": "Jorge Winston Barbosa Chacón"
+       },
+       {
+        "name": "Michelle Mendoza-Lira"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110252",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110275",
+      "title": [
+       "Fairness Assessment Tools Applied to Digital Information Sources: a proposed model for fairness verification"
+      ],
+      "author": [
+       {
+        "name": "Heloene Gonçalves Santos Passos"
+       },
+       {
+        "name": "Daniela Lucas da Silva Lemos"
+       },
+       {
+        "name": "Dirceu Flávio Macedo"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110275",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110306",
+      "title": [
+       "Information Literacy for Digital Citizens: Examining the Role of Community Libraries in Reducing Misinformation"
+      ],
+      "author": [
+       {
+        "name": "Ciptro Handrianto"
+       },
+       {
+        "name": "Setiawati Setiawati"
+       },
+       {
+        "name": "Zahratul Azizah"
+       },
+       {
+        "name": "Fitri Dwi Arini"
+       },
+       {
+        "name": "Saripah Banseng"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110306",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110359",
+      "title": [
+       "Digital accessibility of the Lattes Platform: limits and impacts for researchers with disabilities"
+      ],
+      "author": [
+       {
+        "name": "Ana Paula Lima dos Santos"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110359",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110458",
+      "title": [
+       "Between the symbolic and the documentary: the informational representation of graduation plaques"
+      ],
+      "author": [
+       {
+        "name": "Everton Fernandes de Lima"
+       },
+       {
+        "name": "Edvaldo Carvalho Alves"
+       },
+       {
+        "name": "Geysa Flávia Câmara de Lima"
+       },
+       {
+        "name": "Maria Elizabeth Baltar Carneiro de Albuquerque"
+       },
+       {
+        "name": "Bernardina Maria Juvenal Freire de Oliveira"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110458",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110726",
+      "title": [
+       "Design Thinking and the implementation of products and services in university libraries: an analysis of scientific publications"
+      ],
+      "author": [
+       {
+        "name": "Érika Molas de Oliveira"
+       },
+       {
+        "name": "Maria Helena Machado"
+       },
+       {
+        "name": "Renata Braz Gonçalves"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110726",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110809",
+      "title": [
+       "Altmetric Coverage and Digital Visibility of Latin American Library and Information Science Journals"
+      ],
+      "author": [
+       {
+        "name": "Juanita Valeria Dueñas Rengifo"
+       },
+       {
+        "name": "Natalia Marquez-Bustos"
+       },
+       {
+        "name": "María Alejandra Peña Narváez"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110809",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110853",
+      "title": [
+       "Semiotic practices in Knowledge Organization"
+      ],
+      "author": [
+       {
+        "name": "Alexandre Robson Martines"
+       },
+       {
+        "name": "Etefania Cristina Pavarina"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110853",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110866",
+      "title": [
+       "From fragmentation to convergence: Information-Scientific-Cognitive Literacy"
+      ],
+      "author": [
+       {
+        "name": "Kelley Cristine Gonçalves Dias Gasque"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110866",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/110957",
+      "title": [
+       "A orality and its importance for the preservation and perpetuation of collective memory"
+      ],
+      "author": [
+       {
+        "name": "Lucas Furtado Gramlich"
+       },
+       {
+        "name": "Rosa da Penha Ferreira da Costa"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e110957",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/111584",
+      "title": [
+       "Controlling images, racism and sexism: the representations of black women in Google Images and in images generated by ChatGPT"
+      ],
+      "author": [
+       {
+        "name": "Lindiwe Sophia Oliveira Fideles"
+       },
+       {
+        "name": "Rodrigo Moreno Marques"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e111584",
+      "page": "1"
+     },
+     {
+      "URL": "https://periodicos.ufsc.br/index.php/eb/article/view/113311",
+      "title": [
+       "Automated accessibility assessment of the Oasisbr Portal: analysis and contributions to inclusive Open Science"
+      ],
+      "author": [
+       {
+        "name": "Karolina Vieira da Silva Bastos"
+       },
+       {
+        "name": "Janicy Aparecida Pereira Rocha"
+       }
+      ],
+      "DOI": "10.5007/1518-2924.2026.e113311",
+      "page": "1"
+     }
+    ],
+    "sig": "31||58"
+   },
+   "total_registros": 1312,
+   "nome": "Encontros Bibli",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "2178-2075": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://revistas.usp.br/incid",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 17",
+    "data": "out. 2026",
+    "itens": [
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/222356",
+      "title": [
+       "Las LAS CONTRIBUCIONES DE LA DIPLOMÁTICA CONTEMPORÁNEA Y LA DIPLOMÁTICA DIGITAL EN LA GESTIÓN DE DOCUMENTOS DIGITALES CON VISIÓN DE SU AUTENTICIDAD Y FIABILIDAD"
+      ],
+      "author": [
+       {
+        "name": "Mayara Patrícia Siqueira Moreschi"
+       },
+       {
+        "name": "Mayara Patrícia Siqueira Moreschi"
+       },
+       {
+        "name": "Mayara Patricia Siqueira Moreschi"
+       },
+       {
+        "name": "Diana Vilas Boas Souto Aleixo"
+       },
+       {
+        "name": "Alexandre Fernal"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.222356"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/229226",
+      "title": [
+       "Gestão da Informação e fluxos de informação: uma análise voltada à gestão pública municipal com ênfase na legislação brasileira"
+      ],
+      "author": [
+       {
+        "name": "Valquíria M. Luchini"
+       },
+       {
+        "name": "Ieda Pelógia Martins Damian"
+       },
+       {
+        "name": "Marcia Cristina de Carvalho Pazin Vitoriano"
+       },
+       {
+        "name": "Valquíria M. Luchini"
+       },
+       {
+        "name": "Ieda Pelógia Martins Damian"
+       },
+       {
+        "name": "Marcia Cristina de Carvalho Pazin Vitoriano"
+       },
+       {
+        "name": "Valquíria M. Luchini"
+       },
+       {
+        "name": "Ieda Pelógia Martins Damian"
+       },
+       {
+        "name": "Marcia Cristina de Carvalho Pazin Vitoriano"
+       },
+       {
+        "name": "Ieda Pelógia Martins Damian"
+       },
+       {
+        "name": "Marcia Cristina de Carvalho Pazin Vitoriano"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.229226"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/231446",
+      "title": [
+       "A interlocução entre o fluxo informacional e a gestão de processos de negócio: evidências de um mapeamento sistemático de literatura"
+      ],
+      "author": [
+       {
+        "name": "Francisco Saldanha Bannitz"
+       },
+       {
+        "name": "Zaira Regina Zafalon"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.231446"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/232090",
+      "title": [
+       "Singularity of the term letramento informacional in relation to other translations of information literacy in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Mariana de Souza Alves"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.232090"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/232271",
+      "title": [
+       "Appropriation of information through reading manga"
+      ],
+      "author": [
+       {
+        "name": "Francisco da Cruz Barbosa da Costa"
+       },
+       {
+        "name": "Rubem Borges Teixeira Ramos"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.232271"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/232302",
+      "title": [
+       "Guidelines for working with information management: entrepreneurial practices in librarianship"
+      ],
+      "author": [
+       {
+        "name": "Beatriz Heinrich"
+       },
+       {
+        "name": "Daniela Spudeit"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.232302"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/234063",
+      "title": [
+       "Cultural Heritage: there is space for articles in Information Science journals?"
+      ],
+      "author": [
+       {
+        "name": "Thaís Lima Trindade"
+       },
+       {
+        "name": "Ana Lúcia de Abreu Gomes"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.234063"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/235203",
+      "title": [
+       "O documento como fonte de memória"
+      ],
+      "author": [
+       {
+        "name": "Lucas Furtado Gramlich"
+       },
+       {
+        "name": "Rosa da Penha Ferreira da Costa"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.235203"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/235775",
+      "title": [
+       "La matrice gnoseologica della teoria fenomenologica dell'informazione: contributi e limiti"
+      ],
+      "author": [
+       {
+        "name": "Marcílio Bezerra Cruz"
+       },
+       {
+        "name": "Jhoicykelly Roberta Pessoa Silva Cruz"
+       },
+       {
+        "name": "Májory Karoline Fernandes de Oliveira Miranda"
+       },
+       {
+        "name": "Hélio Márcio Pajeú"
+       },
+       {
+        "name": "Marcílio Bezerra Cruz"
+       },
+       {
+        "name": "Marcílio Bezerra Cruz"
+       },
+       {
+        "name": "Marcílio Bezerra Cruz"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.235775"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/235881",
+      "title": [
+       "A documentação imagética da Sociedade Brasileira para o Progresso da Ciência: uma proposta de abordagem contextual"
+      ],
+      "author": [
+       {
+        "name": "Bruno de Andrea Roma"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.235881"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/236715",
+      "title": [
+       "As práticas informacionais no grupo de alcoólicos anônimos Glória Feliz"
+      ],
+      "author": [
+       {
+        "name": "Everton Rafael Caldeira"
+       },
+       {
+        "name": "Carlos Alberto Ávila Araújo"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.236715"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/237056",
+      "title": [
+       "Management maturity and access to research data at Brazilian federal public universities: a multiple case study"
+      ],
+      "author": [
+       {
+        "name": "Nivaldo Calixto Ribeiro"
+       },
+       {
+        "name": "Dalgiza Andrade Oliveira"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.237056"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/237586",
+      "title": [
+       "Document management plan applied to manga by independent authors: an archival approach"
+      ],
+      "author": [
+       {
+        "name": "Fernanda Lacerda Santana Bim"
+       },
+       {
+        "name": "Jessica Beatriz Tolare"
+       },
+       {
+        "name": "Fernanda Lacerda Santana Bim"
+       },
+       {
+        "name": "Fernanda Lacerda Santana Bim"
+       },
+       {
+        "name": "Fernanda Lacerda Santana Bim"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.237586"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/237733",
+      "title": [
+       "Transparência pública e controle social: descumprimento de legislações sanitária e contra incêndio"
+      ],
+      "author": [
+       {
+        "name": "Marcelo Fernandes de Oliveira"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.237733"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/240395",
+      "title": [
+       "Gestão da informação e planejamento estratégico em pequenas e médias empresas"
+      ],
+      "author": [
+       {
+        "name": "Thúlio Timóteo da Silva Rezende"
+       },
+       {
+        "name": "Alex Fabianne de Paulo"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.240395"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/241489",
+      "title": [
+       "Implicit mediation in the context of the data life cycle"
+      ],
+      "author": [
+       {
+        "name": "Doris Campos Mendonça"
+       },
+       {
+        "name": "João Arlindo dos Santos Neto"
+       },
+       {
+        "name": "Jacquelin Teresa Camperos Reyes"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.241489"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/242689",
+      "title": [
+       "Between the personal and the institutional: the Collecting Practices of Marcos Carneiro de Mendonça from the Perspective of Information, Memory, and Culture"
+      ],
+      "author": [
+       {
+        "name": "Renato Vieira"
+       },
+       {
+        "name": "Bianca Rihan Pinheiro Amorim"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.242689"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/243312",
+      "title": [
+       "Saúde, informação e gênero: uma crítica socioinformacional ao cuidado como atribuição feminina"
+      ],
+      "author": [
+       {
+        "name": "Tayssa Nobre Lobo"
+       },
+       {
+        "name": "Maria de Fátima Olveira Costa"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.243312"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/246148",
+      "title": [
+       "A representação dos povos indígenas por uma editora fantasma"
+      ],
+      "author": [
+       {
+        "name": "Lou-Ann Kleppa"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.246148"
+     }
+    ],
+    "sig": "17||19"
+   },
+   "total_registros": 478,
+   "nome": "InCID: Revista de Ciência da Informação e Documentação",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1981-8920": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://ojs.uel.br/revistas/uel/index.php/informacao",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 31, n. 3",
+    "data": "nov. 2026",
+    "itens": [
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/56692",
+      "title": [
+       "Informação & Informação, Londrina, v. 31, n. 3, jul./set. 2026"
+      ],
+      "author": [
+       {
+        "name": "Rogerio Paulo Müller Fernandes"
+       }
+      ]
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/56693",
+      "title": [
+       "Editorial"
+      ],
+      "author": [
+       {
+        "name": "Rogerio Paulo Müller Fernandes"
+       },
+       {
+        "name": "Juliana Cardoso dos Santos"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3pi"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55647",
+      "title": [
+       "Effects of light exposure on the degradation of different paper types: an experimental study"
+      ],
+      "author": [
+       {
+        "name": "Jordana da Costa Teixeira Lira"
+       },
+       {
+        "name": "Vildeane da Rocha Borba"
+       },
+       {
+        "name": "Majory Karoline Fernandes de Oliveira Miranda"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p01",
+      "page": "01"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55694",
+      "title": [
+       "Mitigation of fraud risks in public procurement platforms: a framework based on blockchain and smart contracts for electronic reverse auction"
+      ],
+      "author": [
+       {
+        "name": "Alexsandro Souza Burite"
+       },
+       {
+        "name": "André Luis Rocha Souza"
+       },
+       {
+        "name": "Eduardo Oliveira Teles"
+       },
+       {
+        "name": "Eduardo Manuel de Freitas Jorge"
+       },
+       {
+        "name": "Roberto Luiz Souza Monteiro"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p26",
+      "page": "26"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55192",
+      "title": [
+       "Digital content curation in a cultural heritage portal: application of the CAS Method to the Upopoy National Ainu Museum Website"
+      ],
+      "author": [
+       {
+        "name": "Gustavo Lunardelli Trevisan"
+       },
+       {
+        "name": "Rosemari Pereira dos Santos Alves"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p52",
+      "page": "52"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/54991",
+      "title": [
+       "The situation of the transfer and the custody of permanent digital archival documents from federal universities in Brazil"
+      ],
+      "author": [
+       {
+        "name": "Murilo Billig Schäfer"
+       },
+       {
+        "name": "Eva Cristina Leite da Silva"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p76",
+      "page": "76"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55103",
+      "title": [
+       "Challenges in records management of academic records in Higher Education Institutions: a bibliographic and documentary review of the brazilian context"
+      ],
+      "author": [
+       {
+        "name": "Lucineia Gomes Silva Batista"
+       },
+       {
+        "name": "Elisângela Cristina Aganette"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p103",
+      "page": "103"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55429",
+      "title": [
+       "Memes as devices for mediating culture on the internet"
+      ],
+      "author": [
+       {
+        "name": "Jade de Jesus dos Santos"
+       },
+       {
+        "name": "Ana Claudia Medeiros de Sousa"
+       },
+       {
+        "name": "Raquel do Rosário Santos"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p123",
+      "page": "123"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55117",
+      "title": [
+       "Narrative, communicative, and collaborative strategies in literary mediation practices in a digital environment"
+      ],
+      "author": [
+       {
+        "name": "Ana Clara Souza Silva"
+       },
+       {
+        "name": "Maria Giovanna Guedes Farias"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p147",
+      "page": "147"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55632",
+      "title": [
+       "Information behavior of individuals with Autism Spectrum Disorder (ASD): literature review"
+      ],
+      "author": [
+       {
+        "name": "Maísa Coelho França"
+       },
+       {
+        "name": "Helen de Castro Silva Casarin"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p172",
+      "page": "172"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/54997",
+      "title": [
+       "Innovation in school library: an analysis of publications in Brapci in light of Gary Pisano's map"
+      ],
+      "author": [
+       {
+        "name": "Caroline Pasa"
+       },
+       {
+        "name": "Cezar Karpisnki"
+       },
+       {
+        "name": "Edgar Bisset Alvarez"
+       },
+       {
+        "name": "Barbara Lipinski"
+       },
+       {
+        "name": "Ana Laura Garbin Brati"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p201",
+      "page": "201"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55610",
+      "title": [
+       "The Letters of the Luiz Carlos Prestes Collection: historical context in documentary representation"
+      ],
+      "author": [
+       {
+        "name": "Monica Facincani Camacho"
+       },
+       {
+        "name": "Zaira Regina Zafalon"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p225",
+      "page": "225"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55676",
+      "title": [
+       "Knowledge Organization in the chain of custody of criminal evidence: a diagnostic analysis of the scientific police of Rio Grande do Norte"
+      ],
+      "author": [
+       {
+        "name": "Gesiele Farias da Silva"
+       },
+       {
+        "name": "Raimunda Fernanda dos Santos"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p251",
+      "page": "251"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55302",
+      "title": [
+       "Information management and decision-making process in a university experimental center: a documentary study at CEEx/UFPR - Fazenda Canguiri"
+      ],
+      "author": [
+       {
+        "name": "André Santos de Oliveira"
+       },
+       {
+        "name": "Edelvino Razzolini Filho"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p278",
+      "page": "278"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55595",
+      "title": [
+       "Archival policies in complex organizational contexts: a methodological framework based on the case of the Administrative Council for Economic Defense"
+      ],
+      "author": [
+       {
+        "name": "Tatiana Costa Rosa"
+       },
+       {
+        "name": "Cynthia Roncaglio"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p305",
+      "page": "305"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55355",
+      "title": [
+       "Documentary reading models in subject analysis: typological adaptations and their role in the stages of thematic representation"
+      ],
+      "author": [
+       {
+        "name": "Gercina Ângela de Lima"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p331",
+      "page": "331"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55569",
+      "title": [
+       "Teaching of Epistemology in Information Science: an analysis of the contents taught in the field of Graduate Programs in the area"
+      ],
+      "author": [
+       {
+        "name": "Augusto Júnior Macucule"
+       },
+       {
+        "name": "Marta Lígia Pomim Valentim"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p359",
+      "page": "359"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55421",
+      "title": [
+       "Knowledge and Skills in Gastronomy: processes of internalizing culinary knowledge in higher technological education"
+      ],
+      "author": [
+       {
+        "name": "Frederico Divino Dias"
+       },
+       {
+        "name": "Armando Sérgio de Aguiar Filho"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p387",
+      "page": "387"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55141",
+      "title": [
+       "The management of reading clubs in public university libraries"
+      ],
+      "author": [
+       {
+        "name": "Thayná Duarte"
+       },
+       {
+        "name": "Daniela Spudeit"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p408",
+      "page": "408"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55200",
+      "title": [
+       "Informação Ambiental, Ciência Aberta e Transparência Governamental: uma análise da Base de Dados da Pesquisa Agropecuária da EMBRAPA"
+      ],
+      "author": [
+       {
+        "name": "Juliana Lobato Seabra"
+       },
+       {
+        "name": "Mariângela Spotti Lopes Fujita"
+       },
+       {
+        "name": "Marcelo Fernandes de Oliveira"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p432",
+      "page": "432"
+     },
+     {
+      "URL": "https://ojs.uel.br/revistas/uel/index.php/informacao/article/view/55743",
+      "title": [
+       "Gestão de Documentos no Setor Privado: Uma proposta arquivística de classificação e codificação para organizações de engenharia"
+      ],
+      "author": [
+       {
+        "name": "Alexandre de Souza Costa"
+       },
+       {
+        "name": "Rafaela Pessanha Chamma"
+       }
+      ],
+      "DOI": "10.5433/1981-8920.2026v31n3p458",
+      "page": "458"
+     }
+    ],
+    "sig": "31|3|21"
+   },
+   "total_registros": 1353,
+   "nome": "Informação & Informação",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1981-5344": {
+   "nome": "Perspectivas em Ciência da Informação",
+   "ok": false,
+   "erro": "oai https://periodicos.ufmg.br/index.php/pci: falha ao acessar https://periodicos.ufmg.br/index.php/pci/oai?verb=ListRecords&resumptionToken=b6426d127baf9937334e26d3223b9f3c: The read operation timed out | tempo esgotado"
+  },
+  "1981-0695": {
+   "ok": true,
+   "fonte": "html",
+   "base": "https://www.pbcib.com/index.php/pbcib",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 21, n. 1",
+    "data": "2026",
+    "itens": [
+     {
+      "URL": "https://revistas.usp.br/pbcib/pt_BR/article/view/254485",
+      "title": [
+       "Gestão arquivistica e transformação digital no Instituto Federal de Educação, Ciência e Tecnologia de Pernambuco: diretrizes estratégicas para desenvolvimento de estrutura de governança arquivística"
+      ],
+      "author": [
+       {
+        "name": "Ananda Fernandes Valério"
+       },
+       {
+        "name": "Ana Claudia Cruz Córdula (Autor)"
+       }
+      ],
+      "page": "003"
+     },
+     {
+      "URL": "https://revistas.usp.br/pbcib/pt_BR/article/view/254483",
+      "title": [
+       "Curadoria digital e preservação de acervos bibliográficos: articulações, potencialidades e desafios"
+      ],
+      "author": [
+       {
+        "name": "Amanda Zarberian da Silva"
+       },
+       {
+        "name": "Francisco Carlos Paletta (Autor)"
+       }
+      ],
+      "page": "026"
+     },
+     {
+      "URL": "https://revistas.usp.br/pbcib/pt_BR/article/view/254484",
+      "title": [
+       "JOSÉ SIMEÃO LEAL: vestígios de sua biblioteca privada"
+      ],
+      "author": [
+       {
+        "name": "André Severino João do Nascimento"
+       },
+       {
+        "name": "Bernardina Maria Juvenal Freire de Oliveira (Autor)"
+       }
+      ],
+      "page": "040"
+     },
+     {
+      "URL": "https://revistas.usp.br/pbcib/pt_BR/article/view/258563",
+      "title": [
+       "Gestão da política de direitos autorais e repositórios institucionais"
+      ],
+      "author": [
+       {
+        "name": "Ednilson Medeiros de Brito Filho"
+       },
+       {
+        "name": "Rosilene Paiva Marinho de Sousa (Autor)"
+       }
+      ],
+      "page": "052"
+     },
+     {
+      "URL": "https://revistas.usp.br/pbcib/pt_BR/article/view/260483",
+      "title": [
+       "Estudo sobre a informação e os dados da violência na cidade de Belo Horizonte"
+      ],
+      "author": [
+       {
+        "name": "Ana Paula dos Santos Ferreira"
+       },
+       {
+        "name": "Cláudio Gottschalg-Duque (Autor)"
+       }
+      ],
+      "page": "065"
+     }
+    ],
+    "sig": "21|1|5"
+   },
+   "total_registros": 5,
+   "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1678-765X": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 25",
+    "data": "out. 2026",
+    "itens": [
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8682261",
+      "title": [
+       "As contribuições de Robert Fugmann para a análise de assunto: a teoria dos cinco axiomas e os desdobramentos contemporâneos"
+      ],
+      "author": [
+       {
+        "name": "Gercina Angela de Lima"
+       },
+       {
+        "name": "Gercina Angela de Lima"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8682261"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8682961",
+      "title": [
+       "Mediação da informação como estratégia epistêmica contra o negacionismo ambiental"
+      ],
+      "author": [
+       {
+        "name": "Igor Mendes da Silva"
+       },
+       {
+        "name": "Rúbia Martins"
+       },
+       {
+        "name": "Oswaldo Francisco de Almeida Júnior"
+       },
+       {
+        "name": "Igor Mendes da Silva"
+       },
+       {
+        "name": "Rúbia Martins"
+       },
+       {
+        "name": "Oswaldo Francisco de Almeida Júnior"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8682961"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8683237",
+      "title": [
+       "Aprendizado institucional e regime de informação no âmbito da extensão universitária: a experiência do Programa Cibercidadania na UFSC"
+      ],
+      "author": [
+       {
+        "name": "Marcelo Minghelli"
+       },
+       {
+        "name": "Edson Luiz Mendes"
+       },
+       {
+        "name": "Marcelo Minghelli"
+       },
+       {
+        "name": "Edson Luiz Mendes"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8683237"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8683770",
+      "title": [
+       "Prêmios científicos e reconhecimento : análise comparativa das premiações da International Society for Scientometrics and Informetrics e da Society for Social Studies of Science"
+      ],
+      "author": [
+       {
+        "name": "Maria Cristina Piumbato Innocentini Hayashi"
+       },
+       {
+        "name": "Maria Cristina Piumbato Innocentini Hayashi"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8683770"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8683855",
+      "title": [
+       "OntoPosGrad : ontologia de referência para trabalhos de conclusão da pós-graduação stricto sensu no Brasil"
+      ],
+      "author": [
+       {
+        "name": "Rafael Denerson Ramos de Sousa"
+       },
+       {
+        "name": "Henrique Monteiro Cristovão"
+       },
+       {
+        "name": "Maria das Graças da Silva Teixeira"
+       },
+       {
+        "name": "Rafael Denerson Ramos de Souza"
+       },
+       {
+        "name": "Henrique Monteiro Cristovão"
+       },
+       {
+        "name": "Maria das Graças da Silva Teixeira"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8683855"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8684096",
+      "title": [
+       "Da teoria à prática em política de indexação: a elaboração de manual de indexação para um sistema de bibliotecas universitárias"
+      ],
+      "author": [
+       {
+        "name": "Isadora Victorino Evangelista Geroto"
+       },
+       {
+        "name": "Milena Polsinelli Rubi"
+       },
+       {
+        "name": "Isadora Victorino Evangelista Geroto"
+       },
+       {
+        "name": "Milena Polsinelli Rubi"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8684096"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8684306",
+      "title": [
+       "Ciência aberta e preservação digital no Brasil : assimetrias e bases para uma política pública sustentável"
+      ],
+      "author": [
+       {
+        "name": "Fabiano Couto Corrêa Silva"
+       },
+       {
+        "name": "Andréa Fontoura da Silva"
+       },
+       {
+        "name": "Alexandre Faria de Oliveira"
+       },
+       {
+        "name": "Fabiano Couto Corrêa da Silva"
+       },
+       {
+        "name": "Andréa Fontoura da Silva"
+       },
+       {
+        "name": "Alexandre Faria de Oliveira"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8684306"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8684389",
+      "title": [
+       "Regimes funcionais de integridade informacional : a produção sociotécnica da confiabilidade em ambientes algorítmicos"
+      ],
+      "author": [
+       {
+        "name": "Mardochée Ogécime"
+       },
+       {
+        "name": "Mardochée Ogécime"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8684389"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8684455",
+      "title": [
+       "Práticas da ciência aberta nos periódicos das ciências agrárias cadastrados no diretório Miguilim"
+      ],
+      "author": [
+       {
+        "name": "Janaina Lais Pacheco Lara Morandin"
+       },
+       {
+        "name": "Fernanda Bochi"
+       },
+       {
+        "name": "Priscila Machado Borges Sena"
+       },
+       {
+        "name": "Maria Cláudia Cabrini Grácio"
+       },
+       {
+        "name": "Janaina Lais Pacheco Lara Morandin"
+       },
+       {
+        "name": "Fernanda Bochi"
+       },
+       {
+        "name": "Priscila Machado Borges Sena"
+       },
+       {
+        "name": "Maria Cláudia Cabrini Grácio"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8684455"
+     },
+     {
+      "URL": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/article/view/8685069",
+      "title": [
+       "Competência midiática: um estudo das narrativas de Aus no X sob o olhar da educação midiática e suas dimensões"
+      ],
+      "author": [
+       {
+        "name": "Nicole Alves de Oliveira"
+       },
+       {
+        "name": "Ana Maria Mendes Miranda"
+       },
+       {
+        "name": "Nicole Alves de Oliveira"
+       },
+       {
+        "name": "Ana Maria Mendes Miranda"
+       }
+      ],
+      "DOI": "10.20396/rdbci.v25i00.8685069"
+     }
+    ],
+    "sig": "25||10"
+   },
+   "total_registros": 712,
+   "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "1980-6949": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://rbbd.febab.org.br/rbbd",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "v. 22",
+    "data": "nov. 2026",
+    "itens": [
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2137",
+      "title": [
+       "Health information in the Congresso Brasileiro de Biblioteconomia e Documentação: a historical perspective"
+      ],
+      "author": [
+       {
+        "name": "Débora Crystina Dias Reis"
+       },
+       {
+        "name": "Ednéia Silva Santos"
+       },
+       {
+        "name": "Diogo Roberto da Silva Andrade"
+       }
+      ]
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/1971",
+      "title": [
+       "INFORMATIONAL PRACTICES OF LIBRARY PROFESSIONALS: integrative literature review"
+      ],
+      "author": [
+       {
+        "name": "Merabe Carvalho Ferreira da Gama"
+       },
+       {
+        "name": "Ilemar Christina Lansoni Wey Berti"
+       },
+       {
+        "name": "Thais Batista Zaninelli"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2056",
+      "title": [
+       "Sistemas de Organização do Conhecimento para representação e recuperação de imagens de Arquitetura e Espaços Urbanos no contexto da Web 4.0"
+      ],
+      "author": [
+       {
+        "name": "Vânia Mara Alves Lima"
+       },
+       {
+        "name": "Cibele Araújo Marques dos Santos"
+       },
+       {
+        "name": "Artur Simões Rozestraten"
+       },
+       {
+        "name": "Rodrigo Akio Siqueira Sono"
+       },
+       {
+        "name": "Giuliana Cristina Gargarella Jorge"
+       },
+       {
+        "name": "Marina Benetti"
+       },
+       {
+        "name": "Carlos Eduardo Santos Moreira Silva"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2091",
+      "title": [
+       "DSpace e Dataverse como repositórios institucionais de dados de pesquisa: um estudo comparativo"
+      ],
+      "author": [
+       {
+        "name": "Joel Vasquez"
+       },
+       {
+        "name": "Diogo Vieira Cardoso"
+       },
+       {
+        "name": "Darli Damian da Silva"
+       },
+       {
+        "name": "Thiago Magela Rodrigues Dias"
+       },
+       {
+        "name": "Divino Ignácio Ribeiro Junior"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2103",
+      "title": [
+       "People management practices in university libraries: reflections on the perceptions of their managers"
+      ],
+      "author": [
+       {
+        "name": "Antonio de Souza Silva"
+       },
+       {
+        "name": "Maria Luiza Alves Forbeci"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2108",
+      "title": [
+       "Transversal and interdisciplinary information practices in the school library: education, resources, and professionals"
+      ],
+      "author": [
+       {
+        "name": "Everton Camillo"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2110",
+      "title": [
+       "Reflections on accessibility and inclusion of people with sensory disabilities in the libraries of the Instituto Federal do Pará"
+      ],
+      "author": [
+       {
+        "name": "Leontina da Cunha Nascimento"
+       },
+       {
+        "name": "Tania Chalhub"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2111",
+      "title": [
+       "Digital ergonomics and universities sites: a contributive analysis on information production and usability of the Department of Information Science of the Federal University of Pernambuco: uma análise contributiva sobre a produção e uso da informação do Departamento de Ciência da Informação da Universidade Federal de Pernambuco"
+      ],
+      "author": [
+       {
+        "name": "Myllena Laís de Melo Silva"
+       },
+       {
+        "name": "Diego Andres Salcedo"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2135",
+      "title": [
+       "As práticas informacionais dos sujeitos em relação ao Instagram da Biblioteca Estadual Câmara Cascudo"
+      ],
+      "author": [
+       {
+        "name": "Letícia Vilela Avelino de Andrade"
+       },
+       {
+        "name": "Gabrielle Francinne de S. C. Tanus"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2140",
+      "title": [
+       "Biblioteca escolar brasileira: dissonâncias entre ideal e realidade"
+      ],
+      "author": [
+       {
+        "name": "Wanderlice da Silva Assis"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2148",
+      "title": [
+       "O bibliotecário nas revisões sistemáticas: propostas para um modelo de competências"
+      ],
+      "author": [
+       {
+        "name": "Jorge Ramirez-Landaeta"
+       }
+      ],
+      "page": "1"
+     },
+     {
+      "URL": "https://rbbd.febab.org.br/rbbd/article/view/2164",
+      "title": [
+       "Serviço de referência de bibliotecas universitárias e inteligência artificial: usos e perspectivas"
+      ],
+      "author": [
+       {
+        "name": "Julia Machado Monteiro de Mattos"
+       },
+       {
+        "name": "Dayanne da Silva Prudencio"
+       }
+      ],
+      "page": "1"
+     }
+    ],
+    "sig": "22||12"
+   },
+   "total_registros": 1229,
+   "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "2675-3073": {
+   "nome": "Revista Brasileira de Preservação Digital (RBPD)",
+   "ok": false,
+   "erro": "oai https://econtents.sbu.unicamp.br/inpec/index.php/rebpred: a resposta não é XML (provavelmente não é um endpoint OAI-PMH) | html https://econtents.sbu.unicamp.br/inpec/index.php/rebpred: nenhum artigo reconhecido na página da edição atual"
   },
   "1645-2895": {
    "ok": true,
@@ -701,41 +5222,6 @@
     "rotulo": "Artigos mais recentes",
     "data": "",
     "itens": [
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093",
-      "title": [
-       "Preservação Digital na Universidade de Aveiro: Estratégias e Desafios"
-      ],
-      "author": [
-       {
-        "name": "Ana Cristina Fernandes Cortês Santana Ju Justino"
-       },
-       {
-        "name": "Luísa Falcão"
-       },
-       {
-        "name": "Pedro Lobo"
-       },
-       {
-        "name": "Filipe Trancho"
-       },
-       {
-        "name": "José Vieira"
-       },
-       {
-        "name": "Rafael Direito"
-       },
-       {
-        "name": "Isaac Raimundo"
-       },
-       {
-        "name": "Eduardo Santos"
-       },
-       {
-        "name": "Filipe Bento"
-       }
-      ]
-     },
      {
       "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091",
       "title": [
@@ -799,13 +5285,334 @@
         "name": "Luis Borges Gouveia"
        }
       ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093",
+      "title": [
+       "Preservação Digital na Universidade de Aveiro: Estratégias e Desafios"
+      ],
+      "author": [
+       {
+        "name": "Ana Cristina Fernandes Cortês Santana Ju Justino"
+       },
+       {
+        "name": "Luísa Falcão"
+       },
+       {
+        "name": "Pedro Lobo"
+       },
+       {
+        "name": "Filipe Trancho"
+       },
+       {
+        "name": "José Vieira"
+       },
+       {
+        "name": "Rafael Direito"
+       },
+       {
+        "name": "Isaac Raimundo"
+       },
+       {
+        "name": "Eduardo Santos"
+       },
+       {
+        "name": "Filipe Bento"
+       }
+      ]
      }
     ],
-    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093"
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091"
    },
    "total_registros": 6,
    "nome": "Cadernos BAD",
-   "coletado": "2026-11-19T18:23:19+00:00"
+   "coletado": "2026-11-19T20:10:54+00:00"
+  },
+  "2183-6671": {
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://ojs.letras.up.pt/index.php/paginasaeb",
+   "ultimo": {
+    "tipo": "numero",
+    "rotulo": "n. 25",
+    "data": "jul. 2026",
+    "itens": [
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16645",
+      "title": [
+       "EDITORIAL"
+      ],
+      "author": [
+       {
+        "name": "Fernanda Ribeiro"
+       }
+      ],
+      "page": "01"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16646",
+      "title": [
+       "DOCUMENTO COMPLETO"
+      ],
+      "author": [
+       {
+        "name": "Páginas a&b"
+       }
+      ],
+      "page": "01"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16277",
+      "title": [
+       "THE USE OF GENERATIVE ARTIFICIAL INTELLIGENCE IN HEURISTIC USABILITY EVALUATION: capabilities and limitations"
+      ],
+      "author": [
+       {
+        "name": "Ranna Redlley Silva Oliveira"
+       },
+       {
+        "name": "Sandra de Albuquerque Siebra"
+       }
+      ],
+      "page": "03"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16202",
+      "title": [
+       "FROM THE FILE CABINET TO THE ALGORITHM: a socio-technical archaeology of path dependence in bibliometrics"
+      ],
+      "author": [
+       {
+        "name": "Alexandre Masson Maroldi"
+       }
+      ],
+      "page": "25"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16264",
+      "title": [
+       "INTERVIEWS WITH INFORMATION PROFESSIONALS: : associative memory and career paths"
+      ],
+      "author": [
+       {
+        "name": "Luisa Alvim"
+       }
+      ],
+      "page": "43"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16016",
+      "title": [
+       "THE IMPACT OF THE LEGISLATIVE GAP ON THE RECOGNITION OF INFORMATION PROFESSIONALS IN PORTUGAL"
+      ],
+      "author": [
+       {
+        "name": "Célia Teresa Queimado Generoso"
+       }
+      ],
+      "page": "60"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16278",
+      "title": [
+       "INFORMATION MANAGEMENT: research perspectives in public and private sector organizations"
+      ],
+      "author": [
+       {
+        "name": "Sara Luísa de Oliveira Novais Torres"
+       }
+      ],
+      "page": "77"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/15996",
+      "title": [
+       "COLLABORATIVE ORGANIZATION AND REPRESENTATION OF CULTURAL HERITAGE: folksonomic practices in the CrowdHeritage and Mukurtu platforms"
+      ],
+      "author": [
+       {
+        "name": "Raimunda Fernanda dos Santos"
+       },
+       {
+        "name": "Leticya Jamily Sales Batista"
+       }
+      ],
+      "page": "97"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16204",
+      "title": [
+       "MEMORY AND TOUCH: accessibility in museums for people with visual impairments"
+      ],
+      "author": [
+       {
+        "name": "Igor Mendes da Silva"
+       }
+      ],
+      "page": "112"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16114",
+      "title": [
+       "SCIENTIFIC PRODUCTION ON THE REPRESENTATION OF MUSEOLOGICAL OBJECTS INDEXED IN WEB OF SCIENCE: a bibliometric analysis (2012-2022)"
+      ],
+      "author": [
+       {
+        "name": "Beatriz Tarré Alonso"
+       },
+       {
+        "name": "Mirelys Puerta-Díaz"
+       }
+      ],
+      "page": "134"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16274",
+      "title": [
+       "FROM THE PRIVATE SPHERE TO THE PUBLIC DOMAIN: the donation of private collections and their contribution to the preservation of cultural heritage"
+      ],
+      "author": [
+       {
+        "name": "Márcia Pinheiro"
+       }
+      ],
+      "page": "151"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16270",
+      "title": [
+       "DIGITAL PRESERVATION OF FUMCTUR’S HISTORICAL COLLECTION: a report on the project for cleaning, organization, and planning for digitization"
+      ],
+      "author": [
+       {
+        "name": "Glêyse Santos Santana"
+       },
+       {
+        "name": "Alessandra dos Santos Araújo"
+       },
+       {
+        "name": "Roberta Santos do Nascimento"
+       }
+      ],
+      "page": "161"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16004",
+      "title": [
+       "ATOM AND ARCHIVEMATICA: presentation and representation of information at the Marques da Silva Institute Foundation"
+      ],
+      "author": [
+       {
+        "name": "Maria José Vicentini Jorente"
+       },
+       {
+        "name": "Beatriz de Lima Sabino"
+       }
+      ],
+      "page": "183"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16076",
+      "title": [
+       "INFORMATION EDUCATION IN COMMUNITY LIBRARIES: collective memories and disinformation in focus"
+      ],
+      "author": [
+       {
+        "name": "Luis Fernando Massoni"
+       },
+       {
+        "name": "Jussara Borges"
+       },
+       {
+        "name": "Juliane Kaefer"
+       }
+      ],
+      "page": "193"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16280",
+      "title": [
+       "THE NATIONAL READING PLAN AND READICIDE IN GENERATIONS Y AND Z: between reading policies and cultural practices"
+      ],
+      "author": [
+       {
+        "name": "Paula Cristina de Sousa Pinto"
+       },
+       {
+        "name": "Maria Beatriz Mrques"
+       }
+      ],
+      "page": "206"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16208",
+      "title": [
+       "IRRATIONALITY IN THE COMMUNICATION DEPARTMENTS OF PROFESSIONAL FOOTBALL CLUBS"
+      ],
+      "author": [
+       {
+        "name": "Joana Barbedo e Silva"
+       }
+      ],
+      "page": "226"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/15994",
+      "title": [
+       "ARCHIVES, SCIENTIFIC INFORMATION AND THE ARCH BASE OF THE ESCOLA NACIONAL DE SAÚDE PÚBLICA SERGIO AROUCA: possible dialogues"
+      ],
+      "author": [
+       {
+        "name": "Ana Carolina dos Santos Garcia"
+       },
+       {
+        "name": "Jeorgina Gentil Rodrigues"
+       }
+      ],
+      "page": "244"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16626",
+      "title": [
+       "REVIEW: Renato de - Acervos presidenciais brasileiros: legislação, preservação e acesso. Be-lo Horizonte: Fino Traço, 2025. ISBN 978-85-8054-765-8."
+      ],
+      "author": [
+       {
+        "name": "Georgete Medleg Rodrigues"
+       }
+      ],
+      "page": "258"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16152",
+      "title": [
+       "REVIEW: IFLA-UNESCO School Library Manifesto, 2025"
+      ],
+      "author": [
+       {
+        "name": "Ana Margarida da Costa"
+       }
+      ],
+      "page": "262"
+     },
+     {
+      "URL": "https://ojs.letras.up.pt/index.php/paginasaeb/article/view/16210",
+      "title": [
+       "REVIEW: Information ethics and the reconfiguration of the moral horizon in the digital society: a critical review of The Ethics of Information"
+      ],
+      "author": [
+       {
+        "name": "Raquel L.A. Soares"
+       }
+      ],
+      "page": "267"
+     }
+    ],
+    "sig": "|25|20"
+   },
+   "total_registros": 646,
+   "nome": "Páginas a&b: arquivos e bibliotecas",
+   "coletado": "2026-11-19T20:10:54+00:00"
   }
  }
 }
