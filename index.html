@@ -93,29 +93,30 @@ footer{margin-top:28px;color:var(--mut);font-size:.8rem}
 const CONFIG = {
   // issn = ISSN principal (chave); alt = outros ISSN tentados se o principal não retornar dados;
   // site = página do periódico; atual: false desliga o link derivado "edição atual".
-  // coleta: true = o periódico não tem dados no Crossref; usa o dados.json gerado por coletar.py (GitHub Actions).
+  // coleta: true = usa primeiro o dados.json gerado por coletar.py (GitHub Actions, direto do site do periódico);
+  // o Crossref fica como reserva quando a coleta falha.
   PERIODICOS: [
-    { "grupo": "Arquivologia", "nome": "Acervo – Revista do Arquivo Nacional", "issn": "2237-8723", "alt": ["0102-700X"], "site": "https://revista.an.gov.br/index.php/revistaacervo" },
-    { "grupo": "Arquivologia", "nome": "Archeion Online", "issn": "2318-6186", "site": "https://periodicos.ufpb.br/index.php/archeion" },
-    { "grupo": "Arquivologia", "nome": "Informação Arquivística", "issn": "2316-7300", "site": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/index" },
+    { "grupo": "Arquivologia", "nome": "Acervo – Revista do Arquivo Nacional", "issn": "2237-8723", "alt": ["0102-700X"], "coleta": true, "site": "https://revista.an.gov.br/index.php/revistaacervo" },
+    { "grupo": "Arquivologia", "nome": "Archeion Online", "issn": "2318-6186", "coleta": true, "site": "https://periodicos.ufpb.br/index.php/archeion" },
+    { "grupo": "Arquivologia", "nome": "Informação Arquivística", "issn": "2316-7300", "coleta": true, "site": "https://aaerj.org.br/ojs/index.php/informacaoarquivistica/index" },
     { "grupo": "Arquivologia", "nome": "Ágora: Arquivologia em Debate", "issn": "2763-9045", "alt": ["0103-3557"], "coleta": true, "site": "https://agora.emnuvens.com.br/ra/index" },
     { "grupo": "Arquivologia", "nome": "Revista do Arquivo (APESP)", "issn": "2447-908X", "coleta": true, "site": "https://revista.arquivoestado.sp.gov.br/", "atual": false },
     { "grupo": "Arquivologia", "nome": "Revista do Arquivo Público do Estado do Espírito Santo", "issn": "2763-535X", "coleta": true, "site": "https://periodicos.ufes.br/revapees" },
-    { "grupo": "Arquivologia", "nome": "Revista Officina", "issn": "2764-7773", "site": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/index" },
+    { "grupo": "Arquivologia", "nome": "Revista Officina", "issn": "2764-7773", "coleta": true, "site": "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi/index" },
 
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Brazilian Journal of Information Science: Research Trends", "issn": "1981-1640", "site": "https://revistas.marilia.unesp.br/index.php/bjis" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Em Questão", "issn": "1808-5245", "alt": ["1807-8893"], "site": "https://seer.ufrgs.br/index.php/EmQuestao/index" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Encontros Bibli", "issn": "1518-2924", "site": "https://periodicos.ufsc.br/index.php/eb/index" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "InCID: Revista de Ciência da Informação e Documentação", "issn": "2178-2075", "site": "https://revistas.usp.br/incid" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Informação & Informação", "issn": "1981-8920", "site": "https://ojs.uel.br/revistas/uel/index.php/informacao/" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Perspectivas em Ciência da Informação", "issn": "1981-5344", "alt": ["1413-9936"], "site": "https://periodicos.ufmg.br/index.php/pci" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)", "issn": "1981-0695", "site": "https://www.pbcib.com/index.php/pbcib/index" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação", "issn": "1678-765X", "site": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/index" },
-    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)", "issn": "1980-6949", "site": "https://rbbd.febab.org.br/rbbd" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Brazilian Journal of Information Science: Research Trends", "issn": "1981-1640", "coleta": true, "site": "https://revistas.marilia.unesp.br/index.php/bjis" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Em Questão", "issn": "1808-5245", "alt": ["1807-8893"], "coleta": true, "site": "https://seer.ufrgs.br/index.php/EmQuestao/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Encontros Bibli", "issn": "1518-2924", "coleta": true, "site": "https://periodicos.ufsc.br/index.php/eb/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "InCID: Revista de Ciência da Informação e Documentação", "issn": "2178-2075", "coleta": true, "site": "https://revistas.usp.br/incid" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Informação & Informação", "issn": "1981-8920", "coleta": true, "site": "https://ojs.uel.br/revistas/uel/index.php/informacao/" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Perspectivas em Ciência da Informação", "issn": "1981-5344", "alt": ["1413-9936"], "coleta": true, "site": "https://periodicos.ufmg.br/index.php/pci" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)", "issn": "1981-0695", "coleta": true, "site": "https://www.pbcib.com/index.php/pbcib/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação", "issn": "1678-765X", "coleta": true, "site": "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci/index" },
+    { "grupo": "Ciência da Informação e Biblioteconomia", "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)", "issn": "1980-6949", "coleta": true, "site": "https://rbbd.febab.org.br/rbbd" },
 
-    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Revista Brasileira de Preservação Digital (RBPD)", "issn": "2675-3073", "site": "https://econtents.sbu.unicamp.br/inpec/index.php/rebpred/index" },
+    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Revista Brasileira de Preservação Digital (RBPD)", "issn": "2675-3073", "coleta": true, "site": "https://econtents.sbu.unicamp.br/inpec/index.php/rebpred/index" },
     { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Cadernos BAD", "issn": "1645-2895", "coleta": true, "site": "https://publicacoes.bad.pt/revistas/index.php/cadernos" },
-    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Páginas a&b: arquivos e bibliotecas", "issn": "2183-6671", "alt": ["0873-5670"], "site": "https://ojs.letras.up.pt/index.php/paginasaeb" }
+    { "grupo": "Interdisciplinares (preservação, arquivos e bibliotecas)", "nome": "Páginas a&b: arquivos e bibliotecas", "issn": "2183-6671", "alt": ["0873-5670"], "coleta": true, "site": "https://ojs.letras.up.pt/index.php/paginasaeb" }
   ],
   EMAIL: "",          // opcional: seu e-mail, para o "polite pool" do Crossref (mais estável)
   INTERVALO_MIN: 60,  // atualização automática enquanto a página estiver aberta
@@ -232,8 +233,13 @@ async function carregaPeriodico(p){
   const campos = "DOI,title,author,issue,volume,issued,published-print,published-online,container-title,URL,page";
   const issns = [p.issn, ...(p.alt || [])].map(normIssn);
   let ultimoErro = null, erroLocal = null;
+  let reserva = null;
   if (p.coleta){
-    try { return await carregaLocal(p); } catch (e){ erroLocal = e; }   // se falhar, ainda tenta o Crossref
+    try {
+      const loc = await carregaLocal(p);
+      if (!loc.aviso) return loc;          // coleta direta bem-sucedida
+      reserva = loc;                       // a última coleta falhou: o dado antigo só serve se o Crossref também falhar
+    } catch (e){ erroLocal = e; }
   }
   for (const issn of issns){            // tenta cada ISSN até algum devolver artigos
     try {
@@ -245,6 +251,7 @@ async function carregaPeriodico(p){
       return { nome, ultimo: escolheUltimo(items) };
     } catch (e){ ultimoErro = e; }
   }
+  if (reserva) return reserva;
   if (erroLocal) throw new Error(erroLocal.message + "; Crossref: " + (ultimoErro ? ultimoErro.message : "sem dados"));
   throw ultimoErro || new Error("Sem dados");
 }

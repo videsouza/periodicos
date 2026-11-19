@@ -11,6 +11,7 @@ Só usa a biblioteca padrão do Python (3.9+).
 """
 import argparse
 import datetime as dt
+import html as htmllib
 import json
 import re
 import sys
@@ -27,6 +28,7 @@ NS = {
     "oai_dc": "http://www.openarchives.org/OAI/2.0/oai_dc/",
     "dc": "http://purl.org/dc/elements/1.1/",
 }
+PRAZO_POR_PERIODICO = 240   # segundos; passou disso, desiste deste periódico e segue para o próximo
 MAX_PAGINAS = 80      # teto de páginas OAI por periódico (100 registros por página no OJS)
 PAUSA = 1.0           # segundos entre requisições ao mesmo servidor
 TIMEOUT = 40
@@ -49,6 +51,17 @@ def http_get(url, tentativas=3):
             ultimo = e
         time.sleep(PAUSA * (i + 1))
     raise RuntimeError(f"falha ao acessar {url}: {ultimo}")
+
+
+def limpa(s):
+    """Decodifica entidades (&lt;b&gt;, &amp;) e remove tags, repetindo até estabilizar."""
+    t = s or ""
+    for _ in range(4):
+        novo = re.sub(r"</?[A-Za-z][^<>]*>", "", htmllib.unescape(t))
+        if novo == t:
+            break
+        t = novo
+    return re.sub(r"\s+", " ", t).strip()
 
 
 def num(s):
@@ -113,8 +126,8 @@ def registro_dc(md):
     datas = vals(md, "date")
     titulos = vals(md, "title")
     return {
-        "titulo": titulos[0] if titulos else "(sem título)",
-        "autores": [nome_autor(a) for a in vals(md, "creator")],
+        "titulo": limpa(titulos[0]) if titulos else "(sem título)",
+        "autores": [limpa(nome_autor(a)) for a in vals(md, "creator")],
         "url": url,
         "doi": doi.replace("https://doi.org/", "") if doi else "",
         "data": max(datas) if datas else "",
@@ -128,6 +141,8 @@ def colhe_oai(base):
     url = raiz_url + urllib.parse.urlencode({"verb": "ListRecords", "metadataPrefix": "oai_dc"})
     registros, paginas = [], 0
     while url and paginas < MAX_PAGINAS:
+        if time.monotonic() > PRAZO[0]:
+            raise RuntimeError("tempo esgotado na coleta OAI-PMH")
         try:
             raiz = ET.fromstring(http_get(url))
         except ET.ParseError:
@@ -243,7 +258,7 @@ def colhe_html(base):
     regs = []
     for a in p.artigos:
         regs.append({
-            "titulo": re.sub(r"\s+", " ", a["titulo"]).strip(),
+            "titulo": limpa(a["titulo"]),
             "autores": [x.strip() for x in re.split(r"[,;]", re.sub(r"\s+", " ", a["autores"])) if x.strip()],
             "url": a["url"], "doi": "", "data": "", "fasc": fasc,
             "pagina": (re.match(r"\s*(\d+)", a["paginas"]) or [None, ""])[1] if a["paginas"] else "",
@@ -288,10 +303,17 @@ def norm_issn(s):
     return t[:4] + "-" + t[4:]
 
 
+PRAZO = [float("inf")]
+
+
 def coleta_periodico(f):
+    PRAZO[0] = time.monotonic() + PRAZO_POR_PERIODICO
     erros = []
     for base in f["bases"]:
         for metodo, fn in (("oai", colhe_oai), ("html", colhe_html)):
+            if time.monotonic() > PRAZO[0]:
+                erros.append("tempo esgotado")
+                return None, erros
             try:
                 regs = fn(base)
                 if not regs:

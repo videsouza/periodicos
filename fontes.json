@@ -1,8 +1,31 @@
 [
   {
+    "issn": "2237-8723",
+    "nome": "Acervo – Revista do Arquivo Nacional",
+    "bases": [
+      "https://revista.an.gov.br/index.php/revistaacervo"
+    ]
+  },
+  {
+    "issn": "2318-6186",
+    "nome": "Archeion Online",
+    "bases": [
+      "https://periodicos.ufpb.br/index.php/archeion"
+    ]
+  },
+  {
+    "issn": "2316-7300",
+    "nome": "Informação Arquivística",
+    "bases": [
+      "https://aaerj.org.br/ojs/index.php/informacaoarquivistica"
+    ]
+  },
+  {
     "issn": "2763-9045",
     "nome": "Ágora: Arquivologia em Debate",
-    "bases": ["https://agora.emnuvens.com.br/ra"]
+    "bases": [
+      "https://agora.emnuvens.com.br/ra"
+    ]
   },
   {
     "issn": "2447-908X",
@@ -21,8 +44,95 @@
     ]
   },
   {
+    "issn": "2764-7773",
+    "nome": "Revista Officina",
+    "bases": [
+      "https://revista.arqsp.org.br/index.php/revista-da-associacao-de-arquivi"
+    ]
+  },
+  {
+    "issn": "1981-1640",
+    "nome": "Brazilian Journal of Information Science: Research Trends",
+    "bases": [
+      "https://revistas.marilia.unesp.br/index.php/bjis"
+    ]
+  },
+  {
+    "issn": "1808-5245",
+    "nome": "Em Questão",
+    "bases": [
+      "https://seer.ufrgs.br/index.php/EmQuestao"
+    ]
+  },
+  {
+    "issn": "1518-2924",
+    "nome": "Encontros Bibli",
+    "bases": [
+      "https://periodicos.ufsc.br/index.php/eb"
+    ]
+  },
+  {
+    "issn": "2178-2075",
+    "nome": "InCID: Revista de Ciência da Informação e Documentação",
+    "bases": [
+      "https://revistas.usp.br/incid"
+    ]
+  },
+  {
+    "issn": "1981-8920",
+    "nome": "Informação & Informação",
+    "bases": [
+      "https://ojs.uel.br/revistas/uel/index.php/informacao"
+    ]
+  },
+  {
+    "issn": "1981-5344",
+    "nome": "Perspectivas em Ciência da Informação",
+    "bases": [
+      "https://periodicos.ufmg.br/index.php/pci"
+    ]
+  },
+  {
+    "issn": "1981-0695",
+    "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
+    "bases": [
+      "https://www.pbcib.com/index.php/pbcib",
+      "https://revistas.usp.br/pbcib"
+    ]
+  },
+  {
+    "issn": "1678-765X",
+    "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
+    "bases": [
+      "https://periodicos.sbu.unicamp.br/ojs/index.php/rdbci"
+    ]
+  },
+  {
+    "issn": "1980-6949",
+    "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
+    "bases": [
+      "https://rbbd.febab.org.br/rbbd"
+    ]
+  },
+  {
+    "issn": "2675-3073",
+    "nome": "Revista Brasileira de Preservação Digital (RBPD)",
+    "bases": [
+      "https://econtents.sbu.unicamp.br/inpec/index.php/rebpred"
+    ]
+  },
+  {
     "issn": "1645-2895",
     "nome": "Cadernos BAD",
-    "bases": ["https://publicacoes.bad.pt/revistas/index.php/cadernos"]
+    "bases": [
+      "https://publicacoes.bad.pt/revistas/index.php/cadernos"
+    ]
+  },
+  {
+    "issn": "2183-6671",
+    "nome": "Páginas a&b: arquivos e bibliotecas",
+    "bases": [
+      "https://ojs.letras.up.pt/index.php/paginasaeb"
+    ]
   }
 ]
