@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-18T18:11:01+00:00",
+ "gerado": "2026-11-19T00:35:07+00:00",
  "periodicos": {
   "2763-9045": {
    "ok": true,
@@ -138,7 +138,7 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-18T18:11:01+00:00"
+   "coletado": "2026-11-19T00:35:07+00:00"
   },
   "2447-908X": {
    "ok": true,
@@ -385,7 +385,7 @@
    },
    "total_registros": 16,
    "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-18T18:11:01+00:00"
+   "coletado": "2026-11-19T00:35:07+00:00"
   },
   "2763-535X": {
    "ok": true,
@@ -690,7 +690,7 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-18T18:11:01+00:00"
+   "coletado": "2026-11-19T00:35:07+00:00"
   },
   "1645-2895": {
    "ok": true,
@@ -701,6 +701,41 @@
     "rotulo": "Artigos mais recentes",
     "data": "",
     "itens": [
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093",
+      "title": [
+       "Preservação Digital na Universidade de Aveiro: Estratégias e Desafios"
+      ],
+      "author": [
+       {
+        "name": "Ana Cristina Fernandes Cortês Santana Ju Justino"
+       },
+       {
+        "name": "Luísa Falcão"
+       },
+       {
+        "name": "Pedro Lobo"
+       },
+       {
+        "name": "Filipe Trancho"
+       },
+       {
+        "name": "José Vieira"
+       },
+       {
+        "name": "Rafael Direito"
+       },
+       {
+        "name": "Isaac Raimundo"
+       },
+       {
+        "name": "Eduardo Santos"
+       },
+       {
+        "name": "Filipe Bento"
+       }
+      ]
+     },
      {
       "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091",
       "title": [
@@ -764,48 +799,13 @@
         "name": "Luis Borges Gouveia"
        }
       ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093",
-      "title": [
-       "Preservação Digital na Universidade de Aveiro: Estratégias e Desafios"
-      ],
-      "author": [
-       {
-        "name": "Ana Cristina Fernandes Cortês Santana Ju Justino"
-       },
-       {
-        "name": "Luísa Falcão"
-       },
-       {
-        "name": "Pedro Lobo"
-       },
-       {
-        "name": "Filipe Trancho"
-       },
-       {
-        "name": "José Vieira"
-       },
-       {
-        "name": "Rafael Direito"
-       },
-       {
-        "name": "Isaac Raimundo"
-       },
-       {
-        "name": "Eduardo Santos"
-       },
-       {
-        "name": "Filipe Bento"
-       }
-      ]
      }
     ],
-    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091"
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3093"
    },
    "total_registros": 6,
    "nome": "Cadernos BAD",
-   "coletado": "2026-11-18T18:11:01+00:00"
+   "coletado": "2026-11-19T00:35:07+00:00"
   }
  }
 }
