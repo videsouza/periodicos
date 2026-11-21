@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-20T17:52:43+00:00",
+ "gerado": "2026-11-21T16:51:13+00:00",
  "periodicos": {
   "2237-8723": {
    "nome": "Acervo – Revista do Arquivo Nacional",
@@ -7,9 +7,9 @@
    "erro": "oai https://revista.an.gov.br/index.php/revistaacervo: a resposta não é XML (provavelmente não é um endpoint OAI-PMH) | html https://revista.an.gov.br/index.php/revistaacervo: nenhum artigo reconhecido na página da edição atual"
   },
   "2318-6186": {
-   "ok": true,
-   "fonte": "html",
-   "base": "https://periodicos.ufpb.br/index.php/archeion",
+   "nome": "Archeion Online",
+   "ok": false,
+   "erro": "oai https://periodicos.ufpb.br/index.php/archeion: falha ao acessar https://periodicos.ufpb.br/index.php/archeion/oai?verb=ListRecords&metadataPrefix=oai_dc: The read operation timed out | html https://periodicos.ufpb.br/index.php/archeion: falha ao acessar https://periodicos.ufpb.br/index.php/archeion/issue/current: The read operation timed out",
    "ultimo": {
     "tipo": "numero",
     "rotulo": "v. 14, n. 1",
@@ -125,9 +125,9 @@
     ],
     "sig": "14|1|7"
    },
-   "total_registros": 7,
-   "nome": "Archeion Online",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-20T17:52:43+00:00",
+   "fonte": "html",
+   "base": "https://periodicos.ufpb.br/index.php/archeion"
   },
   "2316-7300": {
    "ok": true,
@@ -356,7 +356,7 @@
    },
    "total_registros": 169,
    "nome": "Informação Arquivística",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "2763-9045": {
    "ok": true,
@@ -495,12 +495,12 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "2447-908X": {
-   "ok": true,
-   "fonte": "html",
-   "base": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo",
+   "nome": "Revista do Arquivo (APESP)",
+   "ok": false,
+   "erro": "oai https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo: falha ao acessar https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/oai?verb=ListRecords&metadataPrefix=oai_dc: <urlopen error timed out> | html https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo: falha ao acessar https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo/issue/current: <urlopen error timed out> | tempo esgotado",
    "ultimo": {
     "tipo": "numero",
     "rotulo": "n. 17",
@@ -740,9 +740,9 @@
     ],
     "sig": "|17|16"
    },
-   "total_registros": 16,
-   "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-20T17:52:43+00:00",
+   "fonte": "html",
+   "base": "https://revista.arquivoestado.sp.gov.br/ojs/revista_do_arquivo"
   },
   "2763-535X": {
    "ok": true,
@@ -1047,7 +1047,7 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "2764-7773": {
    "ok": true,
@@ -1102,12 +1102,12 @@
    },
    "total_registros": 128,
    "nome": "Revista Officina",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1981-1640": {
-   "nome": "Brazilian Journal of Information Science: Research Trends",
-   "ok": false,
-   "erro": "oai https://revistas.marilia.unesp.br/index.php/bjis: falha ao acessar https://revistas.marilia.unesp.br/index.php/bjis/oai?verb=ListRecords&metadataPrefix=oai_dc: The read operation timed out | html https://revistas.marilia.unesp.br/index.php/bjis: falha ao acessar https://revistas.marilia.unesp.br/index.php/bjis/issue/current: The read operation timed out",
+   "ok": true,
+   "fonte": "oai",
+   "base": "https://revistas.marilia.unesp.br/index.php/bjis",
    "ultimo": {
     "tipo": "numero",
     "rotulo": "v. 20",
@@ -1920,9 +1920,9 @@
     ],
     "sig": "20||47"
    },
-   "coletado": "2026-11-19T20:10:54+00:00",
-   "fonte": "oai",
-   "base": "https://revistas.marilia.unesp.br/index.php/bjis"
+   "total_registros": 549,
+   "nome": "Brazilian Journal of Information Science: Research Trends",
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1808-5245": {
    "ok": true,
@@ -2982,7 +2982,7 @@
    },
    "total_registros": 1260,
    "nome": "Em Questão",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1518-2924": {
    "ok": true,
@@ -4052,7 +4052,7 @@
    },
    "total_registros": 1312,
    "nome": "Encontros Bibli",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "2178-2075": {
    "ok": true,
@@ -4404,7 +4404,7 @@
    },
    "total_registros": 478,
    "nome": "InCID: Revista de Ciência da Informação e Documentação",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1981-8920": {
    "ok": true,
@@ -4774,7 +4774,7 @@
    },
    "total_registros": 1353,
    "nome": "Informação & Informação",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1981-5344": {
    "ok": true,
@@ -5282,7 +5282,7 @@
    },
    "total_registros": 1674,
    "nome": "Perspectivas em Ciência da Informação",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1981-0695": {
    "ok": true,
@@ -5373,7 +5373,7 @@
    },
    "total_registros": 5,
    "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1678-765X": {
    "ok": true,
@@ -5611,7 +5611,7 @@
    },
    "total_registros": 712,
    "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "1980-6949": {
    "ok": true,
@@ -5827,7 +5827,7 @@
    },
    "total_registros": 1229,
    "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   },
   "2675-3073": {
    "nome": "Revista Brasileira de Preservação Digital (RBPD)",
@@ -5835,9 +5835,9 @@
    "erro": "oai https://econtents.sbu.unicamp.br/inpec/index.php/rebpred: a resposta não é XML (provavelmente não é um endpoint OAI-PMH) | html https://econtents.sbu.unicamp.br/inpec/index.php/rebpred: nenhum artigo reconhecido na página da edição atual"
   },
   "1645-2895": {
-   "ok": true,
-   "fonte": "html",
-   "base": "https://publicacoes.bad.pt/revistas/index.php/cadernos",
+   "nome": "Cadernos BAD",
+   "ok": false,
+   "erro": "oai https://publicacoes.bad.pt/revistas/index.php/cadernos: falha ao acessar https://publicacoes.bad.pt/revistas/index.php/cadernos/oai?verb=ListRecords&metadataPrefix=oai_dc: The read operation timed out | html https://publicacoes.bad.pt/revistas/index.php/cadernos: falha ao acessar https://publicacoes.bad.pt/revistas/index.php/cadernos/issue/current: <urlopen error _ssl.c:994: The handshake operation timed out>",
    "ultimo": {
     "tipo": "continuo",
     "rotulo": "Artigos mais recentes",
@@ -5945,9 +5945,9 @@
     ],
     "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095"
    },
-   "total_registros": 6,
-   "nome": "Cadernos BAD",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-20T17:52:43+00:00",
+   "fonte": "html",
+   "base": "https://publicacoes.bad.pt/revistas/index.php/cadernos"
   },
   "2183-6671": {
    "ok": true,
@@ -6233,7 +6233,7 @@
    },
    "total_registros": 646,
    "nome": "Páginas a&b: arquivos e bibliotecas",
-   "coletado": "2026-11-20T17:52:43+00:00"
+   "coletado": "2026-11-21T16:51:13+00:00"
   }
  }
 }
