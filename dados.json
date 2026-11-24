@@ -1,10 +1,10 @@
 {
- "gerado": "2026-11-23T21:32:02+00:00",
+ "gerado": "2026-11-24T20:14:16+00:00",
  "periodicos": {
   "2237-8723": {
    "nome": "Acervo – Revista do Arquivo Nacional",
    "ok": false,
-   "erro": "oai https://revista.an.gov.br/index.php/revistaacervo: a resposta não é XML (provavelmente não é um endpoint OAI-PMH) | html https://revista.an.gov.br/index.php/revistaacervo: nenhum artigo reconhecido na página da edição atual"
+   "erro": "oai https://revista.an.gov.br/index.php/revistaacervo: falha ao acessar https://revista.an.gov.br/index.php/revistaacervo/oai?verb=ListRecords&metadataPrefix=oai_dc: <urlopen error [Errno 104] Connection reset by peer> | html https://revista.an.gov.br/index.php/revistaacervo: falha ao acessar https://revista.an.gov.br/index.php/revistaacervo/issue/current: <urlopen error [Errno 104] Connection reset by peer>"
   },
   "2318-6186": {
    "ok": true,
@@ -136,7 +136,7 @@
    },
    "total_registros": 271,
    "nome": "Archeion Online",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2316-7300": {
    "ok": true,
@@ -365,7 +365,7 @@
    },
    "total_registros": 169,
    "nome": "Informação Arquivística",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2763-9045": {
    "ok": true,
@@ -504,7 +504,7 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2447-908X": {
    "ok": true,
@@ -751,7 +751,7 @@
    },
    "total_registros": 16,
    "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2763-535X": {
    "ok": true,
@@ -1056,7 +1056,7 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2764-7773": {
    "ok": true,
@@ -1111,7 +1111,7 @@
    },
    "total_registros": 128,
    "nome": "Revista Officina",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1981-1640": {
    "ok": true,
@@ -1943,7 +1943,7 @@
    },
    "total_registros": 550,
    "nome": "Brazilian Journal of Information Science: Research Trends",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1808-5245": {
    "ok": true,
@@ -3003,7 +3003,7 @@
    },
    "total_registros": 1260,
    "nome": "Em Questão",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1518-2924": {
    "nome": "Encontros Bibli",
@@ -4425,7 +4425,7 @@
    },
    "total_registros": 478,
    "nome": "InCID: Revista de Ciência da Informação e Documentação",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1981-8920": {
    "ok": true,
@@ -4795,7 +4795,7 @@
    },
    "total_registros": 1353,
    "nome": "Informação & Informação",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1981-5344": {
    "ok": true,
@@ -5303,7 +5303,7 @@
    },
    "total_registros": 1674,
    "nome": "Perspectivas em Ciência da Informação",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1981-0695": {
    "ok": true,
@@ -5394,7 +5394,7 @@
    },
    "total_registros": 5,
    "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1678-765X": {
    "ok": true,
@@ -5632,7 +5632,7 @@
    },
    "total_registros": 712,
    "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "1980-6949": {
    "ok": true,
@@ -5848,7 +5848,7 @@
    },
    "total_registros": 1229,
    "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2675-3073": {
    "nome": "Revista Brasileira de Preservação Digital (RBPD)",
@@ -5864,6 +5864,28 @@
     "rotulo": "Artigos mais recentes",
     "data": "",
     "itens": [
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
+      "title": [
+       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
+      ],
+      "author": [
+       {
+        "name": "Ana Margarida Dias da Silva"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
+      "title": [
+       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
+      ],
+      "author": [
+       {
+        "name": "André Barbosa"
+       }
+      ]
+     },
      {
       "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090",
       "title": [
@@ -5940,35 +5962,13 @@
         "name": "João Mendes Moreira"
        }
       ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
-      "title": [
-       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
-      ],
-      "author": [
-       {
-        "name": "Ana Margarida Dias da Silva"
-       }
-      ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
-      "title": [
-       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
-      ],
-      "author": [
-       {
-        "name": "André Barbosa"
-       }
-      ]
      }
     ],
-    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090"
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095"
    },
    "total_registros": 6,
    "nome": "Cadernos BAD",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   },
   "2183-6671": {
    "ok": true,
@@ -6254,7 +6254,7 @@
    },
    "total_registros": 646,
    "nome": "Páginas a&b: arquivos e bibliotecas",
-   "coletado": "2026-11-23T21:32:02+00:00"
+   "coletado": "2026-11-24T20:14:16+00:00"
   }
  }
 }
