@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-24T20:14:16+00:00",
+ "gerado": "2026-11-25T19:25:38+00:00",
  "periodicos": {
   "2237-8723": {
    "nome": "Acervo – Revista do Arquivo Nacional",
@@ -136,7 +136,7 @@
    },
    "total_registros": 271,
    "nome": "Archeion Online",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2316-7300": {
    "ok": true,
@@ -365,7 +365,7 @@
    },
    "total_registros": 169,
    "nome": "Informação Arquivística",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2763-9045": {
    "ok": true,
@@ -504,7 +504,7 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2447-908X": {
    "ok": true,
@@ -751,7 +751,7 @@
    },
    "total_registros": 16,
    "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2763-535X": {
    "ok": true,
@@ -1056,7 +1056,7 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2764-7773": {
    "ok": true,
@@ -1111,7 +1111,7 @@
    },
    "total_registros": 128,
    "nome": "Revista Officina",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1981-1640": {
    "ok": true,
@@ -1943,7 +1943,7 @@
    },
    "total_registros": 550,
    "nome": "Brazilian Journal of Information Science: Research Trends",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1808-5245": {
    "ok": true,
@@ -3003,7 +3003,7 @@
    },
    "total_registros": 1260,
    "nome": "Em Questão",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1518-2924": {
    "nome": "Encontros Bibli",
@@ -4082,7 +4082,7 @@
    "ultimo": {
     "tipo": "numero",
     "rotulo": "v. 17",
-    "data": "out. 2026",
+    "data": "nov. 2026",
     "itens": [
      {
       "URL": "https://revistas.usp.br/incid/article/view/222356",
@@ -4361,6 +4361,18 @@
       "DOI": "10.11606/issn.2178-2075.incid.2026.240395"
      },
      {
+      "URL": "https://revistas.usp.br/incid/article/view/240472",
+      "title": [
+       "O Humano como Animal que documenta a realidade: fundamentos para uma Antropologia Filosófica da Ciência da Informação"
+      ],
+      "author": [
+       {
+        "name": "Giovani Miguez da Silva"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.240472"
+     },
+     {
       "URL": "https://revistas.usp.br/incid/article/view/241489",
       "title": [
        "Implicit mediation in the context of the data life cycle"
@@ -4419,13 +4431,43 @@
        }
       ],
       "DOI": "10.11606/issn.2178-2075.incid.2026.246148"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/249134",
+      "title": [
+       "Geomarketing in Brasile: territori di ricerca e mediazione informazionale tramite Storymap"
+      ],
+      "author": [
+       {
+        "name": "Edberto Ferneda"
+       },
+       {
+        "name": "Gustavo Lunardelli Trevisan"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.249134"
+     },
+     {
+      "URL": "https://revistas.usp.br/incid/article/view/261051",
+      "title": [
+       "Entre vivências, formação humana e profissional com Paulo Freire: com a palavra a bibliotecária e professora Henriette Ferreira Gomes"
+      ],
+      "author": [
+       {
+        "name": "Gabrielle Francinne de S. C. Tanus"
+       },
+       {
+        "name": "Sueli Bortolin"
+       }
+      ],
+      "DOI": "10.11606/issn.2178-2075.incid.2026.261051"
      }
     ],
-    "sig": "17||19"
+    "sig": "17||22"
    },
-   "total_registros": 478,
+   "total_registros": 481,
    "nome": "InCID: Revista de Ciência da Informação e Documentação",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1981-8920": {
    "ok": true,
@@ -4795,7 +4837,7 @@
    },
    "total_registros": 1353,
    "nome": "Informação & Informação",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1981-5344": {
    "ok": true,
@@ -5303,7 +5345,7 @@
    },
    "total_registros": 1674,
    "nome": "Perspectivas em Ciência da Informação",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1981-0695": {
    "ok": true,
@@ -5394,7 +5436,7 @@
    },
    "total_registros": 5,
    "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1678-765X": {
    "ok": true,
@@ -5632,7 +5674,7 @@
    },
    "total_registros": 712,
    "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "1980-6949": {
    "ok": true,
@@ -5848,7 +5890,7 @@
    },
    "total_registros": 1229,
    "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2675-3073": {
    "nome": "Revista Brasileira de Preservação Digital (RBPD)",
@@ -5864,28 +5906,6 @@
     "rotulo": "Artigos mais recentes",
     "data": "",
     "itens": [
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
-      "title": [
-       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
-      ],
-      "author": [
-       {
-        "name": "Ana Margarida Dias da Silva"
-       }
-      ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
-      "title": [
-       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
-      ],
-      "author": [
-       {
-        "name": "André Barbosa"
-       }
-      ]
-     },
      {
       "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090",
       "title": [
@@ -5962,13 +5982,35 @@
         "name": "João Mendes Moreira"
        }
       ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
+      "title": [
+       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
+      ],
+      "author": [
+       {
+        "name": "Ana Margarida Dias da Silva"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
+      "title": [
+       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
+      ],
+      "author": [
+       {
+        "name": "André Barbosa"
+       }
+      ]
      }
     ],
-    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095"
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090"
    },
    "total_registros": 6,
    "nome": "Cadernos BAD",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   },
   "2183-6671": {
    "ok": true,
@@ -6254,7 +6296,7 @@
    },
    "total_registros": 646,
    "nome": "Páginas a&b: arquivos e bibliotecas",
-   "coletado": "2026-11-24T20:14:16+00:00"
+   "coletado": "2026-11-25T19:25:38+00:00"
   }
  }
 }
