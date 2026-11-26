@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-25T19:25:38+00:00",
+ "gerado": "2026-11-26T19:08:05+00:00",
  "periodicos": {
   "2237-8723": {
    "nome": "Acervo – Revista do Arquivo Nacional",
@@ -8,27 +8,15 @@
   },
   "2318-6186": {
    "ok": true,
-   "fonte": "oai",
+   "fonte": "html",
    "base": "https://periodicos.ufpb.br/index.php/archeion",
    "ultimo": {
     "tipo": "numero",
     "rotulo": "v. 14, n. 1",
-    "data": "jun. 2026",
+    "data": "2026",
     "itens": [
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/79327",
-      "title": [
-       "Expediente"
-      ],
-      "author": [
-       {
-        "name": "Ediane Toscano Galdino Carvalho"
-       }
-      ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.79327"
-     },
-     {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/79328",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/79328",
       "title": [
        "Editorial"
       ],
@@ -37,12 +25,12 @@
         "name": "Ediane Toscano Galdino Carvalho"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.79328"
+      "page": "2"
      },
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/77711",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/77711",
       "title": [
-       "Archives and Libraries as Agents of Information Literacy and Citizenship Education: memory, documentary preservation, and educational practices"
+       "ARQUIVOS E BIBLIOTECAS COMO AGENTES DE LETRAMENTO INFORMACIONAL E FORMAÇÃO CIDADÃ memória, preservação documental e práticas educativas"
       ],
       "author": [
        {
@@ -52,20 +40,19 @@
         "name": "Ricardo Roberto de Andrade"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.77711",
       "page": "3"
      },
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/74613",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/74613",
       "title": [
-       "Information Literacy and Informational Sustainability: An Overview of Research in Information Science"
+       "COMPETÊNCIA EM INFORMAÇÃO E SUSTENTABILIDADE INFORMACIONAL Panorama de pesquisas na Ciência da Informação"
       ],
       "author": [
        {
         "name": "Luana Shirley Dias Maciel"
        },
        {
-        "name": "Luciane Luciane Pantoja do Nascimento"
+        "name": "Luciane Pantoja do Nascimento"
        },
        {
         "name": "Renata Lira Furtado"
@@ -74,32 +61,30 @@
         "name": "Gabriela Belmont de Farias"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.74613",
       "page": "21"
      },
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/79344",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/79344",
       "title": [
        "CONTRIBUIÇÕES DA INTENCIONALIDADE INFORMACIONAL PARA DIÁLOGOS TEÓRICOS E CONCEITUAIS COM A ARQUIVOLOGIA"
       ],
       "author": [
        {
-        "name": "Fernanda Alves Sanchez"
+        "name": "Dra Fernanda Alves Sanchez"
        },
        {
-        "name": "Claudialyne Araújo da Silva"
+        "name": "Dra. Claudialyne Araújo da Silva"
        },
        {
-        "name": "Silvana Ap. B. G. Vidotti"
+        "name": "Dra. Silvana Ap. B. G. Vidotti"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.79344",
       "page": "38"
      },
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/79310",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/79310",
       "title": [
-       "Information governance in organization: preliminary understandings"
+       "GOVERNANÇA DA INFORMAÇÃO NAS ORGANIZAÇÕES compreensões preliminares"
       ],
       "author": [
        {
@@ -112,13 +97,12 @@
         "name": "Michelle Juliana Vieira Gomes"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.79310",
       "page": "55"
      },
      {
-      "URL": "https://periodicos.ufpb.br/index.php/archeion/article/view/76449",
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/76449",
       "title": [
-       "BETWEEN INFORMATION AND SILENCE: Memory Politics and Oblivion in the Manuscript Collection of José Américo de Almeida"
+       "ENTRE A INFORMAÇÃO E O SILÊNCIO invisibilidade documental e desafios arquivísticos no acervo de manuscritos de José Américo de Almeida"
       ],
       "author": [
        {
@@ -128,15 +112,22 @@
         "name": "Thiago Gomes Medeiros"
        }
       ],
-      "DOI": "10.22478/ufpb.2318-6186.2026v14n1.76449",
       "page": "77"
+     },
+     {
+      "URL": "https://periodicos.ufpb.br/index.php/archeion/pt_BR/article/view/79327",
+      "title": [
+       "Expediente"
+      ],
+      "author": [],
+      "page": "95"
      }
     ],
     "sig": "14|1|7"
    },
-   "total_registros": 271,
+   "total_registros": 7,
    "nome": "Archeion Online",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2316-7300": {
    "ok": true,
@@ -365,7 +356,7 @@
    },
    "total_registros": 169,
    "nome": "Informação Arquivística",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2763-9045": {
    "ok": true,
@@ -504,7 +495,7 @@
    },
    "total_registros": 836,
    "nome": "Ágora: Arquivologia em Debate",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2447-908X": {
    "ok": true,
@@ -751,7 +742,7 @@
    },
    "total_registros": 16,
    "nome": "Revista do Arquivo (APESP)",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2763-535X": {
    "ok": true,
@@ -1056,7 +1047,7 @@
    },
    "total_registros": 225,
    "nome": "Revista do Arquivo Público do Estado do Espírito Santo",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2764-7773": {
    "ok": true,
@@ -1111,7 +1102,7 @@
    },
    "total_registros": 128,
    "nome": "Revista Officina",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1981-1640": {
    "ok": true,
@@ -1943,7 +1934,7 @@
    },
    "total_registros": 550,
    "nome": "Brazilian Journal of Information Science: Research Trends",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1808-5245": {
    "ok": true,
@@ -3003,7 +2994,7 @@
    },
    "total_registros": 1260,
    "nome": "Em Questão",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1518-2924": {
    "nome": "Encontros Bibli",
@@ -4467,7 +4458,7 @@
    },
    "total_registros": 481,
    "nome": "InCID: Revista de Ciência da Informação e Documentação",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1981-8920": {
    "ok": true,
@@ -4837,7 +4828,7 @@
    },
    "total_registros": 1353,
    "nome": "Informação & Informação",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1981-5344": {
    "ok": true,
@@ -5345,7 +5336,7 @@
    },
    "total_registros": 1674,
    "nome": "Perspectivas em Ciência da Informação",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1981-0695": {
    "ok": true,
@@ -5436,7 +5427,7 @@
    },
    "total_registros": 5,
    "nome": "Pesquisa Brasileira em Ciência da Informação e Biblioteconomia (PBCIB)",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1678-765X": {
    "ok": true,
@@ -5674,7 +5665,7 @@
    },
    "total_registros": 712,
    "nome": "RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "1980-6949": {
    "ok": true,
@@ -5890,7 +5881,7 @@
    },
    "total_registros": 1229,
    "nome": "Revista Brasileira de Biblioteconomia e Documentação (RBBD)",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2675-3073": {
    "nome": "Revista Brasileira de Preservação Digital (RBPD)",
@@ -5906,6 +5897,48 @@
     "rotulo": "Artigos mais recentes",
     "data": "",
     "itens": [
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091",
+      "title": [
+       "Diretório Indexar | Recursos Digitais Abertos à Ciência e à Cultura"
+      ],
+      "author": [
+       {
+        "name": "Paula Seguro de Carvalho"
+       },
+       {
+        "name": "Paula Meireles"
+       },
+       {
+        "name": "Paulo Lopes"
+       },
+       {
+        "name": "João Mendes Moreira"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
+      "title": [
+       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
+      ],
+      "author": [
+       {
+        "name": "Ana Margarida Dias da Silva"
+       }
+      ]
+     },
+     {
+      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
+      "title": [
+       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
+      ],
+      "author": [
+       {
+        "name": "André Barbosa"
+       }
+      ]
+     },
      {
       "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090",
       "title": [
@@ -5962,55 +5995,13 @@
         "name": "Filipe Bento"
        }
       ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091",
-      "title": [
-       "Diretório Indexar | Recursos Digitais Abertos à Ciência e à Cultura"
-      ],
-      "author": [
-       {
-        "name": "Paula Seguro de Carvalho"
-       },
-       {
-        "name": "Paula Meireles"
-       },
-       {
-        "name": "Paulo Lopes"
-       },
-       {
-        "name": "João Mendes Moreira"
-       }
-      ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3095",
-      "title": [
-       "A Inteligência Artificial no acesso à informação em documentos manuscritos"
-      ],
-      "author": [
-       {
-        "name": "Ana Margarida Dias da Silva"
-       }
-      ]
-     },
-     {
-      "URL": "https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3092",
-      "title": [
-       "Wikidata: Uma Fonte Aberta para a Gestão e Interoperabilidade da Informação"
-      ],
-      "author": [
-       {
-        "name": "André Barbosa"
-       }
-      ]
      }
     ],
-    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3090"
+    "sig": "c|https://publicacoes.bad.pt/revistas/index.php/cadernos/article/view/3091"
    },
    "total_registros": 6,
    "nome": "Cadernos BAD",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   },
   "2183-6671": {
    "ok": true,
@@ -6296,7 +6287,7 @@
    },
    "total_registros": 646,
    "nome": "Páginas a&b: arquivos e bibliotecas",
-   "coletado": "2026-11-25T19:25:38+00:00"
+   "coletado": "2026-11-26T19:08:05+00:00"
   }
  }
 }
